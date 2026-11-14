@@ -8,8 +8,8 @@ What it does:
  1. copies scripts/, data/, results/ and paper/main.tex into a temporary directory and decompresses every *.gz there
     (the repository itself is never modified; committed numbers_*.json are NOT copied, so they are regenerated);
  2. runs the analysis scripts in order: lexical_ngram -> analyze_v2 (Block A) -> analyze_b (Block B, + Llama and Gemma
-    replications) -> figs_b -> analyze_d (Block D) -> analyze_f + posthoc_f1_templates (Block F) -> polish_figs + fig_intro (print
-    figures) -> make_appendix (appendix tables) -> number_check (every hand-typed number in the main text);
+    replications) -> figs_b -> analyze_d (Block D) -> analyze_f + posthoc_f1_templates (Block F) -> polish_figs + fig_intro + fig_tradeoff (print
+    figures; fig_tradeoff runs last and writes the paper's Fig. 6) -> make_appendix (appendix tables) -> number_check (every hand-typed number in the main text);
  3. compares the regenerated numbers_A/B/D/F.json, numbers_F_posthoc.json and appendix tables with the committed ones;
  4. copies numbers, summaries, appendix .tex, figures and NUMBER_CHECK.md to reproduced/.
 Exit code 0 only if every step ran, the regenerated numbers equal the committed ones and number_check passes.
@@ -130,6 +130,7 @@ def main():
     sh(tmp, "scripts/posthoc_f1_templates.py")
     sh(tmp, "scripts/polish_figs.py")
     sh(tmp, "scripts/fig_intro.py", ".")
+    sh(tmp, "scripts/fig_tradeoff.py", ".")   # last: replaces the draft figD_tradeoff_F3 written by analyze_d/polish_figs (which still draw the removed Schuster point)
     sh(tmp, "scripts/make_appendix.py")
     nc = sh(tmp, "scripts/number_check.py", "--out", os.path.join(tmp, "NUMBER_CHECK.md"))
     print("[3/4] comparing with the committed outputs")
