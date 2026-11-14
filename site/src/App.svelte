@@ -10,6 +10,7 @@
   import Probe from "./parts/Probe.svelte";
   import Fixes from "./parts/Fixes.svelte";
   import Prereg from "./parts/Prereg.svelte";
+  import Cite from "./parts/Cite.svelte";
 
   const theme = createTheme({ key: "rbc.theme" });
   onMount(() => theme.start());
@@ -25,6 +26,7 @@
       <a href="#signal">Signal</a>
       <a href="#fixes">Fixes</a>
       <a href="#record">Record</a>
+      <a href="#cite">Cite</a>
       <ThemeButton {theme} />
     </nav>
   </header>
@@ -39,6 +41,7 @@
     <Probe />
     <Fixes />
     <Prereg />
+    <Cite />
   </main>
 
   <footer>

@@ -16,6 +16,7 @@
 <section class="hero part">
   <p class="kicker">Apart AI x Epistemics sprint · open-weight models, 7B to 32B</p>
   <h1>Repetition beats credibility</h1>
+  <p class="byline"><span class="au">Amr Sobhy</span><span class="sep" aria-hidden="true">·</span><span>Le French News Lab</span></p>
   <p class="lede">
     Reword one social-media post four times and Qwen2.5-32B sides with it against a government source on
     <b>86%</b> of items. Paste the same post four times and it holds firm: <b>3%</b>.
@@ -43,6 +44,9 @@
 <style>
   .hero { padding-top: var(--s7); }
   h1 { font: var(--type-title); letter-spacing: -.045em; max-width: 14ch; text-wrap: balance; }
+  .byline { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s2); margin-top: calc(var(--s3) * -1); color: var(--ink2); font: var(--type-lead); }
+  .byline .au { color: var(--ink); font-weight: 600; }
+  .byline .sep { color: var(--ink3); }
   .lede b { color: var(--ink); font-weight: 600; }
   .stacks { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s4); margin-top: var(--s4); }
   .stack { display: grid; gap: var(--s3); align-content: end; padding: var(--s5) var(--s4) var(--s4); background: var(--wash); border-radius: var(--r-box); }
