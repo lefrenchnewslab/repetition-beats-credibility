@@ -1,4 +1,5 @@
 """SPRINT Block C (14 Nov 2026) — build paper appendices from numbers_A.json / numbers_B.json / results files. New file.
+Block F (14 Nov, evening): pre-registration rows P1/P2, amendment rows, and the Block F tables from numbers_F.json.
   python3 scripts/make_appendix.py  -> paper/app_prereg.tex, paper/app_tables.tex
 No number is typed by hand: every value is read from a JSON/results file at build time.
 """
@@ -50,7 +51,21 @@ P.append(r"D-S1 & Trained LoRA adapter (same model): F1 C2 $k{=}4$ bias reductio
 P.append(r"D-S2 & Same adapter, F3 C7 $k{=}4$: bias reduction $\ge$50\%, F3 preference kept $\ge$70\%, same capability bars. & Any bar missed. & -- & " + f"\\textbf{{met}} ({_f('D.F3.BR_C7k4'):.0f}\\%, {_f('D.F3.pref_kept'):.0f}\\%) (C)" + r" & -- \\")
 P.append(r"D-cmp & Adapter vs best head damping at matched F3 preference: better if its CI lower bound exceeds the damping value. & Worse or no difference. & -- & better (C) & -- \\")
 P.append(r"D-sel & Adapter keeps $\ge$50\% of the independent-user (C3 $k{=}4$) effect. & Below 50\%. & -- & " + f"not met ({_f('D.F1.corrob_kept'):.0f}\\% F1, {_f('D.F3.corrob_kept'):.0f}\\% F3)" + r" & -- \\")
+F = json.load(open(f"{S}/numbers_F.json"))
+fv = lambda k: F[k]["value"]
+p1 = lambda m: met(float(F[f"F1.{m}.F3.D_pts"]["ci"][0] > 0 and fv(f"F1.{m}.F3.R_p_pts") > fv(f"F1.{m}.F3.L_p_pts")))
+PF = []
+PF.append(r"P1 & Block F, documents (F3): the paraphrase gain beyond one paraphrased copy exceeds the exact-copy gain, $D = R_p - R_e > 0$ (CI lower bound $>0$), with $R_p = P_{\text{low}}(\text{C7 } k{=}4) - P_{\text{low}}(\text{C7 } k{=}1)$, $R_e = P_{\text{low}}(\text{C2 } k{=}4) - P_{\text{low}}(\text{C1})$, \emph{and} $R_p >$ the length-matched filler effect $L_p$. Confirmatory in Qwen-32B and Qwen-7B. & $D$'s CI includes 0 or $D<0$ (a one-shot wording effect), or $R_p \le L_p$ (a length effect). & "
+         + f"{p1('Llama-8B')} (E) & {p1('Qwen-7B')} (C) & {p1('Gemma-12B')} (E) & {p1('Qwen-32B')} (C)" + r" \\")
+PF.append(r"P2 & Block F, tables (F1): the fixed top-10 heads are specific to the credibility--repetition conflict: recovery on C1$\to$C2 $k{=}4$ exceeds the other three contrasts (C0$\to$C1, C0$\to$C0r $k{=}4$, C1$\to$C6 $k{=}4$) by $>$20 points. & Any other contrast within 20 points. & "
+         + " & ".join(f"{met(fv(f'F2.{m}.specific'))} (C)" for m in M3) + r" & -- \\")
 P.append(r"\bottomrule\end{tabular}\caption{Pre-registered criteria, failure outcomes and verdicts.}\label{tab:prereg}\end{table}")
+P.append(r"""
+\begin{table}[!htbp]\centering\scriptsize
+\begin{tabular}{@{}p{0.6cm}p{5.4cm}p{3.6cm}p{1.15cm}p{1.15cm}p{1.15cm}p{1.15cm}@{}}\toprule
+ID & Definition & Fails if & Llama & Qwen-7B & Gemma & Qwen-32B \\ \midrule""")
+P += PF
+P.append(r"\bottomrule\end{tabular}\caption{Block F (reviewer controls): pre-registered criteria, failure outcomes and verdicts.}\label{tab:prereg_f}\end{table}")
 am = [
  (r"A1", r"13 Nov, after a 3-pair code-check smoke test", r"H2 layer chosen by selection log-loss instead of AUC (ties at 1.00).", r"all full runs"),
  (r"A2", r"13 Nov", r"Qwen-32B scope (test split, F1+F3, priority order); lexical baselines; graded-credibility set; H3 defined.", r"Gemma, Qwen-32B runs; all extras"),
@@ -69,6 +84,9 @@ am = [
  (r"H-F.1", r"14 Nov $\sim$00:30", r"H-F rule when Feeders exceed the union's range.", r"B3 test data"),
  (r"B-report", r"14 Nov $\sim$00:55", r"Report preference kept in all formats (no criterion change).", r"B3 test data"),
  (r"B1-scope", r"14 Nov $\sim$04:20", r"Reduced sender pool (top-50 heads + top-10 MLPs by AtP); suffix positions only.", r"all B1 data"),
+ (r"F", r"14 Nov $\sim$15:30", r"Block F (reviewer controls): C7 $k{=}1$ per paraphrase template, C8 $k{=}4$, C5p; P1, P2 and their failing outcomes.", r"all Block F data"),
+ (r"F-C5p", r"14 Nov $\sim$15:45", r"F3 filler blocks lengthened to 4 sentences so that C5p matches C7 $k{=}4$ in length.", r"all Block F data"),
+ (r"F-posthoc", r"14 Nov, after Qwen-32B data", r"Per-template C7 $k{=}1$ values and $D$ against templates 1--3 or the strongest template; labelled post hoc, verdicts unchanged.", r"none (post hoc)"),
 ]
 P.append(r"""
 \begin{table}[!htbp]\centering\scriptsize
@@ -174,5 +192,24 @@ for L, o in R2["layers"].items():
     t = o["test"]["F1_C2k4"]; c = o["controls_100pairs"]
     T.append(f"L{L} & {o['sigma']:.3f} & {o['alpha_star']} & {t['base']:.3f}$\\to${t['steer']:.3f} & {c['delta_direction']:+.4f} & {c['mean_abs_delta_random']:.4f} & {c['delta_positive_control']:+.3f}" + r" \\")
 T.append(r"\bottomrule\end{tabular}\caption{B2 steering, Qwen-7B (oracle sign; diagnostic only). Controls on the first 100 test pairs.}\end{table}")
+# Block F: F1-main quantities and F2 recovery
+FM = [("Qwen-32B", "F3", "C"), ("Qwen-7B", "F3", "C"), ("Llama-8B", "F3", "E"), ("Gemma-12B", "F3", "E"), ("Llama-8B", "F1", "E"), ("Qwen-7B", "F1", "E"), ("Gemma-12B", "F1", "E")]
+T.append(r"\begin{table}[!htbp]\centering\scriptsize\setlength{\tabcolsep}{3pt}\resizebox{\linewidth}{!}{\begin{tabular}{@{}llcccccc|cccc@{}}\toprule")
+T.append(r"Model & Format & $W$ & $R_p$ & $R_e$ & $D = R_p - R_e$ [CI] & $L_p$ & interaction [CI] & C2 $k{=}4$ & C3 $k{=}4$ & C7 $k{=}4$ & C8 $k{=}4$ \\")
+T.append(r" & & & & & & & & same, exact & different, exact & same, paraphr. & different, paraphr. \\ \midrule")
+for m, fmt, lab in FM:
+    b = f"F1.{m}.{fmt}"; dc, ic = F[f"{b}.D_pts"]["ci"], F[f"{b}.I_2x2_pts"]["ci"]
+    T.append(f"{m} ({lab}) & {'documents' if fmt == 'F3' else 'tables'} & {fv(b + '.W_pts'):+.1f} & {fv(b + '.R_p_pts'):+.1f} & {fv(b + '.R_e_pts'):+.1f} & {fv(b + '.D_pts'):+.1f} [{dc[0]:+.1f}, {dc[1]:+.1f}] & {fv(b + '.L_p_pts'):+.1f} & {fv(b + '.I_2x2_pts'):+.1f} [{ic[0]:+.1f}, {ic[1]:+.1f}] & "
+             + " & ".join(f"{fv(f'{b}.{ck}.p_low'):.3f}" for ck in ("C2k4", "C3k4", "C7k4", "C8k4")) + r" \\")
+T.append(r"\bottomrule\end{tabular}}\caption{Block F: is it repetition or wording? Effects in percentage points of $P_{\text{low}}$ on 400 test pairs (95\% CI, cluster bootstrap over pairs). $W$: one paraphrased copy (mean over the four templates) minus C1; $R_p$: four paraphrased copies minus one; $R_e$: four exact copies minus C1; $L_p$: one social block plus filler matched in length to C7 $k{=}4$, minus C1. Right: $P_{\text{low}}$ in the source identity $\times$ wording $2{\times}2$ at $k{=}4$; interaction = (C8$-$C7)$-$(C3$-$C2). (C) confirmatory, (E) exploratory.}\end{table}")
+CON = [("C1k1->C2k4", r"C1$\to$C2 $k{=}4$ (reference)"), ("C0k1->C1k1", r"C0$\to$C1 (credibility)"), ("C0k1->C0rk4", r"C0$\to$C0r $k{=}4$ (unlabelled repetition)"), ("C1k1->C6k4", r"C1$\to$C6 $k{=}4$ (government repeated)")]
+T.append(r"\begin{table}[!htbp]\centering\scriptsize\setlength{\tabcolsep}{3pt}\begin{tabular}{@{}llccccc@{}}\toprule")
+T.append(r"Model & Contrast (clean$\to$corrupt) & eligible & mean gap & flip rate & top-10 recovery [CI] & random p95 \\ \midrule")
+for m in M3:
+    for i, (c, lab) in enumerate(CON):
+        b = f"F2.{m}.{c}"; rc = F[f"{b}.recovery_top10_pct"]["ci"]
+        T.append(f"{m if i == 0 else ''} & {lab} & {int(fv(b + '.n_eligible'))} & {abs(fv(b + '.mean_gap')):.2f} & {fv(b + '.flip_rate') * 100:.0f}\\% & {fv(b + '.recovery_top10_pct'):.1f} [{rc[0]:.1f}, {rc[1]:.1f}] & {fv(b + '.random_p95_pct'):.1f}" + r" \\")
+    if m != M3[-1]: T[-1] += r" \midrule"
+T.append(r"\bottomrule\end{tabular}\caption{Block F: the fixed top-10 heads of criterion H1 (tables, F1), patched for four contrasts on up to 160 test items with a gap $>$1 logit. Recovery = share of the mean logit-difference gap restored (95\% CI over pairs); random p95 over the same 20 random 10-head sets.}\end{table}")
 open(f"{S}/paper/app_tables.tex", "w").write("\n".join(T) + "\n\\clearpage\n")
 print("wrote app_prereg.tex, app_tables.tex")

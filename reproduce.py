@@ -8,7 +8,7 @@ What it does:
  1. copies scripts/, data/, results/ and paper/main.tex into a temporary directory and decompresses every *.gz there
     (the repository itself is never modified; committed numbers_*.json are NOT copied, so they are regenerated);
  2. runs the analysis scripts in order: lexical_ngram -> analyze_v2 (Block A) -> analyze_b (Block B, + Llama and Gemma
-    replications) -> figs_b -> analyze_d (Block D) -> analyze_f + posthoc_f1_templates (Block F) -> polish_figs (print
+    replications) -> figs_b -> analyze_d (Block D) -> analyze_f + posthoc_f1_templates (Block F) -> polish_figs + fig_intro (print
     figures) -> make_appendix (appendix tables) -> number_check (every hand-typed number in the main text);
  3. compares the regenerated numbers_A/B/D/F.json, numbers_F_posthoc.json and appendix tables with the committed ones;
  4. copies numbers, summaries, appendix .tex, figures and NUMBER_CHECK.md to reproduced/.
@@ -93,7 +93,7 @@ def headline(tmp):
         ("Abstract, Sec. 4.2", "Qwen2.5-32B, documents: items flipped by 4 exact copies (%)", f"{v(A, 'Qwen-32B.F3.test.C2k4.flip_pct'):.2f}"),
         ("Sec. 4.2", "Qwen2.5-32B, documents: paraphrased minus exact (points)",
          f"{v(A, 'Qwen-32B.F3.test.C7k4_minus_C2k4_pts'):.1f} {ci(A, 'Qwen-32B.F3.test.C7k4_minus_C2k4_pts')}"),
-        *[("Sec. 4.3, Fig. 3", f"{m}: top-10 heads recover, tables (%)",
+        *[("Sec. 4.3, Fig. 4", f"{m}: top-10 heads recover, tables (%)",
            f"{v(A, f'{m}.F1.patch.top10.recovery_pct'):.1f} {ci(A, f'{m}.F1.patch.top10.recovery_pct')}") for m in ("Llama-8B", "Qwen-7B", "Gemma-12B")],
         *[("Sec. 4.2 (Block F)", f"{m}, documents: paraphrase gain minus exact-copy gain D (points)",
            f"{v(F, f'F1.{m}.F3.D_pts'):.1f} {ci(F, f'F1.{m}.F3.D_pts')}") for m in ("Qwen-32B", "Qwen-7B")],
@@ -102,7 +102,7 @@ def headline(tmp):
            f"{v(F, f'F2.{m}.C1k1->C6k4.recovery_top10_pct'):.1f} {ci(F, f'F2.{m}.C1k1->C6k4.recovery_top10_pct')}") for m in ("Llama-8B", "Qwen-7B", "Gemma-12B")],
         ("Sec. 4.5", "Head damping (Qwen2.5-7B, tables): exact-copy effect removed (%)", f"{v(B, 'B3.F1.F1.BR_C2k4', 100):.1f} {ci(B, 'B3.F1.F1.BR_C2k4', 100)}"),
         ("Sec. 4.5", "Head damping: source preference kept (%)", f"{v(B, 'B3.F1.F1.pref_kept', 100):.1f} {ci(B, 'B3.F1.F1.pref_kept', 100)}"),
-        ("Sec. 4.5, Fig. 5", "LoRA (Qwen2.5-7B, documents): paraphrase effect removed (%)", f"{v(D, 'D.F3.BR_C7k4', 100):.1f} {ci(D, 'D.F3.BR_C7k4', 100)}"),
+        ("Sec. 4.5, Fig. 6", "LoRA (Qwen2.5-7B, documents): paraphrase effect removed (%)", f"{v(D, 'D.F3.BR_C7k4', 100):.1f} {ci(D, 'D.F3.BR_C7k4', 100)}"),
         ("Sec. 4.5", "LoRA, documents: independent-user effect kept (%)", f"{v(D, 'D.F3.corrob_kept', 100):.1f} {ci(D, 'D.F3.corrob_kept', 100)}"),
     ]
     print("\nHeadline numbers (should match README 'Quickstart'):")
@@ -129,6 +129,7 @@ def main():
     sh(tmp, "scripts/analyze_f.py")
     sh(tmp, "scripts/posthoc_f1_templates.py")
     sh(tmp, "scripts/polish_figs.py")
+    sh(tmp, "scripts/fig_intro.py", ".")
     sh(tmp, "scripts/make_appendix.py")
     nc = sh(tmp, "scripts/number_check.py", "--out", os.path.join(tmp, "NUMBER_CHECK.md"))
     print("[3/4] comparing with the committed outputs")

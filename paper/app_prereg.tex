@@ -22,6 +22,13 @@ D-sel & Adapter keeps $\ge$50\% of the independent-user (C3 $k{=}4$) effect. & B
 \bottomrule\end{tabular}\caption{Pre-registered criteria, failure outcomes and verdicts.}\label{tab:prereg}\end{table}
 
 \begin{table}[!htbp]\centering\scriptsize
+\begin{tabular}{@{}p{0.6cm}p{5.4cm}p{3.6cm}p{1.15cm}p{1.15cm}p{1.15cm}p{1.15cm}@{}}\toprule
+ID & Definition & Fails if & Llama & Qwen-7B & Gemma & Qwen-32B \\ \midrule
+P1 & Block F, documents (F3): the paraphrase gain beyond one paraphrased copy exceeds the exact-copy gain, $D = R_p - R_e > 0$ (CI lower bound $>0$), with $R_p = P_{\text{low}}(\text{C7 } k{=}4) - P_{\text{low}}(\text{C7 } k{=}1)$, $R_e = P_{\text{low}}(\text{C2 } k{=}4) - P_{\text{low}}(\text{C1})$, \emph{and} $R_p >$ the length-matched filler effect $L_p$. Confirmatory in Qwen-32B and Qwen-7B. & $D$'s CI includes 0 or $D<0$ (a one-shot wording effect), or $R_p \le L_p$ (a length effect). & \textbf{met} (E) & \textbf{met} (C) & \textbf{met} (E) & \textbf{met} (C) \\
+P2 & Block F, tables (F1): the fixed top-10 heads are specific to the credibility--repetition conflict: recovery on C1$\to$C2 $k{=}4$ exceeds the other three contrasts (C0$\to$C1, C0$\to$C0r $k{=}4$, C1$\to$C6 $k{=}4$) by $>$20 points. & Any other contrast within 20 points. & not met (C) & not met (C) & not met (C) & -- \\
+\bottomrule\end{tabular}\caption{Block F (reviewer controls): pre-registered criteria, failure outcomes and verdicts.}\label{tab:prereg_f}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
 \begin{tabular}{@{}p{1.3cm}p{2.2cm}p{8.4cm}p{2.6cm}@{}}\toprule
 ID & Written (as recorded) & Change & Before which data \\ \midrule
 A1 & 13 Nov, after a 3-pair code-check smoke test & H2 layer chosen by selection log-loss instead of AUC (ties at 1.00). & all full runs \\
@@ -41,5 +48,8 @@ B-Feeders & 14 Nov $\sim$00:15 & Feeders head set and H-F; test $\gamma$-curves.
 H-F.1 & 14 Nov $\sim$00:30 & H-F rule when Feeders exceed the union's range. & B3 test data \\
 B-report & 14 Nov $\sim$00:55 & Report preference kept in all formats (no criterion change). & B3 test data \\
 B1-scope & 14 Nov $\sim$04:20 & Reduced sender pool (top-50 heads + top-10 MLPs by AtP); suffix positions only. & all B1 data \\
+F & 14 Nov $\sim$15:30 & Block F (reviewer controls): C7 $k{=}1$ per paraphrase template, C8 $k{=}4$, C5p; P1, P2 and their failing outcomes. & all Block F data \\
+F-C5p & 14 Nov $\sim$15:45 & F3 filler blocks lengthened to 4 sentences so that C5p matches C7 $k{=}4$ in length. & all Block F data \\
+F-posthoc & 14 Nov, after Qwen-32B data & Per-template C7 $k{=}1$ values and $D$ against templates 1--3 or the strongest template; labelled post hoc, verdicts unchanged. & none (post hoc) \\
 \bottomrule\end{tabular}\caption{Amendments, in order.}\label{tab:amend}\end{table}
 \clearpage

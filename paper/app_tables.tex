@@ -139,4 +139,30 @@ F3 / C7k4 & MLP16, MLP19, MLP14, MLP20, L17H24, L11H8, L11H0, L13H1, L17H22, L15
 L18 & 0.143 & 32 & 0.634$\to$0.626 & -0.0084 & 0.0089 & +0.076 \\
 L28 & 1.386 & 8 & 0.634$\to$0.634 & -0.0001 & 0.0018 & -0.438 \\
 \bottomrule\end{tabular}\caption{B2 steering, Qwen-7B (oracle sign; diagnostic only). Controls on the first 100 test pairs.}\end{table}
+\begin{table}[!htbp]\centering\scriptsize\setlength{\tabcolsep}{3pt}\resizebox{\linewidth}{!}{\begin{tabular}{@{}llcccccc|cccc@{}}\toprule
+Model & Format & $W$ & $R_p$ & $R_e$ & $D = R_p - R_e$ [CI] & $L_p$ & interaction [CI] & C2 $k{=}4$ & C3 $k{=}4$ & C7 $k{=}4$ & C8 $k{=}4$ \\
+ & & & & & & & & same, exact & different, exact & same, paraphr. & different, paraphr. \\ \midrule
+Qwen-32B (C) & documents & +1.2 & +70.0 & +11.0 & +59.1 [+57.1, +61.1] & +0.3 & -23.5 [-25.9, -21.1] & 0.110 & 0.519 & 0.713 & 0.887 \\
+Qwen-7B (C) & documents & +6.2 & +76.9 & +46.7 & +30.2 [+28.3, +32.2] & +19.3 & -6.2 [-7.3, -5.1] & 0.591 & 0.653 & 0.955 & 0.955 \\
+Llama-8B (E) & documents & -0.9 & +60.6 & +22.1 & +38.5 [+36.9, +40.2] & +14.5 & -10.5 [-11.6, -9.4] & 0.494 & 0.687 & 0.870 & 0.958 \\
+Gemma-12B (E) & documents & +1.6 & +65.3 & +62.7 & +2.7 [+0.9, +4.4] & +8.7 & -3.0 [-3.8, -2.1] & 0.849 & 0.905 & 0.892 & 0.919 \\
+Llama-8B (E) & tables & -21.9 & +65.1 & +34.7 & +30.4 [+29.1, +31.7] & -4.2 & -9.3 [-10.1, -8.5] & 0.781 & 0.905 & 0.866 & 0.897 \\
+Qwen-7B (E) & tables & -12.8 & +80.1 & +39.2 & +40.9 [+38.8, +43.0] & +7.6 & -11.9 [-13.4, -10.4] & 0.635 & 0.761 & 0.916 & 0.923 \\
+Gemma-12B (E) & tables & -26.0 & +67.2 & +30.9 & +36.3 [+34.8, +37.9] & +12.1 & -4.2 [-5.2, -3.2] & 0.727 & 0.832 & 0.830 & 0.893 \\
+\bottomrule\end{tabular}}\caption{Block F: is it repetition or wording? Effects in percentage points of $P_{\text{low}}$ on 400 test pairs (95\% CI, cluster bootstrap over pairs). $W$: one paraphrased copy (mean over the four templates) minus C1; $R_p$: four paraphrased copies minus one; $R_e$: four exact copies minus C1; $L_p$: one social block plus filler matched in length to C7 $k{=}4$, minus C1. Right: $P_{\text{low}}$ in the source identity $\times$ wording $2{\times}2$ at $k{=}4$; interaction = (C8$-$C7)$-$(C3$-$C2). (C) confirmatory, (E) exploratory.}\end{table}
+\begin{table}[!htbp]\centering\scriptsize\setlength{\tabcolsep}{3pt}\begin{tabular}{@{}llccccc@{}}\toprule
+Model & Contrast (clean$\to$corrupt) & eligible & mean gap & flip rate & top-10 recovery [CI] & random p95 \\ \midrule
+Llama-8B & C1$\to$C2 $k{=}4$ (reference) & 2845 & 4.45 & 41\% & 92.1 [90.5, 93.7] & 31.1 \\
+ & C0$\to$C1 (credibility) & 1297 & 3.19 & 34\% & 92.6 [91.3, 93.9] & 24.3 \\
+ & C0$\to$C0r $k{=}4$ (unlabelled repetition) & 3118 & 6.30 & 48\% & 90.7 [89.4, 91.9] & 28.0 \\
+ & C1$\to$C6 $k{=}4$ (government repeated) & 3021 & 4.88 & 39\% & 92.8 [91.5, 94.0] & 34.1 \\ \midrule
+Qwen-7B & C1$\to$C2 $k{=}4$ (reference) & 2429 & 13.73 & 59\% & 95.4 [92.5, 98.6] & 18.7 \\
+ & C0$\to$C1 (credibility) & 2599 & 8.01 & 39\% & 72.3 [69.4, 75.2] & 22.7 \\
+ & C0$\to$C0r $k{=}4$ (unlabelled repetition) & 2856 & 15.07 & 56\% & 90.2 [86.5, 94.3] & 14.0 \\
+ & C1$\to$C6 $k{=}4$ (government repeated) & 2576 & 9.44 & 23\% & 96.6 [92.3, 101.5] & 16.6 \\ \midrule
+Gemma-12B & C1$\to$C2 $k{=}4$ (reference) & 2269 & 6.62 & 49\% & 93.2 [91.4, 95.3] & 13.6 \\
+ & C0$\to$C1 (credibility) & 1387 & 3.43 & 26\% & 92.2 [89.3, 95.1] & 12.8 \\
+ & C0$\to$C0r $k{=}4$ (unlabelled repetition) & 2851 & 6.26 & 39\% & 90.7 [87.8, 93.9] & 14.7 \\
+ & C1$\to$C6 $k{=}4$ (government repeated) & 2040 & 6.62 & 46\% & 93.7 [91.7, 95.7] & 11.7 \\
+\bottomrule\end{tabular}\caption{Block F: the fixed top-10 heads of criterion H1 (tables, F1), patched for four contrasts on up to 160 test items with a gap $>$1 logit. Recovery = share of the mean logit-difference gap restored (95\% CI over pairs); random p95 over the same 20 random 10-head sets.}\end{table}
 \clearpage

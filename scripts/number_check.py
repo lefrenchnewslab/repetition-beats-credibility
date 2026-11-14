@@ -22,7 +22,7 @@ B0 = {m: J(f"results/B/b0_induction_{m}.json") for m in M3}
 B2 = J("results/B/b2_steer_Qwen2.5-7B-Instruct.json")
 MD = J("data/manifest_d.json")
 TEX = re.sub(r"\s+", " ", open(f"{S}/paper/main.tex").read())
-TEX = TEX[TEX.index(r"\begin{abstract}"):TEX.index(r"\section*{Code and Data}")]   # main text only
+TEX = TEX[TEX.index(r"\begin{abstract}"):TEX.index(r"\input{app_prereg}")]   # main text + the verdicts table (Appendix A, typed by hand)
 
 
 def g(Dct, k, i=None):
@@ -48,58 +48,48 @@ add("Abstract", r"four paraphrased copies of one post flip 86\% of items", 86, "
 add("Abstract", r"against 3\% for four exact copies", 3, "Qwen-32B.F3.test.C2k4.flip_pct", a("Qwen-32B.F3.test.C2k4.flip_pct"))
 add("Abstract", r"recover 92--95\% of the repetition effect", 92, "*.F1.patch.top10.recovery_pct (min of 3 models)", min(top10))
 add("Abstract", r"recover 92--95\% of the repetition effect", 95, "*.F1.patch.top10.recovery_pct (max of 3 models)", max(top10))
-add("Abstract", r"(random heads: at most 31\%)", 31, "*.F1.patch.rand10.recovery_p95 (max)", max(p95))
+add("Abstract", r"(random sets: 95th percentile $\le$31\%)", 31, "*.F1.patch.rand10.recovery_p95 (max)", max(p95))
 add("Abstract", r"removes 95\% of the paraphrase effect", 95, "D.F3.BR_C7k4", d("D.F3.BR_C7k4"), 100)
+add("Abstract", r"four distinct users then keep only 2--11\% of their effect", 2, "D.F3.corrob_kept", d("D.F3.corrob_kept"), 100)
+add("Abstract", r"four distinct users then keep only 2--11\% of their effect", 11, "D.F1.corrob_kept", d("D.F1.corrob_kept"), 100)
 
-# ---------------- Table 3 (pre-registered criteria), Block F rows ----------------
-for m in ("Qwen-32B", "Qwen-7B"):   # F1-main: D's CI lower bound > 0 and R_p > L_p (Qwen-7B is the table's column)
+# ---------------- Table 2 (pre-registered criteria, Appendix A), Block F rows ----------------
+for m in ("Qwen-32B", "Qwen-7B"):   # P1 (F1-main): D's CI lower bound > 0 and R_p > L_p (Qwen-7B is the table's column)
     met = float(fv(f"F1.{m}.F3.D_pts", 0) > 0 and fv(f"F1.{m}.F3.R_p_pts") > fv(f"F1.{m}.F3.L_p_pts"))
-    add("Table 3", r"F1 paraphrase gain exceeds exact-copy gain & -- & \textbf{met} & --", 1, f"F1.{m}.F3 D ci lo > 0 and R_p > L_p (1 = met)", met)
+    add("Table 2", r"P1 paraphrase gain exceeds exact-copy gain & -- & \textbf{met} & --", 1, f"F1.{m}.F3 D ci lo > 0 and R_p > L_p (1 = met)", met)
 for m in SH:
-    add("Table 3", "F2 top heads specific to the conflict & not met & not met & not met", 0, f"F2.{m}.specific (0 = not met)", fv(f"F2.{m}.specific"))
+    add("Table 2", "P2 top heads specific to the conflict & not met & not met & not met", 0, f"F2.{m}.specific (0 = not met)", fv(f"F2.{m}.specific"))
 
 # ---------------- Section 3 (design constants) ----------------
 add("§3.5", "on 1,500 items about new fictional entities", "1500", "data/manifest_d.json items.train_d", MD["items"]["train_d"])
 
-# ---------------- Section 4.1 + Table 2 ----------------
+# ---------------- Section 4.1 + Table 1 ----------------
 add("§4.1", r"reproduces at most 40\% of the shift in Qwen-7B", 40, "Qwen-7B.F1.test.C5_pct_of_C2k4_shift", a("Qwen-7B.F1.test.C5_pct_of_C2k4_shift"))
 c4 = [a(f"{m}.F1.test.C4k4.shift_vs_C1_pts") for m in SH]
-add("§4.1", "(+3 to +18 points)", 3, "*.F1.test.C4k4.shift_vs_C1_pts (min)", min(c4))
-add("§4.1", "(+3 to +18 points)", 18, "*.F1.test.C4k4.shift_vs_C1_pts (max)", max(c4))
+add("§4.1", "moves it only 3--18 points", 3, "*.F1.test.C4k4.shift_vs_C1_pts (min)", min(c4))
+add("§4.1", "moves it only 3--18 points", 18, "*.F1.test.C4k4.shift_vs_C1_pts (max)", max(c4))
 ROWS = {"Llama-8B": "Llama-3.1-8B", "Qwen-7B": "Qwen2.5-7B", "Gemma-12B": "Gemma-3-12B", "Qwen-32B": "Qwen2.5-32B"}
 cols = [("F1", "C1k1"), ("F1", "C2k4"), ("F1", "C3k4"), ("F1", "C7k4"), ("F3", "C1k1"), ("F3", "C2k4"), ("F3", "C7k4")]
 for m, name in ROWS.items():
     vals = [a(f"{m}.{f}.test.{ck}.p_low") for f, ck in cols]
     row = name + " & " + " & ".join(f"{v:.2f}".lstrip("0") for v in vals) + r" \\"   # the table row rebuilt from the data
     for (f, ck), v in zip(cols, vals):
-        add("Table 2", row, f"{v:.2f}", f"{m}.{f}.test.{ck}.p_low", v)
+        add("Table 1", row, f"{v:.2f}", f"{m}.{f}.test.{ck}.p_low", v)
 
 # ---------------- Section 4.2 ----------------
-q = "Gemma: 0.73 exact vs 0.83 paraphrased and 0.83 independent"
-add("§4.2", q, "0.73", "Gemma-12B.F1.test.C2k4.p_low", a("Gemma-12B.F1.test.C2k4.p_low"))
-add("§4.2", q, "0.83", "Gemma-12B.F1.test.C7k4.p_low", a("Gemma-12B.F1.test.C7k4.p_low"))
-add("§4.2", q, "0.83", "Gemma-12B.F1.test.C3k4.p_low", a("Gemma-12B.F1.test.C3k4.p_low"))
-add("§4.2", "near 0.5 (0.49--0.59)", "0.49", "Llama-8B.F3.test.C2k4.p_low", a("Llama-8B.F3.test.C2k4.p_low"))
-add("§4.2", "near 0.5 (0.49--0.59)", "0.59", "Qwen-7B.F3.test.C2k4.p_low", a("Qwen-7B.F3.test.C2k4.p_low"))
-q = "is 0.11 with four exact copies and 0.71 with four paraphrased copies"
-add("§4.2", q, "0.11", "Qwen-32B.F3.test.C2k4.p_low", a("Qwen-32B.F3.test.C2k4.p_low"))
-add("§4.2", q, "0.71", "Qwen-32B.F3.test.C7k4.p_low", a("Qwen-32B.F3.test.C7k4.p_low"))
-add("§4.2 (Block F)", "A single paraphrased copy barely moves the answer (+1 point in Qwen-32B)", 1, "F1.Qwen-32B.F3.W_pts", fv("F1.Qwen-32B.F3.W_pts"))
-C.append(("§4.2 (Block F)", "and length-matched filler moves it far less", "<1", "F1.Qwen-32B.F3: L_p / R_p (filler effect as a share of the paraphrase-repetition effect)",
-          fv("F1.Qwen-32B.F3.L_p_pts") / fv("F1.Qwen-32B.F3.R_p_pts")))
-for p, i in (("60.3", None), ("58.3", 0), ("62.2", 1)):
-    add("§4.2", "(+60.3 points [58.3, 62.2])", p, "Qwen-32B.F3.test.C7k4_minus_C2k4_pts", a("Qwen-32B.F3.test.C7k4_minus_C2k4_pts", i))
-q = r"Paraphrased copies flip 86\% of items, against 3\% for exact copies and 52\% for four independent users"
+q = r"four paraphrased copies of one post flip 86\% of Qwen-32B's items, against 3\% for four exact copies and 52\% for four users posting identical text"
 add("§4.2", q, 86, "Qwen-32B.F3.test.C7k4.flip_pct", a("Qwen-32B.F3.test.C7k4.flip_pct"))
 add("§4.2", q, 3, "Qwen-32B.F3.test.C2k4.flip_pct", a("Qwen-32B.F3.test.C2k4.flip_pct"))
 add("§4.2", q, 52, "Qwen-32B.F3.test.C3k4.flip_pct", a("Qwen-32B.F3.test.C3k4.flip_pct"))
+q = "In Qwen-32B one paraphrased copy moves the answer by 1 point and filler as long as four paraphrases by 0.3"
+add("§4.2 (Block F)", q, 1, "F1.Qwen-32B.F3.W_pts", fv("F1.Qwen-32B.F3.W_pts"))
+add("§4.2 (Block F)", q, "0.3", "F1.Qwen-32B.F3.L_p_pts", fv("F1.Qwen-32B.F3.L_p_pts"))
 
 # ---------------- Section 4.3 ----------------
-for m, (v, lo, hi, pp) in {"Llama-8B": ("91.9", "90.4", "93.4", "30.9"), "Qwen-7B": ("95.4", "92.3", "99.0", "19.4"),
-                           "Gemma-12B": ("93.1", "91.2", "95.2", "13.9")}.items():
-    k = f"{m}.F1.patch.top10.recovery_pct"; quote = rf"{v}\% [{lo}, {hi}]"
-    add("§4.3", quote, v, k, a(k)); add("§4.3", quote, lo, k + " ci lo", a(k, 0)); add("§4.3", quote, hi, k + " ci hi", a(k, 1))
-    add("§4.3", r"the 95th percentile is 30.9\%, 19.4\% and 13.9\%", pp, f"{m}.F1.patch.rand10.recovery_p95", a(f"{m}.F1.patch.rand10.recovery_p95"))
+q = r"recover 92--95\% of the repetition effect on held-out entities, against at most 31\% for random sets of ten"
+add("§4.3", q, 92, "*.F1.patch.top10.recovery_pct (min)", min(top10))
+add("§4.3", q, 95, "*.F1.patch.top10.recovery_pct (max)", max(top10))
+add("§4.3", q, 31, "*.F1.patch.rand10.recovery_p95 (max)", max(p95))
 for lab, cn, lo, hi in (("credibility alone", "C0k1->C1k1", 72, 93), ("unlabelled repetition", "C0k1->C0rk4", 90, 91),
                         ("a repeated government source", "C1k1->C6k4", 93, 97)):
     r = [fv(f"F2.{m}.{cn}.recovery_top10_pct") for m in SH]; q = rf"{lab} ({lo}--{hi}\%)"
@@ -118,28 +108,21 @@ add("§4.3", "each model contains 7--10 strong induction heads", 7, "b0_inductio
 add("§4.3", "each model contains 7--10 strong induction heads", 10, "b0_induction_*.json, all heads (max over models)", max(n_ind))
 for p, i in (("40.6", None), ("36.5", 0), ("44.7", 1)):
     add("§4.3", r"mediate 40.6\% [36.5, 44.7]", p, "B1.F1/C2k4.mediated_top10_pct", b("B1.F1/C2k4.mediated_top10_pct", i))
-add("§4.3", r"random sets of ten mediate 7.0\%", "7.0", "B1.F1/C2k4.random_p95_pct", b("B1.F1/C2k4.random_p95_pct"))
+add("§4.3", r"the random p95 is 7.0\%", "7.0", "B1.F1/C2k4.random_p95_pct", b("B1.F1/C2k4.random_p95_pct"))
 add("§4.3", r"For paraphrases the share is 46.9\%", "46.9", "B1.F3/C7k4.mediated_top10_pct", b("B1.F3/C7k4.mediated_top10_pct"))
 
 # ---------------- Section 4.4 ----------------
-for lab, key, (q7, g12) in (("government exceeds newspaper", "gov_minus_newspaper", ("2.15", "1.98")),
-                            ("newspaper exceeds person", "newspaper_minus_person", ("0.64", "1.19")),
-                            ("person exceeds social media", "person_minus_social", ("3.39", "2.97"))):
-    quote = f"{lab} (+{q7} and +{g12})"
-    add("§4.4", quote, q7, f"Qwen-7B.controls.H3.{key}", a(f"Qwen-7B.controls.H3.{key}"))
-    add("§4.4", quote, g12, f"Gemma-12B.controls.H3.{key}", a(f"Gemma-12B.controls.H3.{key}"))
-for lev, p in zip(("gov", "newspaper", "person", "social"), ("0.57", "0.55", "0.48", "0.50")):
-    add("§4.4", "is 0.57, 0.55, 0.48 and 0.50", p, f"Gemma-12B.controls.graded.behaviour_pX.{lev}", a(f"Gemma-12B.controls.graded.behaviour_pX.{lev}"))
-q = "the probe scores 0.23 (Qwen-7B) and 0.13 (Gemma)"
+h3lo = [a(f"{m}.controls.H3.{k}", 0) for m in ("Qwen-7B", "Gemma-12B") for k in ("gov_minus_newspaper", "newspaper_minus_person", "person_minus_social")]
+C.append(("§4.4", r"each step with a 95\% CI above zero", ">0", "min CI lower bound over the 6 H3 contrasts (Qwen-7B, Gemma)", min(h3lo)))
+q = "probe AUC is 0.23 (Qwen-7B) and 0.13 (Gemma)"
 add("§4.4", q, "0.23", "Qwen-7B.H4.a_flipped_auc_Lstar", a("Qwen-7B.H4.a_flipped_auc_Lstar"))
 add("§4.4", q, "0.13", "Gemma-12B.H4.a_flipped_auc_Lstar", a("Gemma-12B.H4.a_flipped_auc_Lstar"))
-add("§4.4", "(0.32 and 0.00)", "0.32", "Qwen-7B.H4.b_C0r_auc_Lstar", a("Qwen-7B.H4.b_C0r_auc_Lstar"))
-add("§4.4", "(0.32 and 0.00)", "0.00", "Gemma-12B.H4.b_C0r_auc_Lstar", a("Gemma-12B.H4.b_C0r_auc_Lstar"))
 q = "A decision-balanced probe reverses too in Gemma (confirmatory) and at Qwen-7B's last layer"
 C.append(("§4.4", q, "<0.5", "Gemma-12B.c1bal.H4a (flipped-item AUC at L*)", a("Gemma-12B.c1bal.H4a")))
 C.append(("§4.4", q, "<0.5", "Qwen-7B.c1bal.H5 (flipped-item AUC, last layer)", a("Qwen-7B.c1bal.H5")))
 add("§4.4", "but not at its selected layer (0.58, exploratory", "0.58", "Qwen-7B.c1bal.H4a", a("Qwen-7B.c1bal.H4a"))
-q = r"at its last layer (0.79) while 90\% of answers flip"
+q = r"(0.80 and 0.79) while 90\% of answers flip"
+add("§4.4", q, "0.80", "Llama-8B.H4.a_flipped_auc_Lstar", a("Llama-8B.H4.a_flipped_auc_Lstar"))
 add("§4.4", q, "0.79", "Llama-8B.H5.final_flipped_auc", a("Llama-8B.H5.final_flipped_auc"))
 add("§4.4", q, 90, "Llama-8B.H5.choice_rate", a("Llama-8B.H5.choice_rate"), 100)
 add("§4.4, Lim. (v)", "up to 32 standard deviations", 32, "b2_steer L28 alpha grid (max)", max(float(x) for x in B2["layers"]["28"]["sel_curve"]))
@@ -148,22 +131,20 @@ t = B2["layers"]["28"]["test"]
 C.append(("§4.4", "by less than 0.001", "<0.001", "b2_steer L28 test: max |steer - base|", max(abs(x["steer"] - x["base"]) for x in t.values())))
 
 # ---------------- Section 4.5 ----------------
-for p, i in (("54", None), ("52", 0), ("57", 1)):
-    add("§4.5", r"removes 54\% [52, 57] of the exact-copy effect", p, "B3.F1.F1.BR_C2k4", b("B3.F1.F1.BR_C2k4", i), 100)
-for p, i in (("80", None), ("77", 0), ("82", 1)):
-    add("§4.5", r"keeps 80\% [77, 82] of the source preference", p, "B3.F1.F1.pref_kept", b("B3.F1.F1.pref_kept", i), 100)
-add("§4.5", r"60\% of the effect of independent users", 60, "B3.F1.F1.corrob_kept", b("B3.F1.F1.corrob_kept"), 100)
+add("§4.5", r"removes 54\% of the exact-copy effect", 54, "B3.F1.F1.BR_C2k4", b("B3.F1.F1.BR_C2k4"), 100)
+q = r"It keeps 80\% of the source preference and 60\% of the effect of distinct users"
+add("§4.5", q, 80, "B3.F1.F1.pref_kept", b("B3.F1.F1.pref_kept"), 100)
+add("§4.5", q, 60, "B3.F1.F1.corrob_kept", b("B3.F1.F1.corrob_kept"), 100)
 for p, i in (("-1.8", None), ("-3.6", 0), ("0.0", 1)):
     add("§4.5", r"costs 1.8 MMLU percentage points [$-3.6$, 0.0]", p, "B3.F1.mmlu_delta_pts (printed as a cost)", b("B3.F1.mmlu_delta_pts", i))
 add("§4.5", r"raises perplexity by 0.3\%", "0.3", "B3.F1.ppl_increase_pct", b("B3.F1.ppl_increase_pct"))
 add("§4.5", r"It removes 11\% of the paraphrase effect", 11, "B3.F1.F1.BR_C7k4", b("B3.F1.F1.BR_C7k4"), 100)
 add("§4.5", r"or in Gemma (32\% removed)", 32, "results/B/gemma numbers: B3.F1.F1.BR_C2k4", g(BG, "B3.F1.F1.BR_C2k4"), 100)
-for p, i in (("95", None), ("94", 0), ("96", 1)):
-    add("§4.5", r"removes 95\% [94, 96] of the paraphrase effect", p, "D.F3.BR_C7k4", d("D.F3.BR_C7k4", i), 100)
+add("§4.5", r"removes 95\% of the paraphrase effect in documents", 95, "D.F3.BR_C7k4", d("D.F3.BR_C7k4"), 100)
 C.append(("§4.5", "while keeping all of the source preference", ">=100", "D.F3.pref_kept (x100)", d("D.F3.pref_kept") * 100))
 add("§4.5", "It costs 0.6 MMLU percentage points", "-0.6", "D.mmlu_delta_pts (printed as a cost)", d("D.mmlu_delta_pts"))
 add("§4.5", r"a format it never saw (81\%)", 81, "D.F2.BR_C7k4", d("D.F2.BR_C7k4"), 100)
-q = r"four independent users keep 2\% of their effect in documents and 11\% in tables"
+q = r"four distinct users keep 2\% of their effect in documents and 11\% in tables"
 add("§4.5", q, 2, "D.F3.corrob_kept", d("D.F3.corrob_kept"), 100)
 add("§4.5", q, 11, "D.F1.corrob_kept", d("D.F1.corrob_kept"), 100)
 damp = [v["value"] for k, v in B.items() if k.startswith("B3.") and k.endswith("corrob_kept")]
@@ -173,6 +154,8 @@ add("Lim. (vi)", r"an MMLU interval reaching $-3.6$ points", "-3.6", "B3.F1.mmlu
 
 # ---------------- evaluate ----------------
 def check(printed, val):
+    if printed.startswith(">") and not printed.startswith(">="):
+        return val > float(printed[1:]), f"{val:.4f}"
     if printed.startswith("<"):
         return val < float(printed[1:]), f"{val:.4f}"
     if printed.startswith(">="):
