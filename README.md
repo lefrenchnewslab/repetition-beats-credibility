@@ -2,6 +2,15 @@
 
 Interactive companion: https://lefrenchnewslab.github.io/repetition-beats-credibility/
 
+<a href="https://lefrenchnewslab.github.io/repetition-beats-credibility/#circuit">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="figs/circuit_explorer_dark.png">
+    <img src="figs/circuit_explorer_light.png" alt="Circuit explorer from the interactive companion: every attention head of Qwen2.5-7B by layer, lit by its share of the repetition effect, with the ten decision heads around layers 17 to 19 and the upstream parts that feed them" width="100%">
+  </picture>
+</a>
+
+<sub>Every attention head of Qwen2.5-7B, lit by its share of the repetition effect. Ten heads around layers 17 to 19 settle the answer, fed mostly by mid-layer MLPs. Click the image to explore it.</sub>
+
 Code, generated data and every number for the paper by Amr Sobhy (Le French News Lab), written at the Apart Research AI x Epistemics Research Sprint, November 2026. Paper: [`paper.pdf`](paper.pdf).
 
 ## Summary
