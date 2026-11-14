@@ -1,0 +1,1 @@
+python run_b3.py select google/gemma-3-12b-it runs/B --sets F1 --pairs 100 --maxtok 20000

@@ -1,0 +1,2 @@
+python b1_path.py Qwen/Qwen2.5-7B-Instruct runs/B --fmt F1 --set F1 --corrupt C2k4
+python b1_path.py Qwen/Qwen2.5-7B-Instruct runs/B --fmt F3 --set F3_C7k4 --corrupt C7k4 --extra_data data/prompts_f3selC7.jsonl --extra_beh runs/A/behaviour_Qwen2.5-7B-Instruct.f3selC7.jsonl

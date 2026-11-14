@@ -1,0 +1,2 @@
+python run_b3.py select meta-llama/Llama-3.1-8B-Instruct runs/B --sets F1 --pairs 100 --maxtok 32000
+python run_b3.py test meta-llama/Llama-3.1-8B-Instruct runs/B --set F1 --fmts F1,F3,F2 --cap --maxtok 32000

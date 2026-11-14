@@ -1,0 +1,1 @@
+python run_v2.py behave meta-llama/Llama-3.1-8B-Instruct runs/A --maxtok 32000 --fmts F2,F3 --part f23

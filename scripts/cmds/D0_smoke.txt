@@ -1,0 +1,2 @@
+python train_lora.py Qwen/Qwen2.5-7B-Instruct runs/D/smoke --lr 2e-4 --epochs 1 --limit 32
+python run_b3.py test Qwen/Qwen2.5-7B-Instruct runs/D/smoke --set LORA --lora runs/D/smoke/ckpt_refine --fmts F1 --maxpairs 3

@@ -1,0 +1,1 @@
+python run_b3.py curve Qwen/Qwen2.5-7B-Instruct runs/B --sets U,F3_C7k4,Feeders

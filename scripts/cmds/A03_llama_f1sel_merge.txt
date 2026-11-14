@@ -1,0 +1,3 @@
+python run_v2.py behave meta-llama/Llama-3.1-8B-Instruct runs/A --maxtok 32000 --fmts F1 --splits selection --part f1sel
+python run_v2.py behave meta-llama/Llama-3.1-8B-Instruct runs/A --from_parts f1sel,f1test,f23
+python run_v2.py extras meta-llama/Llama-3.1-8B-Instruct runs/A --beh runs/A/behaviour_Llama-3.1-8B-Instruct.jsonl --dirs runs/A/probe_dirs_Llama-3.1-8B-Instruct.npz --probes runs/A/probes_Llama-3.1-8B-Instruct.json

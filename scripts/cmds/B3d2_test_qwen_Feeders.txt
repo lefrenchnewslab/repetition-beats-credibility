@@ -1,0 +1,1 @@
+python run_b3.py test Qwen/Qwen2.5-7B-Instruct runs/B --set Feeders --fmts F3,F1,F2 --cap

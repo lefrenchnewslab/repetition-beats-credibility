@@ -1,0 +1,134 @@
+{
+ "B3.F1.F1.BR_C2k4": {
+  "value": -0.01851652554095784,
+  "ci": [
+   -0.02953034063391602,
+   -0.008210910244341951
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "B3.F1.F1.BR_C7k4": {
+  "value": 0.032054529320161174,
+  "ci": [
+   0.024935017160530815,
+   0.03945008546558937
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "B3.F1.F1.pref_kept": {
+  "value": 0.7281390572338202,
+  "ci": [
+   0.6861519224433904,
+   0.7646238724338239
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "B3.F1.F1.corrob_kept": {
+  "value": 0.9634150832781039,
+  "ci": [
+   0.9573603134421036,
+   0.969712222173611
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "B3.F1.F3.BR_C2k4": {
+  "value": -0.055004259009675094,
+  "ci": [
+   -0.07945152268739353,
+   -0.0319496575780831
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "B3.F1.F3.BR_C7k4": {
+  "value": 0.04219407965487032,
+  "ci": [
+   0.03564258999168257,
+   0.048098772887390284
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "B3.F1.F3.pref_kept": {
+  "value": 0.8307434452587261,
+  "ci": [
+   0.8207771037448167,
+   0.8404932895642688
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "B3.F1.F3.corrob_kept": {
+  "value": 0.9885896291772087,
+  "ci": [
+   0.9781128434431879,
+   0.998906904895302
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "B3.F1.F2.BR_C2k4": {
+  "value": -0.026509510781596912,
+  "ci": [
+   -0.043816158499508706,
+   -0.009065112080819615
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "B3.F1.F2.BR_C7k4": {
+  "value": 0.05861475720315301,
+  "ci": [
+   0.05308915112497714,
+   0.06400469591838487
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "B3.F1.F2.pref_kept": {
+  "value": 0.834093750843218,
+  "ci": [
+   0.8231063945480075,
+   0.8446039651569153
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "B3.F1.F2.corrob_kept": {
+  "value": 0.9587752922148108,
+  "ci": [
+   0.9476284600640638,
+   0.9699057950833809
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "B3.F1.mmlu_delta_pts": {
+  "value": 0.4,
+  "ci": [
+   -0.6,
+   1.6
+  ],
+  "n": 500,
+  "source": "B/llama/b3_cap_F1_Llama-3.1-8B-Instruct.json"
+ },
+ "B3.F1.ppl_increase_pct": {
+  "value": -0.05253579571681266,
+  "ci": [
+   -0.10356410033380059,
+   -0.0003582039020114144
+  ],
+  "n": 200,
+  "source": "B/llama/b3_cap_F1_Llama-3.1-8B-Instruct.json"
+ },
+ "B3.B3-S1.met": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ }
+}

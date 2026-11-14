@@ -1,0 +1,1 @@
+python train_lora.py Qwen/Qwen2.5-7B-Instruct runs/D/lr2e-4 --lr 2e-4 --epochs 2

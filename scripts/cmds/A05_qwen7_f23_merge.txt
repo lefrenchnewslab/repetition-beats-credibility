@@ -1,0 +1,5 @@
+python run_v2.py behave meta-llama/Llama-3.1-8B-Instruct runs/A --data data/prompts_c6.jsonl --fmts F1 --splits test --hidden_all --maxtok 32000 --part c6
+python run_v2.py behave Qwen/Qwen2.5-7B-Instruct runs/A --maxtok 48000 --fmts F2,F3 --part f23
+python run_v2.py behave Qwen/Qwen2.5-7B-Instruct runs/A --from_parts f1sel,f1test,f23
+python run_v2.py extras Qwen/Qwen2.5-7B-Instruct runs/A --beh runs/A/behaviour_Qwen2.5-7B-Instruct.jsonl --dirs runs/A/probe_dirs_Qwen2.5-7B-Instruct.npz --probes runs/A/probes_Qwen2.5-7B-Instruct.json
+python run_v2.py behave Qwen/Qwen2.5-7B-Instruct runs/A --data data/prompts_c6.jsonl --fmts F1 --splits test --hidden_all --maxtok 48000 --part c6

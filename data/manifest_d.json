@@ -1,0 +1,20 @@
+{
+ "seed": 20261114,
+ "entities": {
+  "train_d": 250,
+  "val_d": 50
+ },
+ "items": {
+  "train_d": 1500,
+  "val_d": 300
+ },
+ "overlap_with_v2_and_pilot": {
+  "entity_names": 0,
+  "usernames": 0,
+  "words": 0
+ },
+ "sha256": {
+  "train_d": "1bd881b172bdc1faa177f029d7230b87e9d0705577b9a54b5c48ab9db5e88628",
+  "val_d": "d62288692d6f20ae956b5f244fc373a47cfb458dde2cc67632918885a2fc6aa9"
+ }
+}

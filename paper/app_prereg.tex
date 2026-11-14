@@ -1,0 +1,45 @@
+All criteria below were written before the data they test existed, each with the outcome that fails it and a check that it can fail under the 8-way counterbalancing. C = confirmatory, E = exploratory.
+
+\begin{table}[!htbp]\centering\scriptsize
+\begin{tabular}{@{}p{1.1cm}p{5.6cm}p{4.1cm}p{1.15cm}p{1.15cm}p{1.15cm}@{}}\toprule
+ID & Definition & Fails if & Llama & Qwen-7B & Gemma \\ \midrule
+H1 & Top-10 heads (AtP on selection, C1 vs C2 $k{=}4$, F1) recover $\ge$40\% of the logit difference on test items by activation patching, \emph{and} exceed the p95 of 20 random 10-head sets. & $<$40\% or $\le$ random p95. & \textbf{met} (C) & \textbf{met} (C) & \textbf{met} (C) \\
+H2 & Credibility probe (all labelled conditions) AUC $\ge$0.8 at C2 $k{=}8$, all and flipped items, at a layer fixed on selection. & AUC $<$0.8. (Met in all, but count-confounded: C0r AUC $\ge$0.997; binding-only in Gemma.) & \textbf{met} (C) & \textbf{met} (C) & \textbf{met} (C) \\
+H3 & Graded set: gov$-$newspaper, newspaper$-$person, person$-$social $>0$ with 95\% cluster-bootstrap CIs, at the pre-registered layer. & Any contrast CI includes 0. Null (direction ignores source) makes all $\approx0$. & not met (C) & \textbf{met} (C) & \textbf{met} (C) \\
+H4 & C1-only probe at $L^*$ (chosen on decision-disagreeing selection items): (a) C2 $k{=}8$ flipped AUC $\ge$0.75, CI $>$0.5; (b) C0r AUC in [0.40, 0.60]; (c) final-layer flipped AUC $<$0.5. & Any of (a)--(c) missed. & not met (E) & not met (C) & not met (C) \\
+H5 & Final-layer C1-only flipped AUC $\ge$0.70, CI $>$0.5, while the model picks social on $\ge$50\% of C2 $k{=}8$. & AUC $<$0.70, CI includes 0.5, or choice rate $<$50\%. & \textbf{met} (E) & not met (C) & not met (C) \\
+B0 & $\ge$5 of the top-10 F1 heads are induction heads (prefix-matching $\ge$0.30 and copying $>$p90 of all heads). & $<$5 and mean prefix $\le$ random p95. & not met (C) & not met (C) & not met (C) \\
+B1 & $\le$10 upstream components (path patching, suffix positions) mediate $\ge$40\% of the top-head effect on test items, above the random p95. & $<$40\% or $\le$ random p95. & -- & \textbf{met} (C) & -- \\
+B2 & Steering along the C1-only direction returns C2 $k{=}4$ to the C1 CI at $\alpha^*$, with random directions moving $<$1/3 as much. Diagnostic only. & Not restored, or random $\ge$1/3. & -- & not met (C, L18); not met (E, L28) & -- \\
+B3-S1 & Head damping (k, $\gamma$ on selection): F1 C2 $k{=}4$ bias reduction $\ge$50\%, preference kept $\ge$70\%, MMLU drop $\le$2 pts, perplexity $\le$+5\%. & Any bar missed. & not met (C) & \textbf{met} (C) & not met (C) \\
+B3-S2 & Same bars on F3 paraphrases (C7 $k{=}4$) with the F3/C7 head set. & Any bar missed. & -- & not met (C) & -- \\
+B3-U & Single fix on the union of both head sets; S1 and S2 bars. & Any bar missed. & -- & not met/not met (C) & -- \\
+H-F & Feeders (paraphrase-only heads) keep more preference than the union at matched bias reduction (test curves). & Not higher (H-F.1: if above the union's range, must dominate its max point). & -- & not supported (E) & -- \\
+D-S1 & Trained LoRA adapter (same model): F1 C2 $k{=}4$ bias reduction $\ge$50\%, preference kept $\ge$70\%, MMLU drop $\le$2 pts, perplexity $\le$+5\%. & Any bar missed. & -- & \textbf{met} (94\%, 115\%) (C) & -- \\
+D-S2 & Same adapter, F3 C7 $k{=}4$: bias reduction $\ge$50\%, F3 preference kept $\ge$70\%, same capability bars. & Any bar missed. & -- & \textbf{met} (95\%, 102\%) (C) & -- \\
+D-cmp & Adapter vs best head damping at matched F3 preference: better if its CI lower bound exceeds the damping value. & Worse or no difference. & -- & better (C) & -- \\
+D-sel & Adapter keeps $\ge$50\% of the independent-user (C3 $k{=}4$) effect. & Below 50\%. & -- & not met (11\% F1, 2\% F3) & -- \\
+\bottomrule\end{tabular}\caption{Pre-registered criteria, failure outcomes and verdicts.}\label{tab:prereg}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\begin{tabular}{@{}p{1.3cm}p{2.2cm}p{8.4cm}p{2.6cm}@{}}\toprule
+ID & Written (as recorded) & Change & Before which data \\ \midrule
+A1 & 13 Nov, after a 3-pair code-check smoke test & H2 layer chosen by selection log-loss instead of AUC (ties at 1.00). & all full runs \\
+A2 & 13 Nov & Qwen-32B scope (test split, F1+F3, priority order); lexical baselines; graded-credibility set; H3 defined. & Gemma, Qwen-32B runs; all extras \\
+A3 & 13 Nov & Neutral-tag (Blue/Green) binding control; $\ge$0.95 $\Rightarrow$ H2 is binding only. & all extras \\
+A4 & 13 Nov & Blue-vs-Green projection demoted to sanity check; neutral tag as 5th graded level; H3 rewritten as three paired contrasts; H1 adds random p95. & all extras, all patching \\
+A5 & 13 Nov 16:45 & F3 head analysis also with paraphrased copies (C7 $k{=}4$) as corrupt run. & job A11 \\
+A6 & 13 Nov $\sim$17:00 & C1-only probe (count confound) with predictions for C2 $k{=}8$, C0r, C6. & all C1-only fits \\
+A7 & 13 Nov $\sim$17:40 & H4 layer-resolved rule ($L^*$ on disagreeing items). & Qwen-7B, Gemma probes \\
+A8 & 13 Nov $\sim$18:10 & Robustness over near-max layers; final-layer description. & Qwen-7B, Gemma probes \\
+A9 & 13 Nov $\sim$18:25 & H5 (source readable at output). & Qwen-7B, Gemma probes \\
+A10 & 13 Nov $\sim$19:00 & Decision-balanced C1 probe (stop if $<$200 disagreeing items). & Gemma probe \\
+B-branch & 13 Nov $\sim$22:55 & Two head sets (Jaccard 0.33 $<$ 0.5). & all B1--B3 data \\
+B-frame & 13 Nov $\sim$23:50 & Steering withdrawn as a fix (needs oracle sign); diagnostic only. & all B2/B3 data \\
+B-U & 13 Nov $\sim$23:50 & Union fix B3-U. & all B3 data \\
+B-Feeders & 14 Nov $\sim$00:15 & Feeders head set and H-F; test $\gamma$-curves. & B3 test data \\
+H-F.1 & 14 Nov $\sim$00:30 & H-F rule when Feeders exceed the union's range. & B3 test data \\
+B-report & 14 Nov $\sim$00:55 & Report preference kept in all formats (no criterion change). & B3 test data \\
+B1-scope & 14 Nov $\sim$04:20 & Reduced sender pool (top-50 heads + top-10 MLPs by AtP); suffix positions only. & all B1 data \\
+\bottomrule\end{tabular}\caption{Amendments, in order.}\label{tab:amend}\end{table}
+\clearpage

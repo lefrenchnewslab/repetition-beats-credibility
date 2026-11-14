@@ -1,0 +1,1 @@
+python run_b2.py Qwen/Qwen2.5-7B-Instruct runs/B --dirs runs/A/dirs_c1only_Qwen2.5-7B-Instruct.npz --layers Lstar,final

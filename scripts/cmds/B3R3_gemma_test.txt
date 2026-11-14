@@ -1,0 +1,1 @@
+python run_b3.py test google/gemma-3-12b-it runs/B --set F1 --fmts F1,F3,F2 --cap --maxtok 20000

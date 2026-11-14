@@ -1,0 +1,1 @@
+python run_b3.py select Qwen/Qwen2.5-7B-Instruct runs/B --sets F1,F3_C7k4,U --pairs 100

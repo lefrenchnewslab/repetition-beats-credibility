@@ -1,0 +1,2 @@
+python run_v2.py behave Qwen/Qwen2.5-7B-Instruct runs/A --maxtok 48000 --fmts F1 --splits test --part f1test
+python run_v2.py behave Qwen/Qwen2.5-7B-Instruct runs/A --maxtok 48000 --fmts F1 --splits selection --part f1sel

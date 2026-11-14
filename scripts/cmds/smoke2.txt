@@ -1,0 +1,5 @@
+python run_v2.py patch meta-llama/Llama-3.1-8B-Instruct $OUT --beh runs/140845/behaviour_Llama-3.1-8B-Instruct.jsonl --n 6 --nverify 6 --nrand 3
+python run_v2.py behave Qwen/Qwen2.5-7B-Instruct $OUT --limit 3 --maxtok 48000
+python run_v2.py behave google/gemma-3-12b-it $OUT --limit 3 --maxtok 16000
+python run_v2.py patch google/gemma-3-12b-it $OUT --beh $OUT/behaviour_gemma-3-12b-it.jsonl --n 6 --nverify 6 --nrand 3 --fmt F3
+python run_v2.py behave Qwen/Qwen2.5-32B-Instruct $OUT --limit 4 --nohidden --maxtok 8000 --fmts F1 --splits test

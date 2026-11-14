@@ -1,0 +1,3 @@
+python pick_lora.py runs/D > runs/D/chosen_adapter.txt
+cp runs/B/b3_cap_F1_Qwen2.5-7B-Instruct.json runs/D/
+python run_b3.py test Qwen/Qwen2.5-7B-Instruct runs/D --set LORA --lora $(cat runs/D/chosen_adapter.txt) --fmts F1,F3,F2 --cap

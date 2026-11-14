@@ -1,0 +1,5 @@
+python run_v2.py patch google/gemma-3-12b-it runs/A --beh runs/A/behaviour_gemma-3-12b-it.jsonl --fmt F1
+python pick_best.py runs/A > runs/A/best_model_for_F3.txt
+python run_v2.py patch $(cat runs/A/best_model_for_F3.txt) runs/A --beh runs/A/behaviour_$(basename $(cat runs/A/best_model_for_F3.txt)).jsonl --fmt F3
+python run_v2.py behave $(cat runs/A/best_model_for_F3.txt) runs/A --data data/prompts_f3selC7.jsonl --fmts F3 --splits selection --nohidden --part f3selC7
+python run_v2.py patch $(cat runs/A/best_model_for_F3.txt) runs/A --beh runs/A/behaviour_$(basename $(cat runs/A/best_model_for_F3.txt)).jsonl --extra_beh runs/A/behaviour_$(basename $(cat runs/A/best_model_for_F3.txt)).f3selC7.jsonl --extra_data data/prompts_f3selC7.jsonl --fmt F3 --corrupt C7k4

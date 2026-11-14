@@ -1,0 +1,42 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "n_prompts": 120000,
+ "parts": [
+  "f1sel",
+  "f1test",
+  "f23"
+ ],
+ "gpu": "NVIDIA A100-SXM4-80GB",
+ "layers": 28,
+ "heads": 28,
+ "stored_layers": [
+  0,
+  2,
+  4,
+  6,
+  8,
+  10,
+  12,
+  14,
+  16,
+  18,
+  20,
+  22,
+  24,
+  26,
+  28
+ ],
+ "letter_ids": {
+  "A": [
+   32,
+   362
+  ],
+  "B": [
+   33,
+   425
+  ]
+ },
+ "job": "144910",
+ "data_sha256": "a0a3836dc5567a1f6c0f0261edc2289c81c1758b81d5b418d8485f0f16b75bf4",
+ "seconds_total": 305.1277701854706
+}

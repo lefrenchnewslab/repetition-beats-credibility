@@ -1,0 +1,623 @@
+{
+ "D.F1.BR_C2k4": {
+  "value": 0.9447190087528436,
+  "ci": [
+   0.9272702158451661,
+   0.9624440115030293
+  ],
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.BR_C7k4": {
+  "value": 0.98866536243531,
+  "ci": [
+   0.977584472377755,
+   1.0008517433686754
+  ],
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.pref_kept": {
+  "value": 1.1540065230281233,
+  "ci": [
+   1.1221186024681826,
+   1.1903800755113718
+  ],
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.corrob_kept": {
+  "value": 0.11243348465389552,
+  "ci": [
+   0.09704478630055509,
+   0.12827597217621847
+  ],
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.BR_C2k4": {
+  "value": 1.033838732875196,
+  "ci": [
+   1.019905287239463,
+   1.0488449464724001
+  ],
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.BR_C7k4": {
+  "value": 0.9456695654736228,
+  "ci": [
+   0.9360829477919625,
+   0.9556155664688308
+  ],
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.pref_kept": {
+  "value": 1.0201323201720316,
+  "ci": [
+   1.0009436675696295,
+   1.039597090046853
+  ],
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.corrob_kept": {
+  "value": 0.02163291423231418,
+  "ci": [
+   0.007349367129831406,
+   0.03562452137975733
+  ],
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F2.BR_C2k4": {
+  "value": 1.0290855129305152,
+  "ci": [
+   1.0034131581538568,
+   1.0549406800184298
+  ],
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F2.BR_C7k4": {
+  "value": 0.8059411226264079,
+  "ci": [
+   0.7890120602805379,
+   0.8230347104787856
+  ],
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F2.pref_kept": {
+  "value": 0.9692461252012103,
+  "ci": [
+   0.9538966764462133,
+   0.9852106772704015
+  ],
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F2.corrob_kept": {
+  "value": -0.09849782626616764,
+  "ci": [
+   -0.13393754488462076,
+   -0.06779139130254487
+  ],
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C0k1.p_low_lora": {
+  "value": 0.5000311379756404,
+  "ci": null,
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C0k1.p_low_base": {
+  "value": 0.4997978736402813,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C0k1.maxprob_lora": {
+  "value": 0.5001459837968285,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C0k1.entropy_lora": {
+  "value": 0.9999973866630509,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C0k1.mass_lora": {
+  "value": 0.9059445344097913,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C0rk4.p_low_lora": {
+  "value": 0.714698427560539,
+  "ci": null,
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C0rk4.p_low_base": {
+  "value": 0.9736118678328738,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C0rk4.maxprob_lora": {
+  "value": 0.714698427560539,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C0rk4.entropy_lora": {
+  "value": 0.8217176331586833,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C0rk4.mass_lora": {
+  "value": 0.9292504694126547,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C1k1.p_low_lora": {
+  "value": 0.20332497542903838,
+  "ci": null,
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C1k1.p_low_base": {
+  "value": 0.24268826756280226,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C1k1.maxprob_lora": {
+  "value": 0.7966750245709616,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C1k1.entropy_lora": {
+  "value": 0.6549632175055953,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C1k1.mass_lora": {
+  "value": 0.8793790093902498,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C2k2.p_low_lora": {
+  "value": 0.18783984280727212,
+  "ci": null,
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C2k2.p_low_base": {
+  "value": 0.555113183815085,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C2k2.maxprob_lora": {
+  "value": 0.8121601571927279,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C2k2.entropy_lora": {
+  "value": 0.61663963110419,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C2k2.mass_lora": {
+  "value": 0.8828277765028179,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C2k4.p_low_lora": {
+  "value": 0.22498615104411532,
+  "ci": null,
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C2k4.p_low_base": {
+  "value": 0.6345259522061865,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C2k4.maxprob_lora": {
+  "value": 0.7750277856652451,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C2k4.entropy_lora": {
+  "value": 0.7014165276093732,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C2k4.mass_lora": {
+  "value": 0.9163786709075794,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C2k8.p_low_lora": {
+  "value": 0.17605419534992317,
+  "ci": null,
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C2k8.p_low_base": {
+  "value": 0.5182674487309338,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C2k8.maxprob_lora": {
+  "value": 0.8239912796480968,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C2k8.entropy_lora": {
+  "value": 0.5945916000169698,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C2k8.mass_lora": {
+  "value": 0.9412917590141296,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C3k4.p_low_lora": {
+  "value": 0.26163009617913474,
+  "ci": null,
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C3k4.p_low_base": {
+  "value": 0.7612626133600287,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C3k4.maxprob_lora": {
+  "value": 0.7389089283678945,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C3k4.entropy_lora": {
+  "value": 0.771411448584522,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C3k4.mass_lora": {
+  "value": 0.9113284334447235,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C5k4.p_low_lora": {
+  "value": 0.32475725065478206,
+  "ci": null,
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C5k4.p_low_base": {
+  "value": 0.39881721003386544,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C5k4.maxprob_lora": {
+  "value": 0.6778396021897831,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C5k4.entropy_lora": {
+  "value": 0.850277206938174,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C5k4.mass_lora": {
+  "value": 0.9475255021359772,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C6k2.p_low_lora": {
+  "value": 0.19841401023556338,
+  "ci": null,
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C6k2.p_low_base": {
+  "value": 0.046954909634891566,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C6k2.maxprob_lora": {
+  "value": 0.8015859897644365,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C6k2.entropy_lora": {
+  "value": 0.6640922095271997,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C6k2.mass_lora": {
+  "value": 0.8984008318651467,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C6k4.p_low_lora": {
+  "value": 0.15595582485682014,
+  "ci": null,
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C6k4.p_low_base": {
+  "value": 0.029829187465613183,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C6k4.maxprob_lora": {
+  "value": 0.8440441751431799,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C6k4.entropy_lora": {
+  "value": 0.5609267629489786,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C6k4.mass_lora": {
+  "value": 0.9230081357620656,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C7k4.p_low_lora": {
+  "value": 0.21095225377317864,
+  "ci": null,
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C7k4.p_low_base": {
+  "value": 0.9156059767184053,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C7k4.maxprob_lora": {
+  "value": 0.7894322006601387,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C7k4.entropy_lora": {
+  "value": 0.6708763049318148,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F1.C7k4.mass_lora": {
+  "value": 0.9293080125097185,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C1k1.p_low_lora": {
+  "value": 0.11608913964939337,
+  "ci": null,
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C1k1.p_low_base": {
+  "value": 0.12374968419993763,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C1k1.maxprob_lora": {
+  "value": 0.8839108603506066,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C1k1.entropy_lora": {
+  "value": 0.39632354132249475,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C1k1.mass_lora": {
+  "value": 0.9099440162442625,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C2k4.p_low_lora": {
+  "value": 0.1002884136988277,
+  "ci": null,
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C2k4.p_low_base": {
+  "value": 0.5906916943763214,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C2k4.maxprob_lora": {
+  "value": 0.8997115863011723,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C2k4.entropy_lora": {
+  "value": 0.3534030448422132,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C2k4.mass_lora": {
+  "value": 0.9338792589213699,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C7k4.p_low_lora": {
+  "value": 0.16125027601535755,
+  "ci": null,
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C7k4.p_low_base": {
+  "value": 0.9549805911428715,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C7k4.maxprob_lora": {
+  "value": 0.8387497239846424,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C7k4.entropy_lora": {
+  "value": 0.5128326955794787,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C7k4.mass_lora": {
+  "value": 0.9513225254602731,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C3k4.p_low_lora": {
+  "value": 0.12753260215083906,
+  "ci": null,
+  "n": 400,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C3k4.p_low_base": {
+  "value": 0.6527335454844247,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C3k4.maxprob_lora": {
+  "value": 0.8724673978491608,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C3k4.entropy_lora": {
+  "value": 0.40922288734118467,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.F3.C3k4.mass_lora": {
+  "value": 0.9379736778140068,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.shortcut.C6k4_delta": {
+  "value": 0.12612663739120694,
+  "ci": null,
+  "n": null,
+  "source": "results/D/b3_test_LORA_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "D.shortcut.flag": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "D.mmlu_delta_pts": {
+  "value": -0.6,
+  "ci": [
+   -1.6,
+   0.2
+  ],
+  "n": 500,
+  "source": "results/D/b3_cap_LORA_Qwen2.5-7B-Instruct.json"
+ },
+ "D.ppl_increase_pct": {
+  "value": -0.5313633547850416,
+  "ci": [
+   -0.6403669275648766,
+   -0.42688577607055467
+  ],
+  "n": 200,
+  "source": "results/D/b3_cap_LORA_Qwen2.5-7B-Instruct.json"
+ },
+ "D.S1.met": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "D.S2.met": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "D.cmp.B3_best_BR_at_matched_SP": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": "results/B/b3_curve_*.json"
+ },
+ "D.cmp.lora_BR": {
+  "value": 0.9456695654736228,
+  "ci": [
+   0.9360829477919625,
+   0.9556155664688308
+  ],
+  "n": null,
+  "source": null
+ },
+ "D.cmp.lora_better": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ }
+}

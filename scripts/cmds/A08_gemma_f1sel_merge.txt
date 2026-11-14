@@ -1,0 +1,4 @@
+python run_v2.py behave google/gemma-3-12b-it runs/A --maxtok 20000 --fmts F1 --splits selection --part f1sel
+python run_v2.py behave google/gemma-3-12b-it runs/A --from_parts f1sel,f1test,f23
+python run_v2.py extras google/gemma-3-12b-it runs/A --beh runs/A/behaviour_gemma-3-12b-it.jsonl --dirs runs/A/probe_dirs_gemma-3-12b-it.npz --probes runs/A/probes_gemma-3-12b-it.json --maxtok 12000
+python run_v2.py behave google/gemma-3-12b-it runs/A --data data/prompts_c6.jsonl --fmts F1 --splits test --hidden_all --maxtok 20000 --part c6

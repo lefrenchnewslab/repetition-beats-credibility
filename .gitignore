@@ -1,0 +1,19 @@
+# outputs of reproduce.py and of full reruns
+reproduced/
+runs/
+logs/
+data_cap/
+*.jsonl
+!data/pairs_v2.jsonl
+!data/pilot_pairs.jsonl
+!data/train_d.jsonl
+!data/val_d.jsonl
+# caches and OS/editor files
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.idea/
+.env
+paper/NUMBER_CHECK.md

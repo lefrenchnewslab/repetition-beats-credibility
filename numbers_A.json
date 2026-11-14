@@ -1,0 +1,6308 @@
+{
+ "Llama-8B.F1.test.mass": {
+  "value": 0.9941060804600517,
+  "ci": null,
+  "n": 48000,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C0k1.p_low": {
+  "value": 0.5000323378808615,
+  "ci": [
+   0.49980822930550967,
+   0.5002435587410634
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C0k1.shift_vs_C1_pts": {
+  "value": 6.562509463105652,
+  "ci": [
+   5.690490298347382,
+   7.422782373987731
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C0k1.flip_pct": {
+  "value": 51.24999999999999,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C0rk4.p_low": {
+  "value": 0.9191180101981226,
+  "ci": [
+   0.9114719975092871,
+   0.9260440246409616
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C0rk4.shift_vs_C1_pts": {
+  "value": 48.47107669483176,
+  "ci": [
+   47.33080268620772,
+   49.649629991502636
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C0rk4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C1k1.p_low": {
+  "value": 0.43440724324980495,
+  "ci": [
+   0.42575053813960934,
+   0.44313257645683135
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C1k1.shift_vs_C1_pts": {
+  "value": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C1k1.flip_pct": {
+  "value": 18.25,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C2k2.p_low": {
+  "value": 0.6433792817567071,
+  "ci": [
+   0.632388907899521,
+   0.6543825485510513
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C2k2.shift_vs_C1_pts": {
+  "value": 20.897203850690218,
+  "ci": [
+   19.56363556391395,
+   22.279111991915652
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C2k2.flip_pct": {
+  "value": 91.75,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C2k4.p_low": {
+  "value": 0.7812402694101651,
+  "ci": [
+   0.7699813195720638,
+   0.7924015801636042
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C2k4.shift_vs_C1_pts": {
+  "value": 34.683302616036016,
+  "ci": [
+   33.3538641170203,
+   36.00002345747323
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C2k4.flip_pct": {
+  "value": 98.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C2k8.p_low": {
+  "value": 0.8896467738591647,
+  "ci": [
+   0.8797697959041328,
+   0.8995185243751407
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C2k8.shift_vs_C1_pts": {
+  "value": 45.52395306093597,
+  "ci": [
+   44.19408647394158,
+   46.871501498207095
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C2k8.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C3k2.p_low": {
+  "value": 0.6885238128324426,
+  "ci": [
+   0.6789249165699335,
+   0.6980754376205859
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C3k2.shift_vs_C1_pts": {
+  "value": 25.411656958263755,
+  "ci": [
+   24.06684297324419,
+   26.703686687308515
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C3k2.flip_pct": {
+  "value": 97.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C3k4.p_low": {
+  "value": 0.9052173639123728,
+  "ci": [
+   0.8979188548981005,
+   0.9125559393486635
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C3k4.shift_vs_C1_pts": {
+  "value": 47.0810120662568,
+  "ci": [
+   45.928152422761045,
+   48.1916787416625
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C3k4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C4k2.p_low": {
+  "value": 0.5294031563923206,
+  "ci": [
+   0.5223079623019807,
+   0.5367492391052227
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C4k2.shift_vs_C1_pts": {
+  "value": 9.499591314251562,
+  "ci": [
+   8.926715252871821,
+   10.146094349297304
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C4k2.flip_pct": {
+  "value": 65.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C4k4.p_low": {
+  "value": 0.6124349955066323,
+  "ci": [
+   0.6020262557759826,
+   0.6218291071449503
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C4k4.shift_vs_C1_pts": {
+  "value": 17.802775225682726,
+  "ci": [
+   16.917266190713836,
+   18.706790871803165
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C4k4.flip_pct": {
+  "value": 89.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C5k4.p_low": {
+  "value": 0.3401994476571377,
+  "ci": [
+   0.32814650039410964,
+   0.3515421785198314
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C5k4.shift_vs_C1_pts": {
+  "value": -9.420779559266714,
+  "ci": [
+   -10.514942116170639,
+   -8.269990204490933
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C5k4.flip_pct": {
+  "value": 10.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C6k2.p_low": {
+  "value": 0.19699503034963617,
+  "ci": [
+   0.1868036863827842,
+   0.20776477920468173
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C6k2.shift_vs_C1_pts": {
+  "value": -23.741221290016874,
+  "ci": [
+   -24.53445004376606,
+   -22.95004692828423
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C6k2.flip_pct": {
+  "value": 1.7500000000000002,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C6k4.p_low": {
+  "value": 0.08405328077140314,
+  "ci": [
+   0.0762524386584183,
+   0.09248315741233477
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C6k4.shift_vs_C1_pts": {
+  "value": -35.03539624784018,
+  "ci": [
+   -35.7161248539641,
+   -34.33472960127589
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C6k4.flip_pct": {
+  "value": 0.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C7k2.p_low": {
+  "value": 0.7434609300179318,
+  "ci": [
+   0.732837883088667,
+   0.7535452396716954
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C7k2.shift_vs_C1_pts": {
+  "value": 30.905368676812685,
+  "ci": [
+   29.833209428937263,
+   31.976810358259243
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C7k2.flip_pct": {
+  "value": 98.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C7k4.p_low": {
+  "value": 0.86616985558739,
+  "ci": [
+   0.8588263792118253,
+   0.8729717274810515
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C7k4.shift_vs_C1_pts": {
+  "value": 43.176261233758524,
+  "ci": [
+   42.12999446625782,
+   44.26154424410472
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C7k4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C3k4_minus_C2k4_pts": {
+  "value": 12.397709450220773,
+  "ci": [
+   11.687446333376682,
+   13.132163064257247
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C7k4_minus_C2k4_pts": {
+  "value": 8.492958617722497,
+  "ci": [
+   7.554777578079852,
+   9.457932793915816
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C7k4_minus_C3k4_pts": {
+  "value": -3.9047508324982756,
+  "ci": [
+   -4.659362954020919,
+   -3.1412577603114813
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C7k2_minus_C2k2_pts": {
+  "value": 10.008164826122467,
+  "ci": [
+   9.106254524850593,
+   10.897948184805745
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C3k2_minus_C2k2_pts": {
+  "value": 4.514453107573537,
+  "ci": [
+   3.967249396352843,
+   5.045820258811515
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.test.C5_pct_of_C2k4_shift": {
+  "value": -27.1622909258675,
+  "ci": [
+   -30.608705491964777,
+   -23.798198806869912
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.mass": {
+  "value": 0.9941804730031225,
+  "ci": null,
+  "n": 72000,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C0k1.p_low": {
+  "value": 0.4999632838202293,
+  "ci": [
+   0.49978749989868954,
+   0.500136756610303
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C0k1.shift_vs_C1_pts": {
+  "value": 6.262817917515419,
+  "ci": [
+   5.596437716645248,
+   6.97717068197435
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C0k1.flip_pct": {
+  "value": 49.666666666666664,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C0rk4.p_low": {
+  "value": 0.9203439009100625,
+  "ci": [
+   0.9141230887831476,
+   0.9265197167838154
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C0rk4.shift_vs_C1_pts": {
+  "value": 48.30087962649877,
+  "ci": [
+   47.33956335621231,
+   49.244610147508915
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C0rk4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C1k1.p_low": {
+  "value": 0.437335104645075,
+  "ci": [
+   0.4300748649973094,
+   0.4442332276548137
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C1k1.shift_vs_C1_pts": {
+  "value": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C1k1.flip_pct": {
+  "value": 18.333333333333332,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C2k2.p_low": {
+  "value": 0.6453760949910288,
+  "ci": [
+   0.6362849347479618,
+   0.6543318588679269
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C2k2.shift_vs_C1_pts": {
+  "value": 20.804099034595378,
+  "ci": [
+   19.723464947132495,
+   21.833818497201246
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C2k2.flip_pct": {
+  "value": 92.33333333333333,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C2k4.p_low": {
+  "value": 0.7861751505405861,
+  "ci": [
+   0.7775260684346368,
+   0.7948948963242705
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C2k4.shift_vs_C1_pts": {
+  "value": 34.88400458955111,
+  "ci": [
+   33.85747387582229,
+   35.909829898362936
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C2k4.flip_pct": {
+  "value": 99.0,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C2k8.p_low": {
+  "value": 0.8961398186809184,
+  "ci": [
+   0.8886148894283337,
+   0.9037195135293022
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C2k8.shift_vs_C1_pts": {
+  "value": 45.88047140358433,
+  "ci": [
+   44.82024554889697,
+   46.915159853643075
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C2k8.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C3k2.p_low": {
+  "value": 0.6909653498513629,
+  "ci": [
+   0.6829177124671809,
+   0.6989076590341069
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C3k2.shift_vs_C1_pts": {
+  "value": 25.36302452062879,
+  "ci": [
+   24.309964117865672,
+   26.450985701309808
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C3k2.flip_pct": {
+  "value": 97.66666666666667,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C3k4.p_low": {
+  "value": 0.9064694989812119,
+  "ci": [
+   0.9003859863773079,
+   0.912321014487076
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C3k4.shift_vs_C1_pts": {
+  "value": 46.91343943361368,
+  "ci": [
+   45.95920677724305,
+   47.83540391306853
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C3k4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C4k2.p_low": {
+  "value": 0.5328770949793377,
+  "ci": [
+   0.527017392200663,
+   0.5387118199140308
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C4k2.shift_vs_C1_pts": {
+  "value": 9.554199033426263,
+  "ci": [
+   9.052543555346729,
+   10.05951164266686
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C4k2.flip_pct": {
+  "value": 66.66666666666666,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C4k4.p_low": {
+  "value": 0.6188839933767377,
+  "ci": [
+   0.6111029611434708,
+   0.6266333050993307
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C4k4.shift_vs_C1_pts": {
+  "value": 18.154888873166275,
+  "ci": [
+   17.434791016936106,
+   18.88750418763555
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C4k4.flip_pct": {
+  "value": 91.16666666666666,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C5k4.p_low": {
+  "value": 0.3463438343530726,
+  "ci": [
+   0.33613575382542804,
+   0.35639911272890334
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C5k4.shift_vs_C1_pts": {
+  "value": -9.099127029200243,
+  "ci": [
+   -9.973716456669452,
+   -8.219176805406837
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C5k4.flip_pct": {
+  "value": 11.5,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C6k2.p_low": {
+  "value": 0.19800259390607444,
+  "ci": [
+   0.18885605080871584,
+   0.2068141836638412
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C6k2.shift_vs_C1_pts": {
+  "value": -23.933251073900053,
+  "ci": [
+   -24.577525044814365,
+   -23.265760575326176
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C6k2.flip_pct": {
+  "value": 1.5,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C6k4.p_low": {
+  "value": 0.08690853829206854,
+  "ci": [
+   0.08035059649934344,
+   0.09370307869716872
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C6k4.shift_vs_C1_pts": {
+  "value": -35.04265663530065,
+  "ci": [
+   -35.59760727088275,
+   -34.475989504767455
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C6k4.flip_pct": {
+  "value": 0.0,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C7k2.p_low": {
+  "value": 0.7471479022425297,
+  "ci": [
+   0.7389859756066149,
+   0.7553049153908155
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C7k2.shift_vs_C1_pts": {
+  "value": 30.981279759745455,
+  "ci": [
+   30.153535791158493,
+   31.81759520044991
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C7k2.flip_pct": {
+  "value": 98.66666666666667,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C7k4.p_low": {
+  "value": 0.8676800285097032,
+  "ci": [
+   0.8619559534682721,
+   0.8733503430198601
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C7k4.shift_vs_C1_pts": {
+  "value": 43.034492386462816,
+  "ci": [
+   42.15886195455003,
+   43.901576345105234
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C7k4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C3k4_minus_C2k4_pts": {
+  "value": 12.029434844062568,
+  "ci": [
+   11.42533194580296,
+   12.623964351110411
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C7k4_minus_C2k4_pts": {
+  "value": 8.150487796911694,
+  "ci": [
+   7.388903985829324,
+   8.868149776119784
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C7k4_minus_C3k4_pts": {
+  "value": -3.8789470471508745,
+  "ci": [
+   -4.464593668574887,
+   -3.2860240353499615
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C7k2_minus_C2k2_pts": {
+  "value": 10.17718072515008,
+  "ci": [
+   9.461460909118033,
+   10.866405464663424
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C3k2_minus_C2k2_pts": {
+  "value": 4.558925486033419,
+  "ci": [
+   4.104870121499009,
+   4.99644524942152
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F1.all.C5_pct_of_C2k4_shift": {
+  "value": -26.083952046966896,
+  "ci": [
+   -29.03450518897897,
+   -23.300533742869117
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.mass": {
+  "value": 0.9153816005773843,
+  "ci": null,
+  "n": 22400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C0k1.p_low": {
+  "value": 0.49995441946540226,
+  "ci": [
+   0.4997223698985611,
+   0.5002203343384894
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C0k1.shift_vs_C1_pts": {
+  "value": 22.172282401865207,
+  "ci": [
+   20.99680793318135,
+   23.24988175904937
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C0k1.flip_pct": {
+  "value": 51.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C1k1.p_low": {
+  "value": 0.27823159544675014,
+  "ci": [
+   0.2675820999713219,
+   0.2892779919010879
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C1k1.shift_vs_C1_pts": {
+  "value": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C1k1.flip_pct": {
+  "value": 3.5000000000000004,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C2k2.p_low": {
+  "value": 0.5008632865466699,
+  "ci": [
+   0.4879506266795916,
+   0.5137453622896145
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C2k2.shift_vs_C1_pts": {
+  "value": 22.263169109991964,
+  "ci": [
+   21.097271574806516,
+   23.368574318232817
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C2k2.flip_pct": {
+  "value": 50.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C2k4.p_low": {
+  "value": 0.49554736523646326,
+  "ci": [
+   0.4791155346846473,
+   0.5110518209224589
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C2k4.shift_vs_C1_pts": {
+  "value": 21.73157697897131,
+  "ci": [
+   20.206114168634326,
+   23.271381451653372
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C2k4.flip_pct": {
+  "value": 46.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C3k4.p_low": {
+  "value": 0.6242117112998896,
+  "ci": [
+   0.608907244955588,
+   0.6396249704196251
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C3k4.shift_vs_C1_pts": {
+  "value": 34.598011585313955,
+  "ci": [
+   33.09263314123772,
+   36.11236332742798
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C3k4.flip_pct": {
+  "value": 76.75,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C5k4.p_low": {
+  "value": 0.3792160440493189,
+  "ci": [
+   0.36820762819261427,
+   0.39074819069211797
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C5k4.shift_vs_C1_pts": {
+  "value": 10.098444860256876,
+  "ci": [
+   8.882030505770114,
+   11.346998870763446
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C5k4.flip_pct": {
+  "value": 13.25,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C7k4.p_low": {
+  "value": 0.9055688738117825,
+  "ci": [
+   0.8959807389530583,
+   0.9149709435540737
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C7k4.shift_vs_C1_pts": {
+  "value": 62.73372783650324,
+  "ci": [
+   61.33561784478362,
+   64.14251009058725
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C7k4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C3k4_minus_C2k4_pts": {
+  "value": 12.866434606342638,
+  "ci": [
+   11.970641784782947,
+   13.776832572426818
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C7k4_minus_C2k4_pts": {
+  "value": 41.00215085753192,
+  "ci": [
+   39.61267881977362,
+   42.30925962050729
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C7k4_minus_C3k4_pts": {
+  "value": 28.135716251189294,
+  "ci": [
+   26.812283595304866,
+   29.454666253050743
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F2.test.C5_pct_of_C2k4_shift": {
+  "value": 46.46899242530211,
+  "ci": [
+   41.058181354931804,
+   52.707913685339
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.mass": {
+  "value": 0.9757569332128124,
+  "ci": null,
+  "n": 22400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C0k1.p_low": {
+  "value": 0.4999874621899788,
+  "ci": [
+   0.4997128843626083,
+   0.5002403825628218
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C0k1.shift_vs_C1_pts": {
+  "value": 22.699687223539534,
+  "ci": [
+   21.682992729357554,
+   23.726403719893376
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C0k1.flip_pct": {
+  "value": 50.74999999999999,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C1k1.p_low": {
+  "value": 0.27299058995458336,
+  "ci": [
+   0.2629441433157063,
+   0.28310564405794914
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C1k1.shift_vs_C1_pts": {
+  "value": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C1k1.flip_pct": {
+  "value": 0.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C2k2.p_low": {
+  "value": 0.5274182925968696,
+  "ci": [
+   0.5134266949113261,
+   0.5411236343843038
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C2k2.shift_vs_C1_pts": {
+  "value": 25.44277026422862,
+  "ci": [
+   23.770519595573315,
+   27.158534546880574
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C2k2.flip_pct": {
+  "value": 58.75,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C2k4.p_low": {
+  "value": 0.4938389808841763,
+  "ci": [
+   0.4780543083604754,
+   0.5095488532430108
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C2k4.shift_vs_C1_pts": {
+  "value": 22.0848390929593,
+  "ci": [
+   20.099525301051028,
+   23.851430689346078
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C2k4.flip_pct": {
+  "value": 44.25,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C3k4.p_low": {
+  "value": 0.6868426575881528,
+  "ci": [
+   0.6719442880137692,
+   0.7008959905586439
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C3k4.shift_vs_C1_pts": {
+  "value": 41.38520676335695,
+  "ci": [
+   39.56187731001661,
+   43.17800811050495
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C3k4.flip_pct": {
+  "value": 91.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C5k4.p_low": {
+  "value": 0.29171306299487687,
+  "ci": [
+   0.2805388067033787,
+   0.30296643725421546
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C5k4.shift_vs_C1_pts": {
+  "value": 1.8722473040293544,
+  "ci": [
+   0.7559957422834802,
+   3.0056103158562752
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C5k4.flip_pct": {
+  "value": 1.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C7k4.p_low": {
+  "value": 0.870427393075902,
+  "ci": [
+   0.8605029394505012,
+   0.8792991542653577
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C7k4.shift_vs_C1_pts": {
+  "value": 59.74368031213187,
+  "ci": [
+   58.38406021749356,
+   61.24460644383171
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C7k4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C3k4_minus_C2k4_pts": {
+  "value": 19.300367670397645,
+  "ci": [
+   18.32266557588079,
+   20.296810986782646
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C7k4_minus_C2k4_pts": {
+  "value": 37.65884121917257,
+  "ci": [
+   36.24375179610834,
+   39.107792021312726
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C7k4_minus_C3k4_pts": {
+  "value": 18.358473548774924,
+  "ci": [
+   17.06953201221081,
+   19.630961451334873
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Llama-8B.F3.test.C5_pct_of_C2k4_shift": {
+  "value": 8.47752295657989,
+  "ci": [
+   3.3924066848038286,
+   13.604671813277173
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Llama-3.1-8B-Instruct.jsonl (job 144328+144906+144907)"
+ },
+ "Qwen-7B.F1.test.mass": {
+  "value": 0.8085109340558241,
+  "ci": null,
+  "n": 48000,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C0k1.p_low": {
+  "value": 0.4997978736402813,
+  "ci": [
+   0.49942180840328854,
+   0.5001424826408337
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C0k1.shift_vs_C1_pts": {
+  "value": 25.7109606077479,
+  "ci": [
+   24.355222699267213,
+   27.059141058455566
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C0k1.flip_pct": {
+  "value": 51.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C0rk4.p_low": {
+  "value": 0.9736118678328738,
+  "ci": [
+   0.9664230417645748,
+   0.9798286597853667
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C0rk4.shift_vs_C1_pts": {
+  "value": 73.09236002700716,
+  "ci": [
+   71.6301214790311,
+   74.5779924873127
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C0rk4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C1k1.p_low": {
+  "value": 0.24268826756280226,
+  "ci": [
+   0.2293111912212157,
+   0.2558487565602293
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C1k1.shift_vs_C1_pts": {
+  "value": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C1k1.flip_pct": {
+  "value": 0.75,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C2k2.p_low": {
+  "value": 0.555113183815085,
+  "ci": [
+   0.5330668248947279,
+   0.5766341650267328
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C2k2.shift_vs_C1_pts": {
+  "value": 31.24249162522827,
+  "ci": [
+   28.58090481672307,
+   34.07919415664776
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C2k2.flip_pct": {
+  "value": 55.50000000000001,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C2k4.p_low": {
+  "value": 0.6345259522061865,
+  "ci": [
+   0.6159961048629108,
+   0.65494821151929
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C2k4.shift_vs_C1_pts": {
+  "value": 39.183768464338414,
+  "ci": [
+   36.88333224410491,
+   41.51607158891182
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C2k4.flip_pct": {
+  "value": 75.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C2k8.p_low": {
+  "value": 0.5182674487309338,
+  "ci": [
+   0.5098747091994786,
+   0.526597848438875
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C2k8.shift_vs_C1_pts": {
+  "value": 27.557918116813145,
+  "ci": [
+   25.993222579909315,
+   29.052462387387724
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C2k8.flip_pct": {
+  "value": 78.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C3k2.p_low": {
+  "value": 0.6706020682377908,
+  "ci": [
+   0.6503084885196626,
+   0.6907142853428784
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C3k2.shift_vs_C1_pts": {
+  "value": 42.791380067498864,
+  "ci": [
+   40.37676510260481,
+   45.319359418191326
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C3k2.flip_pct": {
+  "value": 76.75,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C3k4.p_low": {
+  "value": 0.7612626133600287,
+  "ci": [
+   0.7413920177322996,
+   0.779538449985184
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C3k4.shift_vs_C1_pts": {
+  "value": 51.857434579722636,
+  "ci": [
+   49.542103285272425,
+   54.165612468799296
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C3k4.flip_pct": {
+  "value": 90.25,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C4k2.p_low": {
+  "value": 0.2945801723016814,
+  "ci": [
+   0.280741703636176,
+   0.30735804097481084
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C4k2.shift_vs_C1_pts": {
+  "value": 5.189190473887905,
+  "ci": [
+   3.82319096941264,
+   6.632870643905248
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C4k2.flip_pct": {
+  "value": 3.5000000000000004,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C4k4.p_low": {
+  "value": 0.38186903006244693,
+  "ci": [
+   0.3682170518019521,
+   0.39576843446186516
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C4k4.shift_vs_C1_pts": {
+  "value": 13.918076249964468,
+  "ci": [
+   12.05673462796552,
+   15.805587935818973
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C4k4.flip_pct": {
+  "value": 21.75,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C5k4.p_low": {
+  "value": 0.39881721003386544,
+  "ci": [
+   0.38704299962755456,
+   0.41040346136870204
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C5k4.shift_vs_C1_pts": {
+  "value": 15.612894247106318,
+  "ci": [
+   13.932957529398642,
+   17.29063425748019
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C5k4.flip_pct": {
+  "value": 9.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C6k2.p_low": {
+  "value": 0.046954909634891566,
+  "ci": [
+   0.039209629532195485,
+   0.054859861811134884
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C6k2.shift_vs_C1_pts": {
+  "value": -19.57333579279107,
+  "ci": [
+   -20.96543193822568,
+   -18.22868458704127
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C6k2.flip_pct": {
+  "value": 0.25,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C6k4.p_low": {
+  "value": 0.029829187465613183,
+  "ci": [
+   0.022771293648779382,
+   0.03736438723341136
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C6k4.shift_vs_C1_pts": {
+  "value": -21.28590800971891,
+  "ci": [
+   -22.742092472668173,
+   -19.837257686036107
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C6k4.flip_pct": {
+  "value": 0.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C7k2.p_low": {
+  "value": 0.7652953411751188,
+  "ci": [
+   0.7484967918529497,
+   0.7815649627384493
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C7k2.shift_vs_C1_pts": {
+  "value": 52.26070736123166,
+  "ci": [
+   50.20284357711826,
+   54.44407291745522
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C7k2.flip_pct": {
+  "value": 96.75,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C7k4.p_low": {
+  "value": 0.9156059767184053,
+  "ci": [
+   0.9016931338152234,
+   0.9285026114445166
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C7k4.shift_vs_C1_pts": {
+  "value": 67.2917709155603,
+  "ci": [
+   65.74375466348312,
+   68.97666414802266
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C7k4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C3k4_minus_C2k4_pts": {
+  "value": 12.673666115384226,
+  "ci": [
+   11.229911513982861,
+   14.111992081820357
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C7k4_minus_C2k4_pts": {
+  "value": 28.108002451221896,
+  "ci": [
+   26.19335898023608,
+   29.940797278670715
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C7k4_minus_C3k4_pts": {
+  "value": 15.43433633583767,
+  "ci": [
+   13.553062384373877,
+   17.342399938614818
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C7k2_minus_C2k2_pts": {
+  "value": 21.018215736003395,
+  "ci": [
+   19.000177799394436,
+   22.98615651249297
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C3k2_minus_C2k2_pts": {
+  "value": 11.548888442270588,
+  "ci": [
+   10.243056181468678,
+   12.831294517205663
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.test.C5_pct_of_C2k4_shift": {
+  "value": 39.8453105941451,
+  "ci": [
+   35.60587625539665,
+   43.98774544447024
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.mass": {
+  "value": 0.8079977759673154,
+  "ci": null,
+  "n": 72000,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C0k1.p_low": {
+  "value": 0.49994227712506206,
+  "ci": [
+   0.49963285156281684,
+   0.5002538875776925
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C0k1.shift_vs_C1_pts": {
+  "value": 25.993348827252127,
+  "ci": [
+   24.9351800733726,
+   27.01154137506115
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C0k1.flip_pct": {
+  "value": 50.33333333333333,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C0rk4.p_low": {
+  "value": 0.9700746899966763,
+  "ci": [
+   0.9638937021695216,
+   0.9764256175150704
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C0rk4.shift_vs_C1_pts": {
+  "value": 73.00659011441356,
+  "ci": [
+   71.80261827793359,
+   74.25020435888062
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C0rk4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C1k1.p_low": {
+  "value": 0.24000878885254076,
+  "ci": [
+   0.22977426589846572,
+   0.2507371614228069
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C1k1.shift_vs_C1_pts": {
+  "value": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C1k1.flip_pct": {
+  "value": 0.6666666666666667,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C2k2.p_low": {
+  "value": 0.5541996720488126,
+  "ci": [
+   0.537154510576481,
+   0.5714926109027205
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C2k2.shift_vs_C1_pts": {
+  "value": 31.419088319627182,
+  "ci": [
+   29.201689178545788,
+   33.531543852843654
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C2k2.flip_pct": {
+  "value": 55.50000000000001,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C2k4.p_low": {
+  "value": 0.6292267345140509,
+  "ci": [
+   0.6138017331594423,
+   0.6439685037940789
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C2k4.shift_vs_C1_pts": {
+  "value": 38.921794566151014,
+  "ci": [
+   37.006564430943016,
+   40.789747277461274
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C2k4.flip_pct": {
+  "value": 74.5,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C2k8.p_low": {
+  "value": 0.5158533534611448,
+  "ci": [
+   0.5095851168536106,
+   0.5225794095558987
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C2k8.shift_vs_C1_pts": {
+  "value": 27.5844564608604,
+  "ci": [
+   26.26875811060699,
+   28.79983268189701
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C2k8.flip_pct": {
+  "value": 77.83333333333333,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C3k2.p_low": {
+  "value": 0.6719050681984312,
+  "ci": [
+   0.6545442190419646,
+   0.6885257559486299
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C3k2.shift_vs_C1_pts": {
+  "value": 43.18962793458903,
+  "ci": [
+   41.03788153434183,
+   45.147635475839714
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C3k2.flip_pct": {
+  "value": 77.66666666666666,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C3k4.p_low": {
+  "value": 0.7540576791733571,
+  "ci": [
+   0.7388302640551205,
+   0.7699383698901368
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C3k4.shift_vs_C1_pts": {
+  "value": 51.404889032081634,
+  "ci": [
+   49.52041788300018,
+   53.36309687913873
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C3k4.flip_pct": {
+  "value": 90.33333333333333,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C4k2.p_low": {
+  "value": 0.29465580018530163,
+  "ci": [
+   0.28378092018029416,
+   0.3056116789570096
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C4k2.shift_vs_C1_pts": {
+  "value": 5.46470113327608,
+  "ci": [
+   4.335195986150473,
+   6.58223482779304
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C4k2.flip_pct": {
+  "value": 3.0,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C4k4.p_low": {
+  "value": 0.3827892020782375,
+  "ci": [
+   0.3714822295835223,
+   0.39376984012888994
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C4k4.shift_vs_C1_pts": {
+  "value": 14.278041322569667,
+  "ci": [
+   12.778462260526865,
+   15.804909872183051
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C4k4.flip_pct": {
+  "value": 21.5,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C5k4.p_low": {
+  "value": 0.3976664834490549,
+  "ci": [
+   0.38842045380952694,
+   0.40735769835048335
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C5k4.shift_vs_C1_pts": {
+  "value": 15.765769459651413,
+  "ci": [
+   14.354924457216558,
+   17.087229750566035
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C5k4.flip_pct": {
+  "value": 7.833333333333334,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C6k2.p_low": {
+  "value": 0.045599855003799365,
+  "ci": [
+   0.039383936241021746,
+   0.051877809277614484
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C6k2.shift_vs_C1_pts": {
+  "value": -19.440893384874144,
+  "ci": [
+   -20.46944965794232,
+   -18.323496459059104
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C6k2.flip_pct": {
+  "value": 0.16666666666666669,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C6k4.p_low": {
+  "value": 0.02743883197815187,
+  "ci": [
+   0.022148134734103174,
+   0.033487353115297616
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C6k4.shift_vs_C1_pts": {
+  "value": -21.25699568743889,
+  "ci": [
+   -22.48581021327934,
+   -20.052233160694087
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C6k4.flip_pct": {
+  "value": 0.0,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C7k2.p_low": {
+  "value": 0.762931576385496,
+  "ci": [
+   0.7482207613728545,
+   0.7771398228429302
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C7k2.shift_vs_C1_pts": {
+  "value": 52.29227875329553,
+  "ci": [
+   50.44577736803583,
+   53.99747687377589
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C7k2.flip_pct": {
+  "value": 96.33333333333334,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C7k4.p_low": {
+  "value": 0.9138879871419643,
+  "ci": [
+   0.9026436441451162,
+   0.9246582957793515
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C7k4.shift_vs_C1_pts": {
+  "value": 67.38791982894234,
+  "ci": [
+   66.00334759234539,
+   68.71477424935303
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C7k4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C3k4_minus_C2k4_pts": {
+  "value": 12.483094465930627,
+  "ci": [
+   11.334844774390184,
+   13.611529523658474
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C7k4_minus_C2k4_pts": {
+  "value": 28.466125262791344,
+  "ci": [
+   26.93139222376573,
+   30.066649962106784
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C7k4_minus_C3k4_pts": {
+  "value": 15.983030796860715,
+  "ci": [
+   14.429027173339627,
+   17.545713787443344
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C7k2_minus_C2k2_pts": {
+  "value": 20.873190433668356,
+  "ci": [
+   19.23472377455518,
+   22.602667031963023
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C3k2_minus_C2k2_pts": {
+  "value": 11.770539614961857,
+  "ci": [
+   10.718356511652997,
+   12.847969334974838
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F1.all.C5_pct_of_C2k4_shift": {
+  "value": 40.506275816383805,
+  "ci": [
+   37.12620735858985,
+   43.92323554118848
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.mass": {
+  "value": 0.8989170820357582,
+  "ci": null,
+  "n": 22400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C0k1.p_low": {
+  "value": 0.5003562389086551,
+  "ci": [
+   0.5001272379006176,
+   0.5006519182951746
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C0k1.shift_vs_C1_pts": {
+  "value": 35.81577720322724,
+  "ci": [
+   34.25595946669139,
+   37.31901914716188
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C0k1.flip_pct": {
+  "value": 52.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C1k1.p_low": {
+  "value": 0.14219846687638274,
+  "ci": [
+   0.12747955593540244,
+   0.1579643082041113
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C1k1.shift_vs_C1_pts": {
+  "value": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C1k1.flip_pct": {
+  "value": 0.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C2k2.p_low": {
+  "value": 0.613367640035111,
+  "ci": [
+   0.5872467884489619,
+   0.637567072178688
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C2k2.shift_vs_C1_pts": {
+  "value": 47.11691731587283,
+  "ci": [
+   44.724864403544046,
+   49.72508973495012
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C2k2.flip_pct": {
+  "value": 62.74999999999999,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C2k4.p_low": {
+  "value": 0.5677399061538158,
+  "ci": [
+   0.5492489159797094,
+   0.5860237682067397
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C2k4.shift_vs_C1_pts": {
+  "value": 42.55414392774331,
+  "ci": [
+   40.33363632546905,
+   44.71329622568258
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C2k4.flip_pct": {
+  "value": 65.25,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C3k4.p_low": {
+  "value": 0.5181609519485779,
+  "ci": [
+   0.5000191056222784,
+   0.5356932100594128
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C3k4.shift_vs_C1_pts": {
+  "value": 37.596248507219514,
+  "ci": [
+   35.41890004457297,
+   39.8017806883019
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C3k4.flip_pct": {
+  "value": 56.49999999999999,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C5k4.p_low": {
+  "value": 0.3104600311923918,
+  "ci": [
+   0.29410032988088497,
+   0.32671745850866535
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C5k4.shift_vs_C1_pts": {
+  "value": 16.826156431600914,
+  "ci": [
+   14.981411027050973,
+   18.703219712958266
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C5k4.flip_pct": {
+  "value": 12.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C7k4.p_low": {
+  "value": 0.9850479646455617,
+  "ci": [
+   0.9790804320975123,
+   0.9901945360440219
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C7k4.shift_vs_C1_pts": {
+  "value": 84.2849497769179,
+  "ci": [
+   82.75709776395163,
+   85.79995040291486
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C7k4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C3k4_minus_C2k4_pts": {
+  "value": -4.957895420523794,
+  "ci": [
+   -6.140664947222149,
+   -3.749363868169899
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C7k4_minus_C2k4_pts": {
+  "value": 41.730805849174594,
+  "ci": [
+   39.79245552438905,
+   43.59851311419541
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C7k4_minus_C3k4_pts": {
+  "value": 46.688701269698385,
+  "ci": [
+   44.86513597539046,
+   48.63628081161168
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F2.test.C5_pct_of_C2k4_shift": {
+  "value": 39.5405826050023,
+  "ci": [
+   35.402722813581775,
+   43.81913140207649
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.mass": {
+  "value": 0.9636493837871344,
+  "ci": null,
+  "n": 22400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C0k1.p_low": {
+  "value": 0.500021505996284,
+  "ci": [
+   0.4995994701777335,
+   0.5004728971580883
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C0k1.shift_vs_C1_pts": {
+  "value": 37.627182179634644,
+  "ci": [
+   36.315047614640655,
+   38.85597565599651
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C0k1.flip_pct": {
+  "value": 47.25,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C1k1.p_low": {
+  "value": 0.12374968419993763,
+  "ci": [
+   0.11027235196259978,
+   0.1366599519699954
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C1k1.shift_vs_C1_pts": {
+  "value": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C1k1.flip_pct": {
+  "value": 0.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C2k2.p_low": {
+  "value": 0.634141848692417,
+  "ci": [
+   0.6119056711690969,
+   0.656800058457687
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C2k2.shift_vs_C1_pts": {
+  "value": 51.039216449247924,
+  "ci": [
+   48.68886739428518,
+   53.48928265304503
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C2k2.flip_pct": {
+  "value": 65.75,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C2k4.p_low": {
+  "value": 0.5906916943763214,
+  "ci": [
+   0.5733267897653919,
+   0.6077215454044904
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C2k4.shift_vs_C1_pts": {
+  "value": 46.69420101763838,
+  "ci": [
+   44.4378540667252,
+   48.92905603628715
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C2k4.flip_pct": {
+  "value": 68.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C3k4.p_low": {
+  "value": 0.6527335454844247,
+  "ci": [
+   0.6347468058704541,
+   0.6699133446504686
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C3k4.shift_vs_C1_pts": {
+  "value": 52.898386128448706,
+  "ci": [
+   50.72042927307707,
+   55.105071536752526
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C3k4.flip_pct": {
+  "value": 81.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C5k4.p_low": {
+  "value": 0.3399213509896818,
+  "ci": [
+   0.3253361887068268,
+   0.3545683649290579
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C5k4.shift_vs_C1_pts": {
+  "value": 21.617166678974407,
+  "ci": [
+   19.903018228685767,
+   23.35545754295379
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C5k4.flip_pct": {
+  "value": 11.25,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C7k4.p_low": {
+  "value": 0.9549805911428715,
+  "ci": [
+   0.9450036565695672,
+   0.964684124144945
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C7k4.shift_vs_C1_pts": {
+  "value": 83.12309069429338,
+  "ci": [
+   81.36883476690082,
+   84.83281146519795
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C7k4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C3k4_minus_C2k4_pts": {
+  "value": 6.204185110810332,
+  "ci": [
+   5.253081416619847,
+   7.2452597029041845
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C7k4_minus_C2k4_pts": {
+  "value": 36.428889676655004,
+  "ci": [
+   34.59657999369012,
+   38.279976794121396
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C7k4_minus_C3k4_pts": {
+  "value": 30.224704565844675,
+  "ci": [
+   28.520788771067295,
+   31.922964762311683
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Qwen-7B.F3.test.C5_pct_of_C2k4_shift": {
+  "value": 46.295184857769996,
+  "ci": [
+   42.48698028772543,
+   50.16455671942615
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-7B-Instruct.jsonl (job 144909+144910)"
+ },
+ "Gemma-12B.F1.test.mass": {
+  "value": 0.9985563094075769,
+  "ci": null,
+  "n": 48000,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C0k1.p_low": {
+  "value": 0.5001225496568449,
+  "ci": [
+   0.4998342046786076,
+   0.5004705038899074
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C0k1.shift_vs_C1_pts": {
+  "value": 8.170399836847261,
+  "ci": [
+   7.2862770712036,
+   9.025123952447238
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C0k1.flip_pct": {
+  "value": 46.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C0rk4.p_low": {
+  "value": 0.9052610463840329,
+  "ci": [
+   0.893750426869499,
+   0.9159351839339379
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C0rk4.shift_vs_C1_pts": {
+  "value": 48.68424950956607,
+  "ci": [
+   47.20353254548392,
+   50.1512238061253
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C0rk4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C1k1.p_low": {
+  "value": 0.41841855128837224,
+  "ci": [
+   0.40975179022200564,
+   0.42678247748393944
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C1k1.shift_vs_C1_pts": {
+  "value": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C1k1.flip_pct": {
+  "value": 2.25,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C2k2.p_low": {
+  "value": 0.6285660897351711,
+  "ci": [
+   0.6114433509940161,
+   0.6450394364436258
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C2k2.shift_vs_C1_pts": {
+  "value": 21.014753844679888,
+  "ci": [
+   19.204962546333544,
+   22.911339775231937
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C2k2.flip_pct": {
+  "value": 78.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C2k4.p_low": {
+  "value": 0.727017957439016,
+  "ci": [
+   0.7091171571440158,
+   0.7456036327816978
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C2k4.shift_vs_C1_pts": {
+  "value": 30.859940615064367,
+  "ci": [
+   28.897770568270452,
+   32.885949733104084
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C2k4.flip_pct": {
+  "value": 86.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C2k8.p_low": {
+  "value": 0.7660249608366767,
+  "ci": [
+   0.7505593040316165,
+   0.7817568986863914
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C2k8.shift_vs_C1_pts": {
+  "value": 34.76064095483045,
+  "ci": [
+   32.99721797409599,
+   36.578746237565426
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C2k8.flip_pct": {
+  "value": 97.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C3k2.p_low": {
+  "value": 0.7677770651820617,
+  "ci": [
+   0.7516458548301513,
+   0.7844257480041412
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C3k2.shift_vs_C1_pts": {
+  "value": 34.93585138936896,
+  "ci": [
+   33.05957429728548,
+   36.69514557790561
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C3k2.flip_pct": {
+  "value": 95.25,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C3k4.p_low": {
+  "value": 0.831867619598486,
+  "ci": [
+   0.8157917504091239,
+   0.8482468786686916
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C3k4.shift_vs_C1_pts": {
+  "value": 41.34490683101138,
+  "ci": [
+   39.60796510027408,
+   43.17291957576208
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C3k4.flip_pct": {
+  "value": 98.25,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C4k2.p_low": {
+  "value": 0.41833452208848115,
+  "ci": [
+   0.4090236173529592,
+   0.42757517792293115
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C4k2.shift_vs_C1_pts": {
+  "value": -0.008402919989103114,
+  "ci": [
+   -0.7271014582115578,
+   0.740850535711713
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C4k2.flip_pct": {
+  "value": 6.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C4k4.p_low": {
+  "value": 0.44937016269999475,
+  "ci": [
+   0.4394642166192447,
+   0.4591791805802416
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C4k4.shift_vs_C1_pts": {
+  "value": 3.0951611411622517,
+  "ci": [
+   2.1474423911259017,
+   4.04338978052293
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C4k4.flip_pct": {
+  "value": 25.75,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C5k4.p_low": {
+  "value": 0.28638426786100796,
+  "ci": [
+   0.2730478372327127,
+   0.3009100451689913
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C5k4.shift_vs_C1_pts": {
+  "value": -13.203428342736423,
+  "ci": [
+   -14.78814046946813,
+   -11.65277893550074
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C5k4.flip_pct": {
+  "value": 4.25,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C6k2.p_low": {
+  "value": 0.2163370926636176,
+  "ci": [
+   0.20025410567083732,
+   0.2345290055309282
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C6k2.shift_vs_C1_pts": {
+  "value": -20.20814586247546,
+  "ci": [
+   -22.227872922573695,
+   -18.204755940573325
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C6k2.flip_pct": {
+  "value": 3.25,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C6k4.p_low": {
+  "value": 0.19940615355485966,
+  "ci": [
+   0.18196077535475566,
+   0.2166735832308919
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C6k4.shift_vs_C1_pts": {
+  "value": -21.901239773351254,
+  "ci": [
+   -23.865306804534097,
+   -20.010683645596632
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C6k4.flip_pct": {
+  "value": 7.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C7k2.p_low": {
+  "value": 0.7252776253187961,
+  "ci": [
+   0.7107741064250085,
+   0.7400950243369582
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C7k2.shift_vs_C1_pts": {
+  "value": 30.6859074030424,
+  "ci": [
+   29.157180905759656,
+   32.23611594640408
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C7k2.flip_pct": {
+  "value": 97.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C7k4.p_low": {
+  "value": 0.829908576015656,
+  "ci": [
+   0.815226507804954,
+   0.8448947742394046
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C7k4.shift_vs_C1_pts": {
+  "value": 41.14900247272839,
+  "ci": [
+   39.638193944681895,
+   42.63704606826399
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C7k4.flip_pct": {
+  "value": 96.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C3k4_minus_C2k4_pts": {
+  "value": 10.484966215947008,
+  "ci": [
+   9.616748133158946,
+   11.3684294687736
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C7k4_minus_C2k4_pts": {
+  "value": 10.289061857664024,
+  "ci": [
+   9.113654469229022,
+   11.545325189142593
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C7k4_minus_C3k4_pts": {
+  "value": -0.19590435828298255,
+  "ci": [
+   -1.2292787714880642,
+   0.8902059365294053
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C7k2_minus_C2k2_pts": {
+  "value": 9.67115355836251,
+  "ci": [
+   8.21351951253565,
+   11.12571036850097
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C3k2_minus_C2k2_pts": {
+  "value": 13.921097544689076,
+  "ci": [
+   12.760653612334819,
+   15.116679049652594
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.test.C5_pct_of_C2k4_shift": {
+  "value": -42.78500891311221,
+  "ci": [
+   -48.84523241731184,
+   -36.8340370671564
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.mass": {
+  "value": 0.9983872750631223,
+  "ci": null,
+  "n": 72000,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C0k1.p_low": {
+  "value": 0.5001774690858511,
+  "ci": [
+   0.49993732663701496,
+   0.500430320995366
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C0k1.shift_vs_C1_pts": {
+  "value": 8.347968021380627,
+  "ci": [
+   7.6080765490729725,
+   9.10080170351158
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C0k1.flip_pct": {
+  "value": 48.66666666666667,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C0rk4.p_low": {
+  "value": 0.9098536365928607,
+  "ci": [
+   0.9003934572342926,
+   0.9187697088344526
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C0rk4.shift_vs_C1_pts": {
+  "value": 49.31558477208157,
+  "ci": [
+   48.13566566499505,
+   50.471407036812074
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C0rk4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C1k1.p_low": {
+  "value": 0.4166977888720449,
+  "ci": [
+   0.40933532748874996,
+   0.42377406809116275
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C1k1.shift_vs_C1_pts": {
+  "value": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C1k1.flip_pct": {
+  "value": 2.5,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C2k2.p_low": {
+  "value": 0.6305607118909975,
+  "ci": [
+   0.617644000335879,
+   0.6437781329144273
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C2k2.shift_vs_C1_pts": {
+  "value": 21.386292301895264,
+  "ci": [
+   19.997998928300895,
+   22.833949587883907
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C2k2.flip_pct": {
+  "value": 78.5,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C2k4.p_low": {
+  "value": 0.7299167224862491,
+  "ci": [
+   0.7150348079405242,
+   0.7446458107712813
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C2k4.shift_vs_C1_pts": {
+  "value": 31.321893361420422,
+  "ci": [
+   29.773652503212823,
+   32.92212063478628
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C2k4.flip_pct": {
+  "value": 86.33333333333333,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C2k8.p_low": {
+  "value": 0.7652636733653546,
+  "ci": [
+   0.7524685734361395,
+   0.7780796855463259
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C2k8.shift_vs_C1_pts": {
+  "value": 34.856588449330964,
+  "ci": [
+   33.36768401413471,
+   36.32782373089303
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C2k8.flip_pct": {
+  "value": 97.0,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C3k2.p_low": {
+  "value": 0.7733820216481126,
+  "ci": [
+   0.7600229149945894,
+   0.7872642859522613
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C3k2.shift_vs_C1_pts": {
+  "value": 35.66842327760676,
+  "ci": [
+   34.149713538904976,
+   37.169825395918146
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C3k2.flip_pct": {
+  "value": 95.33333333333334,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C3k4.p_low": {
+  "value": 0.8339593532088412,
+  "ci": [
+   0.8202668532298489,
+   0.8469620655515993
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C3k4.shift_vs_C1_pts": {
+  "value": 41.72615643367963,
+  "ci": [
+   40.22067936870595,
+   43.20256284578556
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C3k4.flip_pct": {
+  "value": 97.66666666666667,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C4k2.p_low": {
+  "value": 0.41354933850599457,
+  "ci": [
+   0.4060322970423866,
+   0.4212856147867382
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C4k2.shift_vs_C1_pts": {
+  "value": -0.31484503660503216,
+  "ci": [
+   -0.917071374528178,
+   0.27826106603602224
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C4k2.flip_pct": {
+  "value": 6.0,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C4k4.p_low": {
+  "value": 0.4479021948797304,
+  "ci": [
+   0.43977377584132793,
+   0.45602543258386796
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C4k4.shift_vs_C1_pts": {
+  "value": 3.120440600768549,
+  "ci": [
+   2.354148914469972,
+   3.884767350369019
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C4k4.flip_pct": {
+  "value": 25.333333333333336,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C5k4.p_low": {
+  "value": 0.28529929706577367,
+  "ci": [
+   0.27311120204039097,
+   0.2966365780196659
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C5k4.shift_vs_C1_pts": {
+  "value": -13.139849180627126,
+  "ci": [
+   -14.383576314669686,
+   -11.800340206187714
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C5k4.flip_pct": {
+  "value": 4.5,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C6k2.p_low": {
+  "value": 0.21692756216323186,
+  "ci": [
+   0.20343923170041953,
+   0.23175452653930445
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C6k2.shift_vs_C1_pts": {
+  "value": -19.977022670881304,
+  "ci": [
+   -21.49281681304141,
+   -18.377442507888585
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C6k2.flip_pct": {
+  "value": 3.5000000000000004,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C6k4.p_low": {
+  "value": 0.1964571131395886,
+  "ci": [
+   0.18268883812683018,
+   0.21047267305826112
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C6k4.shift_vs_C1_pts": {
+  "value": -22.024067573245627,
+  "ci": [
+   -23.680452002754468,
+   -20.397347078111824
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C6k4.flip_pct": {
+  "value": 6.666666666666667,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C7k2.p_low": {
+  "value": 0.7222468962770392,
+  "ci": [
+   0.7097778115037578,
+   0.7351660168461897
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C7k2.shift_vs_C1_pts": {
+  "value": 30.554910740499423,
+  "ci": [
+   29.269430602135344,
+   31.78163073007437
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C7k2.flip_pct": {
+  "value": 96.66666666666667,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C7k4.p_low": {
+  "value": 0.828304926749862,
+  "ci": [
+   0.8159660122344229,
+   0.8398883246495756
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C7k4.shift_vs_C1_pts": {
+  "value": 41.1607137877817,
+  "ci": [
+   39.90423545483158,
+   42.408378217865796
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C7k4.flip_pct": {
+  "value": 96.66666666666667,
+  "ci": null,
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C3k4_minus_C2k4_pts": {
+  "value": 10.404263072259209,
+  "ci": [
+   9.651191376283913,
+   11.156089226815121
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C7k4_minus_C2k4_pts": {
+  "value": 9.838820426361286,
+  "ci": [
+   8.896073933424248,
+   10.8409616705358
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C7k4_minus_C3k4_pts": {
+  "value": -0.5654426458979219,
+  "ci": [
+   -1.4366629939774136,
+   0.3071605987410829
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C7k2_minus_C2k2_pts": {
+  "value": 9.168618438604163,
+  "ci": [
+   7.9025138747813575,
+   10.346228151457298
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C3k2_minus_C2k2_pts": {
+  "value": 14.28213097571151,
+  "ci": [
+   13.249197702787948,
+   15.2572499128419
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F1.all.C5_pct_of_C2k4_shift": {
+  "value": -41.95100541658713,
+  "ci": [
+   -46.34329767309282,
+   -37.43709906273795
+  ],
+  "n": 600,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.mass": {
+  "value": 0.999901402997119,
+  "ci": null,
+  "n": 22400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C0k1.p_low": {
+  "value": 0.5001462966266998,
+  "ci": [
+   0.49983012271571736,
+   0.5004416249322924
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C0k1.shift_vs_C1_pts": {
+  "value": 44.926193034275244,
+  "ci": [
+   44.13722552933859,
+   45.663366044472255
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C0k1.flip_pct": {
+  "value": 42.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C1k1.p_low": {
+  "value": 0.05088436628394744,
+  "ci": [
+   0.04333785185086245,
+   0.05892544107321152
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C1k1.shift_vs_C1_pts": {
+  "value": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C1k1.flip_pct": {
+  "value": 0.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C2k2.p_low": {
+  "value": 0.6576954926905839,
+  "ci": [
+   0.6429096199996781,
+   0.6731509304805103
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C2k2.shift_vs_C1_pts": {
+  "value": 60.68111264066365,
+  "ci": [
+   59.058068964431996,
+   62.31467470544091
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C2k2.flip_pct": {
+  "value": 85.25,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C2k4.p_low": {
+  "value": 0.8062617394100546,
+  "ci": [
+   0.7970883484016299,
+   0.8152169597244383
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C2k4.shift_vs_C1_pts": {
+  "value": 75.53773731261072,
+  "ci": [
+   74.32215725934033,
+   76.76101836116642
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C2k4.flip_pct": {
+  "value": 99.75,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C3k4.p_low": {
+  "value": 0.8628699852951058,
+  "ci": [
+   0.8512939792641976,
+   0.8735229573074801
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C3k4.shift_vs_C1_pts": {
+  "value": 81.19856190111584,
+  "ci": [
+   79.75555084753255,
+   82.56349038847702
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C3k4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C5k4.p_low": {
+  "value": 0.07140510094622142,
+  "ci": [
+   0.06375974411614937,
+   0.07947501123191769
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C5k4.shift_vs_C1_pts": {
+  "value": 2.0520734662274,
+  "ci": [
+   1.11682567877446,
+   3.018830605476576
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C5k4.flip_pct": {
+  "value": 0.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C7k4.p_low": {
+  "value": 0.8778124793215002,
+  "ci": [
+   0.8688306030924099,
+   0.8872837700295638
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C7k4.shift_vs_C1_pts": {
+  "value": 82.69281130375529,
+  "ci": [
+   81.3631905764396,
+   84.00122139056174
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C7k4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C3k4_minus_C2k4_pts": {
+  "value": 5.6608245885051245,
+  "ci": [
+   4.834836551293357,
+   6.506746660768269
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C7k4_minus_C2k4_pts": {
+  "value": 7.1550739911445715,
+  "ci": [
+   6.0559805437444325,
+   8.243225687418128
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C7k4_minus_C3k4_pts": {
+  "value": 1.4942494026394468,
+  "ci": [
+   0.24655499012162918,
+   2.685261830520389
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F2.test.C5_pct_of_C2k4_shift": {
+  "value": 2.7166202473539203,
+  "ci": [
+   1.4393437172377743,
+   3.945435842676664
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.mass": {
+  "value": 0.9997042978767838,
+  "ci": null,
+  "n": 22400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C0k1.p_low": {
+  "value": 0.4998546624168187,
+  "ci": [
+   0.4993468884462853,
+   0.500351071630446
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C0k1.shift_vs_C1_pts": {
+  "value": 27.79790621721112,
+  "ci": [
+   26.625626974720447,
+   29.056316331963885
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C0k1.flip_pct": {
+  "value": 45.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C1k1.p_low": {
+  "value": 0.2218756002447075,
+  "ci": [
+   0.21013586090080283,
+   0.2334076978104023
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C1k1.shift_vs_C1_pts": {
+  "value": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C1k1.flip_pct": {
+  "value": 0.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C2k2.p_low": {
+  "value": 0.7375405213713654,
+  "ci": [
+   0.7245415445966056,
+   0.7507915099184075
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C2k2.shift_vs_C1_pts": {
+  "value": 51.566492112665784,
+  "ci": [
+   49.55670208199584,
+   53.519858267515055
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C2k2.flip_pct": {
+  "value": 98.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C2k4.p_low": {
+  "value": 0.8487845790531996,
+  "ci": [
+   0.83798231273412,
+   0.8600549787260853
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C2k4.shift_vs_C1_pts": {
+  "value": 62.690897880849214,
+  "ci": [
+   60.76726122173828,
+   64.58944995746741
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C2k4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C3k4.p_low": {
+  "value": 0.905294461641899,
+  "ci": [
+   0.8962883351030114,
+   0.9149750011563844
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C3k4.shift_vs_C1_pts": {
+  "value": 68.34188613971915,
+  "ci": [
+   66.5246838210395,
+   70.17870744080037
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C3k4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C5k4.p_low": {
+  "value": 0.25417760076759705,
+  "ci": [
+   0.23975782797659712,
+   0.2685571946758049
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C5k4.shift_vs_C1_pts": {
+  "value": 3.230200052288957,
+  "ci": [
+   1.5357851257997057,
+   4.872640000476573
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C5k4.flip_pct": {
+  "value": 1.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C7k4.p_low": {
+  "value": 0.891505421698225,
+  "ci": [
+   0.8808841769877799,
+   0.9011947921525112
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C7k4.shift_vs_C1_pts": {
+  "value": 66.96298214535176,
+  "ci": [
+   65.42151118069019,
+   68.58769618942877
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C7k4.flip_pct": {
+  "value": 100.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C3k4_minus_C2k4_pts": {
+  "value": 5.650988258869932,
+  "ci": [
+   4.965905305738976,
+   6.353350197102156
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C7k4_minus_C2k4_pts": {
+  "value": 4.272084264502539,
+  "ci": [
+   3.145645477421585,
+   5.377751575318694
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C7k4_minus_C3k4_pts": {
+  "value": -1.3789039943673922,
+  "ci": [
+   -2.3692071581724488,
+   -0.3674754238939112
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Gemma-12B.F3.test.C5_pct_of_C2k4_shift": {
+  "value": 5.152582211261831,
+  "ci": [
+   2.460032183009616,
+   7.7974470912143
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_gemma-3-12b-it.jsonl (job 144911+144912+144913)"
+ },
+ "Qwen-32B.F1.test.mass": {
+  "value": 0.9998543212216879,
+  "ci": null,
+  "n": 22400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C0k1.p_low": {
+  "value": 0.5004462947589616,
+  "ci": [
+   0.4998779366926495,
+   0.5010291433372238
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C0k1.shift_vs_C1_pts": {
+  "value": 40.59983730402882,
+  "ci": [
+   39.43895877585845,
+   41.70419747179776
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C0k1.flip_pct": {
+  "value": 64.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C1k1.p_low": {
+  "value": 0.09444792171867343,
+  "ci": [
+   0.08293033828410429,
+   0.10631552666997965
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C1k1.shift_vs_C1_pts": {
+  "value": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C1k1.flip_pct": {
+  "value": 0.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C2k2.p_low": {
+  "value": 0.6121428593700269,
+  "ci": [
+   0.5936489140643987,
+   0.6293898164290364
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C2k2.shift_vs_C1_pts": {
+  "value": 51.769493765135344,
+  "ci": [
+   49.70015768770097,
+   53.8705875241875
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C2k2.flip_pct": {
+  "value": 79.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C2k4.p_low": {
+  "value": 0.7173647303856794,
+  "ci": [
+   0.7006837940286886,
+   0.732753124256935
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C2k4.shift_vs_C1_pts": {
+  "value": 62.29168086670058,
+  "ci": [
+   60.353743412126015,
+   64.22238737798807
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C2k4.flip_pct": {
+  "value": 93.25,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C3k4.p_low": {
+  "value": 0.9630503795684792,
+  "ci": [
+   0.9556939838599019,
+   0.9699575204521749
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C3k4.shift_vs_C1_pts": {
+  "value": 86.86024578498056,
+  "ci": [
+   85.50204950607524,
+   88.25954856379016
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C3k4.flip_pct": {
+  "value": 99.75,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C5k4.p_low": {
+  "value": 0.07641893381790141,
+  "ci": [
+   0.06554678070982702,
+   0.08805305032080608
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C5k4.shift_vs_C1_pts": {
+  "value": -1.8028987900772022,
+  "ci": [
+   -3.045532977811739,
+   -0.5953191173873407
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C5k4.flip_pct": {
+  "value": 0.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C7k4.p_low": {
+  "value": 0.8770293042282603,
+  "ci": [
+   0.8620978227529564,
+   0.8913919063396077
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C7k4.shift_vs_C1_pts": {
+  "value": 78.25813825095867,
+  "ci": [
+   76.08028030133617,
+   80.39964775336911
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C7k4.flip_pct": {
+  "value": 97.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C3k4_minus_C2k4_pts": {
+  "value": 24.56856491827997,
+  "ci": [
+   23.03068232542618,
+   26.023555151588155
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C7k4_minus_C2k4_pts": {
+  "value": 15.966457384258092,
+  "ci": [
+   13.908146009440774,
+   17.89654939852212
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C7k4_minus_C3k4_pts": {
+  "value": -8.602107534021878,
+  "ci": [
+   -10.185200705037197,
+   -7.129712965350551
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.test.C5_pct_of_C2k4_shift": {
+  "value": -2.8942850232846777,
+  "ci": [
+   -4.788590883329913,
+   -1.0452553713061086
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.mass": {
+  "value": 0.9998543212216879,
+  "ci": null,
+  "n": 22400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C0k1.p_low": {
+  "value": 0.5004462947589616,
+  "ci": [
+   0.4998796977846966,
+   0.5010649788824341
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C0k1.shift_vs_C1_pts": {
+  "value": 40.59983730402882,
+  "ci": [
+   39.344128127913166,
+   41.79179397436926
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C0k1.flip_pct": {
+  "value": 64.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C1k1.p_low": {
+  "value": 0.09444792171867343,
+  "ci": [
+   0.08350870848532058,
+   0.10575289454439696
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C1k1.shift_vs_C1_pts": {
+  "value": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C1k1.flip_pct": {
+  "value": 0.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C2k2.p_low": {
+  "value": 0.6121428593700269,
+  "ci": [
+   0.5945939321449799,
+   0.6298461657502059
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C2k2.shift_vs_C1_pts": {
+  "value": 51.769493765135344,
+  "ci": [
+   49.59942673505749,
+   53.84140182339745
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C2k2.flip_pct": {
+  "value": 79.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C2k4.p_low": {
+  "value": 0.7173647303856794,
+  "ci": [
+   0.7005187687204937,
+   0.7338431965526446
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C2k4.shift_vs_C1_pts": {
+  "value": 62.29168086670058,
+  "ci": [
+   60.40912555966153,
+   64.1380392234725
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C2k4.flip_pct": {
+  "value": 93.25,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C3k4.p_low": {
+  "value": 0.9630503795684792,
+  "ci": [
+   0.95611558272437,
+   0.9701829871656961
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C3k4.shift_vs_C1_pts": {
+  "value": 86.86024578498056,
+  "ci": [
+   85.46138360917175,
+   88.25006726649796
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C3k4.flip_pct": {
+  "value": 99.75,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C5k4.p_low": {
+  "value": 0.07641893381790141,
+  "ci": [
+   0.06533349615739086,
+   0.08783479757068402
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C5k4.shift_vs_C1_pts": {
+  "value": -1.8028987900772022,
+  "ci": [
+   -3.0343365933026116,
+   -0.5576803448250136
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C5k4.flip_pct": {
+  "value": 0.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C7k4.p_low": {
+  "value": 0.8770293042282603,
+  "ci": [
+   0.8623109499833307,
+   0.8905528481064535
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C7k4.shift_vs_C1_pts": {
+  "value": 78.25813825095867,
+  "ci": [
+   76.20515016731741,
+   80.42337101251171
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C7k4.flip_pct": {
+  "value": 97.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C3k4_minus_C2k4_pts": {
+  "value": 24.56856491827997,
+  "ci": [
+   23.106960914839714,
+   26.10713795034717
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C7k4_minus_C2k4_pts": {
+  "value": 15.966457384258092,
+  "ci": [
+   13.986629313621284,
+   18.04125793924907
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C7k4_minus_C3k4_pts": {
+  "value": -8.602107534021878,
+  "ci": [
+   -10.062406561616715,
+   -7.156146601972888
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F1.all.C5_pct_of_C2k4_shift": {
+  "value": -2.8942850232846777,
+  "ci": [
+   -4.943620399274427,
+   -0.8071096298168994
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.mass": {
+  "value": 0.999993019476533,
+  "ci": null,
+  "n": 22400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C0k1.p_low": {
+  "value": 0.49996126451594736,
+  "ci": [
+   0.4993744075841401,
+   0.500583205820267
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C0k1.shift_vs_C1_pts": {
+  "value": 49.92660683498825,
+  "ci": [
+   49.81260054793075,
+   50.02253358494859
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C0k1.flip_pct": {
+  "value": 65.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C1k1.p_low": {
+  "value": 0.0006951961660648257,
+  "ci": [
+   2.2608155576897317e-05,
+   0.0016800696345058812
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C1k1.shift_vs_C1_pts": {
+  "value": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C1k1.flip_pct": {
+  "value": 0.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C2k2.p_low": {
+  "value": 0.08750927673419526,
+  "ci": [
+   0.07475585384860886,
+   0.10024120636961839
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C2k2.shift_vs_C1_pts": {
+  "value": 8.681408056813044,
+  "ci": [
+   7.387168803227707,
+   9.977921678533368
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C2k2.flip_pct": {
+  "value": 0.25,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C2k4.p_low": {
+  "value": 0.11021558747846935,
+  "ci": [
+   0.09674466716008247,
+   0.1244578709620697
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C2k4.shift_vs_C1_pts": {
+  "value": 10.952039131240454,
+  "ci": [
+   9.564241939469605,
+   12.355299573986358
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C2k4.flip_pct": {
+  "value": 2.75,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C3k4.p_low": {
+  "value": 0.5191480205623502,
+  "ci": [
+   0.4959492703418142,
+   0.5406425101132661
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C3k4.shift_vs_C1_pts": {
+  "value": 51.845282439628534,
+  "ci": [
+   49.613974515911444,
+   54.0178211059138
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C3k4.flip_pct": {
+  "value": 51.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C5k4.p_low": {
+  "value": 0.00245295218150902,
+  "ci": [
+   0.0006740692829206499,
+   0.0045405343948530736
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C5k4.shift_vs_C1_pts": {
+  "value": 0.17577560154441946,
+  "ci": [
+   0.020600693821697314,
+   0.37339260059728635
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C5k4.flip_pct": {
+  "value": 0.0,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C7k4.p_low": {
+  "value": 0.7133790907288099,
+  "ci": [
+   0.6943720663473149,
+   0.7325404921302239
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C7k4.shift_vs_C1_pts": {
+  "value": 71.26838945627449,
+  "ci": [
+   69.33774719448219,
+   73.19480531745451
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C7k4.flip_pct": {
+  "value": 85.5,
+  "ci": null,
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C3k4_minus_C2k4_pts": {
+  "value": 40.89324330838808,
+  "ci": [
+   39.09053688848711,
+   42.840930319618664
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C7k4_minus_C2k4_pts": {
+  "value": 60.31635032503405,
+  "ci": [
+   58.30952420050858,
+   62.201890921468994
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C7k4_minus_C3k4_pts": {
+  "value": 19.42310701664596,
+  "ci": [
+   17.289825671404664,
+   21.575235903235114
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Qwen-32B.F3.test.C5_pct_of_C2k4_shift": {
+  "value": 1.6049577566156004,
+  "ci": [
+   0.11232227039739183,
+   3.3446180683797606
+  ],
+  "n": 400,
+  "source": "results/A/behaviour_Qwen2.5-32B-Instruct.jsonl (job 144915)"
+ },
+ "Llama-8B.probe.cred_all.L26.C2k8": {
+  "value": 1.0,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.probe.cred_all.L26.C2k8_flipped": {
+  "value": 1.0,
+  "ci": null,
+  "n": 2877,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.probe.cred_all.L26.C2k8_notflipped": {
+  "value": 1.0,
+  "ci": null,
+  "n": 323,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.probe.cred_all.L26.C2k4_flipped": {
+  "value": 1.0,
+  "ci": null,
+  "n": 2501,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.probe.cred_all.L26.C7k4_flipped": {
+  "value": 0.9999965348884754,
+  "ci": null,
+  "n": 2858,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.probe.cred_all.L26.C3k4_flipped": {
+  "value": 1.0,
+  "ci": null,
+  "n": 2964,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.probe.cred_all.L26.C0k1_control": {
+  "value": 0.49921308593749997,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.probe.cred_all.L26.C0rk4_control": {
+  "value": 0.996711328125,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.probe.cred_all.L26.F2_C2k4": {
+  "value": 0.975025390625,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.probe.cred_all.L26.F3_C2k4": {
+  "value": 0.98177578125,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.probe.cred_all.L26.F2_C2k4_flipped": {
+  "value": 0.9988476504375572,
+  "ci": null,
+  "n": 1554,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.probe.cred_all.L26.F3_C2k4_flipped": {
+  "value": 0.9998718815301764,
+  "ci": null,
+  "n": 1543,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.probe.cred_all.L26.F2_C0k1": {
+  "value": 0.4992208984375,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.probe.cred_all.L26.F3_C0k1": {
+  "value": 0.49959296875000003,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.probe.chosen_layer": {
+  "value": 26.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.H2_met": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.probe.C2_vs_C3.k4.max_over_layers": {
+  "value": 1.0,
+  "ci": null,
+  "n": 6400,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.probe.C2_vs_C7.k4.max_over_layers": {
+  "value": 1.0,
+  "ci": null,
+  "n": 6400,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Llama-8B.probe.C3_vs_C7.k4.max_over_layers": {
+  "value": 1.0,
+  "ci": null,
+  "n": 6400,
+  "source": "results/A/probes_Llama-3.1-8B-Instruct.json (job 144328+144906+144907)"
+ },
+ "Qwen-7B.probe.cred_all.L24.C2k8": {
+  "value": 1.0,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.probe.cred_all.L24.C2k8_flipped": {
+  "value": 1.0,
+  "ci": null,
+  "n": 1648,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.probe.cred_all.L24.C2k8_notflipped": {
+  "value": 1.0,
+  "ci": null,
+  "n": 1552,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.probe.cred_all.L24.C2k4_flipped": {
+  "value": 1.0,
+  "ci": null,
+  "n": 2011,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.probe.cred_all.L24.C7k4_flipped": {
+  "value": 1.0,
+  "ci": null,
+  "n": 2926,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.probe.cred_all.L24.C3k4_flipped": {
+  "value": 1.0,
+  "ci": null,
+  "n": 2442,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.probe.cred_all.L24.C0k1_control": {
+  "value": 0.49992968750000005,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.probe.cred_all.L24.C0rk4_control": {
+  "value": 1.0,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.probe.cred_all.L24.F2_C2k4": {
+  "value": 0.99999921875,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.probe.cred_all.L24.F3_C2k4": {
+  "value": 0.9996015625,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.probe.cred_all.L24.F2_C2k4_flipped": {
+  "value": 0.9999987577639752,
+  "ci": null,
+  "n": 1805,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.probe.cred_all.L24.F3_C2k4_flipped": {
+  "value": 0.999019436254381,
+  "ci": null,
+  "n": 1889,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.probe.cred_all.L24.F2_C0k1": {
+  "value": 0.49991386718749997,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.probe.cred_all.L24.F3_C0k1": {
+  "value": 0.50000078125,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.probe.chosen_layer": {
+  "value": 24.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.H2_met": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.probe.C2_vs_C3.k4.max_over_layers": {
+  "value": 1.0,
+  "ci": null,
+  "n": 6400,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.probe.C2_vs_C7.k4.max_over_layers": {
+  "value": 1.0,
+  "ci": null,
+  "n": 6400,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Qwen-7B.probe.C3_vs_C7.k4.max_over_layers": {
+  "value": 1.0,
+  "ci": null,
+  "n": 6400,
+  "source": "results/A/probes_Qwen2.5-7B-Instruct.json (job 144909+144910)"
+ },
+ "Gemma-12B.probe.cred_all.L26.C2k8": {
+  "value": 1.0,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.probe.cred_all.L26.C2k8_flipped": {
+  "value": 1.0,
+  "ci": null,
+  "n": 2450,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.probe.cred_all.L26.C2k8_notflipped": {
+  "value": 1.0,
+  "ci": null,
+  "n": 750,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.probe.cred_all.L26.C2k4_flipped": {
+  "value": 1.0,
+  "ci": null,
+  "n": 2321,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.probe.cred_all.L26.C7k4_flipped": {
+  "value": 1.0,
+  "ci": null,
+  "n": 2664,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.probe.cred_all.L26.C3k4_flipped": {
+  "value": 1.0,
+  "ci": null,
+  "n": 2670,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.probe.cred_all.L26.C0k1_control": {
+  "value": 0.500446875,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.probe.cred_all.L26.C0rk4_control": {
+  "value": 0.998340625,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.probe.cred_all.L26.F2_C2k4": {
+  "value": 0.9999671875,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.probe.cred_all.L26.F3_C2k4": {
+  "value": 0.9999890625,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.probe.cred_all.L26.F2_C2k4_flipped": {
+  "value": 0.9999834283441601,
+  "ci": null,
+  "n": 2576,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.probe.cred_all.L26.F3_C2k4_flipped": {
+  "value": 0.9999850577104428,
+  "ci": null,
+  "n": 2722,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.probe.cred_all.L26.F2_C0k1": {
+  "value": 0.5001294921875,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.probe.cred_all.L26.F3_C0k1": {
+  "value": 0.49988007812499996,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.probe.chosen_layer": {
+  "value": 26.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.H2_met": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.probe.C2_vs_C3.k4.max_over_layers": {
+  "value": 1.0,
+  "ci": null,
+  "n": 6400,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.probe.C2_vs_C7.k4.max_over_layers": {
+  "value": 1.0,
+  "ci": null,
+  "n": 6400,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Gemma-12B.probe.C3_vs_C7.k4.max_over_layers": {
+  "value": 1.0,
+  "ci": null,
+  "n": 6400,
+  "source": "results/A/probes_gemma-3-12b-it.json (job 144911+144912+144913)"
+ },
+ "Llama-8B.controls.H3.gov_minus_newspaper": {
+  "value": 2.2096427685627713,
+  "ci": [
+   2.0630197528238057,
+   2.3610683045239713
+  ],
+  "n": 100,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.H3.newspaper_minus_person": {
+  "value": 0.03639673897996545,
+  "ci": [
+   -0.09632929080780013,
+   0.17871620916508255
+  ],
+  "n": 100,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.H3.person_minus_social": {
+  "value": 2.9427384979041746,
+  "ci": [
+   2.8255223606999214,
+   3.063307203213656
+  ],
+  "n": 100,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.graded.L26.neutral_position": {
+  "value": 0.353175086592827,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.graded.L26.spearman_nonsocial": {
+  "value": 0.6747721798050282,
+  "ci": [
+   0.6431971885969098,
+   0.7058058998447779
+  ],
+  "n": 100,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.graded.L26.mean_gov": {
+  "value": 5.144907637106953,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.graded.L26.mean_newspaper": {
+  "value": 2.935264868544182,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.graded.L26.mean_person": {
+  "value": 2.8988681295642165,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.graded.L26.mean_social": {
+  "value": -0.043870368339958075,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.graded.L26.mean_neutral": {
+  "value": 1.7886767530447105,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.graded.behaviour_pX.gov": {
+  "value": 0.5653512966337622,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.graded.behaviour_pX.newspaper": {
+  "value": 0.5430194223491072,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.graded.behaviour_pX.person": {
+  "value": 0.5031914208276612,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.graded.behaviour_pX.social": {
+  "value": 0.4977887636128207,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.graded.behaviour_pX.neutral": {
+  "value": 0.44056738633654274,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.lexical.meanpool.C2k8": {
+  "value": 0.5,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.neutral.binding_auc_max": {
+  "value": 0.9194703125000001,
+  "ci": null,
+  "n": 1600,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.neutral.L26.binding_auc": {
+  "value": 0.9118078125,
+  "ci": null,
+  "n": 1600,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.controls.neutral.L26.abs_ratio": {
+  "value": 0.4524310529232025,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Llama-8B.H3_met": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Llama-3.1-8B-Instruct.json (job 144907)"
+ },
+ "Qwen-7B.controls.H3.gov_minus_newspaper": {
+  "value": 2.1518841303908265,
+  "ci": [
+   1.9639154687241536,
+   2.335407051272341
+  ],
+  "n": 100,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.H3.newspaper_minus_person": {
+  "value": 0.642023497170303,
+  "ci": [
+   0.44902807422552726,
+   0.8245188746882485
+  ],
+  "n": 100,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.H3.person_minus_social": {
+  "value": 3.3868641199875857,
+  "ci": [
+   3.2204507492281262,
+   3.5589069320411655
+  ],
+  "n": 100,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.graded.L24.neutral_position": {
+  "value": 0.5092919015672243,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.graded.L24.spearman_nonsocial": {
+  "value": 0.725259884469775,
+  "ci": [
+   0.6880781776970339,
+   0.7634293668993386
+  ],
+  "n": 100,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.graded.L24.mean_gov": {
+  "value": 6.242523872116581,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.graded.L24.mean_newspaper": {
+  "value": 4.090639741725754,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.graded.L24.mean_person": {
+  "value": 3.448616244555451,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.graded.L24.mean_social": {
+  "value": 0.06175212456786539,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.graded.L24.mean_neutral": {
+  "value": 3.2095691210299266,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.graded.behaviour_pX.gov": {
+  "value": 0.7796062541219263,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.graded.behaviour_pX.newspaper": {
+  "value": 0.694203788855022,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.graded.behaviour_pX.person": {
+  "value": 0.5548054203057993,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.graded.behaviour_pX.social": {
+  "value": 0.5080866763843561,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.graded.behaviour_pX.neutral": {
+  "value": 0.6052090927990602,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.lexical.meanpool.C2k8": {
+  "value": 0.5,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.neutral.binding_auc_max": {
+  "value": 0.9027296875,
+  "ci": null,
+  "n": 1600,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.neutral.L24.binding_auc": {
+  "value": 0.8483390625,
+  "ci": null,
+  "n": 1600,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.controls.neutral.L24.abs_ratio": {
+  "value": 0.43317633867263794,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Qwen-7B.H3_met": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_Qwen2.5-7B-Instruct.json (job 144910)"
+ },
+ "Gemma-12B.controls.H3.gov_minus_newspaper": {
+  "value": 1.9844784954324133,
+  "ci": [
+   1.8208442133344942,
+   2.142571925241864
+  ],
+  "n": 100,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.H3.newspaper_minus_person": {
+  "value": 1.1872885033447529,
+  "ci": [
+   1.069346493291858,
+   1.2992566576544924
+  ],
+  "n": 100,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.H3.person_minus_social": {
+  "value": 2.9727837464178446,
+  "ci": [
+   2.8281085680952818,
+   3.123483688653941
+  ],
+  "n": 100,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.graded.L26.neutral_position": {
+  "value": 0.5254120891500847,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.graded.L26.spearman_nonsocial": {
+  "value": 0.865503508538516,
+  "ci": [
+   0.8394533913502104,
+   0.8912720160706865
+  ],
+  "n": 100,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.graded.L26.mean_gov": {
+  "value": 6.192635748386383,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.graded.L26.mean_newspaper": {
+  "value": 4.20815725295397,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.graded.L26.mean_person": {
+  "value": 3.020868749609217,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.graded.L26.mean_social": {
+  "value": 0.04808500319137238,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.graded.L26.mean_neutral": {
+  "value": 3.276506247112993,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.graded.behaviour_pX.gov": {
+  "value": 0.5712737707910139,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.graded.behaviour_pX.newspaper": {
+  "value": 0.5527184193576454,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.graded.behaviour_pX.person": {
+  "value": 0.4830298837928285,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.graded.behaviour_pX.social": {
+  "value": 0.49905615406469794,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.graded.behaviour_pX.neutral": {
+  "value": 0.47650677802251723,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.lexical.meanpool.C2k8": {
+  "value": 0.5,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.neutral.binding_auc_max": {
+  "value": 0.9722421875,
+  "ci": null,
+  "n": 1600,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.neutral.L26.binding_auc": {
+  "value": 0.9291,
+  "ci": null,
+  "n": 1600,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.controls.neutral.L26.abs_ratio": {
+  "value": 0.44305500388145447,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Gemma-12B.H3_met": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/extras_gemma-3-12b-it.json (job 144913)"
+ },
+ "Llama-8B.H4.robust.S": {
+  "value": 6.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_Llama-3.1-8B-Instruct.json (job 153318)"
+ },
+ "Llama-8B.H4.robust.mean_flipped_auc": {
+  "value": 0.5172481845295986,
+  "ci": null,
+  "n": 6,
+  "source": "results/A/probe_c1only_Llama-3.1-8B-Instruct.json (job 153318)"
+ },
+ "Llama-8B.H4.robust.mean_C0r_auc": {
+  "value": 0.24826621093749998,
+  "ci": null,
+  "n": 6,
+  "source": "results/A/probe_c1only_Llama-3.1-8B-Instruct.json (job 153318)"
+ },
+ "Llama-8B.H4.final.choice_rate_social_C2k8": {
+  "value": 0.8990625,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probe_c1only_Llama-3.1-8B-Instruct.json (job 153318)"
+ },
+ "Llama-8B.H5.final_flipped_auc": {
+  "value": 0.7901001750632173,
+  "ci": [
+   0.7663840315450423,
+   0.8147622923470426
+  ],
+  "n": 2877,
+  "source": "results/A/probe_c1only_Llama-3.1-8B-Instruct.json (job 153318)"
+ },
+ "Llama-8B.H5.choice_rate": {
+  "value": 0.8990625,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probe_c1only_Llama-3.1-8B-Instruct.json (job 153318)"
+ },
+ "Llama-8B.H5.met": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_Llama-3.1-8B-Instruct.json (job 153318)"
+ },
+ "Llama-8B.H5.L28.flipped_auc": {
+  "value": 0.4900257731958763,
+  "ci": [
+   0.453975760272539,
+   0.5284195053346145
+  ],
+  "n": 2877,
+  "source": "results/A/probe_c1only_Llama-3.1-8B-Instruct.json (job 153318)"
+ },
+ "Llama-8B.H5.L30.flipped_auc": {
+  "value": 0.6259949426181677,
+  "ci": [
+   0.5926256374440295,
+   0.6570826931295162
+  ],
+  "n": 2877,
+  "source": "results/A/probe_c1only_Llama-3.1-8B-Instruct.json (job 153318)"
+ },
+ "Llama-8B.H5.L32.flipped_auc": {
+  "value": 0.7901001750632173,
+  "ci": [
+   0.7663840315450423,
+   0.8147622923470426
+  ],
+  "n": 2877,
+  "source": "results/A/probe_c1only_Llama-3.1-8B-Instruct.json (job 153318)"
+ },
+ "Llama-8B.H4.Lstar": {
+  "value": 14.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_Llama-3.1-8B-Instruct.json (job 153318)"
+ },
+ "Llama-8B.H4.a_flipped_auc_Lstar": {
+  "value": 0.7988997763081112,
+  "ci": [
+   0.7880848260259539,
+   0.8102480218752678
+  ],
+  "n": 2877,
+  "source": "results/A/probe_c1only_Llama-3.1-8B-Instruct.json (job 153318)"
+ },
+ "Llama-8B.H4.b_C0r_auc_Lstar": {
+  "value": 0.5188503906249999,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probe_c1only_Llama-3.1-8B-Instruct.json (job 153318)"
+ },
+ "Llama-8B.H4.c_flipped_auc_final": {
+  "value": 0.7901001750632173,
+  "ci": [
+   0.7658298981357874,
+   0.8145025909012732
+  ],
+  "n": null,
+  "source": "results/A/probe_c1only_Llama-3.1-8B-Instruct.json (job 153318)"
+ },
+ "Llama-8B.H4.met": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_Llama-3.1-8B-Instruct.json (job 153318)"
+ },
+ "Llama-8B.H4.C6k4_auc_Lstar": {
+  "value": 0.8010878906249999,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_Llama-3.1-8B-Instruct.json (job 153318)"
+ },
+ "Llama-8B.H4.C6k8_auc_Lstar": {
+  "value": 0.731365625,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_Llama-3.1-8B-Instruct.json (job 153318)"
+ },
+ "Qwen-7B.H4.robust.S": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_Qwen2.5-7B-Instruct.json (job 153318)"
+ },
+ "Qwen-7B.H4.robust.mean_flipped_auc": {
+  "value": 0.2272269353128314,
+  "ci": null,
+  "n": 1,
+  "source": "results/A/probe_c1only_Qwen2.5-7B-Instruct.json (job 153318)"
+ },
+ "Qwen-7B.H4.robust.mean_C0r_auc": {
+  "value": 0.32292929687499994,
+  "ci": null,
+  "n": 1,
+  "source": "results/A/probe_c1only_Qwen2.5-7B-Instruct.json (job 153318)"
+ },
+ "Qwen-7B.H4.final.choice_rate_social_C2k8": {
+  "value": 0.515,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probe_c1only_Qwen2.5-7B-Instruct.json (job 153318)"
+ },
+ "Qwen-7B.H5.final_flipped_auc": {
+  "value": 0.16743401673147168,
+  "ci": [
+   0.14336387698268643,
+   0.191042975229459
+  ],
+  "n": 1648,
+  "source": "results/A/probe_c1only_Qwen2.5-7B-Instruct.json (job 153318)"
+ },
+ "Qwen-7B.H5.choice_rate": {
+  "value": 0.515,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probe_c1only_Qwen2.5-7B-Instruct.json (job 153318)"
+ },
+ "Qwen-7B.H5.met": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_Qwen2.5-7B-Instruct.json (job 153318)"
+ },
+ "Qwen-7B.H5.L24.flipped_auc": {
+  "value": 0.43950895487215746,
+  "ci": [
+   0.41029286634206846,
+   0.4710867793715244
+  ],
+  "n": 1648,
+  "source": "results/A/probe_c1only_Qwen2.5-7B-Instruct.json (job 153318)"
+ },
+ "Qwen-7B.H5.L26.flipped_auc": {
+  "value": 0.21625132555673382,
+  "ci": [
+   0.18974433036577584,
+   0.2426213396320123
+  ],
+  "n": 1648,
+  "source": "results/A/probe_c1only_Qwen2.5-7B-Instruct.json (job 153318)"
+ },
+ "Qwen-7B.H5.L28.flipped_auc": {
+  "value": 0.16743401673147168,
+  "ci": [
+   0.14336387698268643,
+   0.191042975229459
+  ],
+  "n": 1648,
+  "source": "results/A/probe_c1only_Qwen2.5-7B-Instruct.json (job 153318)"
+ },
+ "Qwen-7B.H4.Lstar": {
+  "value": 18.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_Qwen2.5-7B-Instruct.json (job 153318)"
+ },
+ "Qwen-7B.H4.a_flipped_auc_Lstar": {
+  "value": 0.2272269353128314,
+  "ci": [
+   0.20300793266639808,
+   0.25324902485352735
+  ],
+  "n": 1648,
+  "source": "results/A/probe_c1only_Qwen2.5-7B-Instruct.json (job 153318)"
+ },
+ "Qwen-7B.H4.b_C0r_auc_Lstar": {
+  "value": 0.32292929687499994,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probe_c1only_Qwen2.5-7B-Instruct.json (job 153318)"
+ },
+ "Qwen-7B.H4.c_flipped_auc_final": {
+  "value": 0.16743401673147168,
+  "ci": [
+   0.14480109689477333,
+   0.19337631008855435
+  ],
+  "n": null,
+  "source": "results/A/probe_c1only_Qwen2.5-7B-Instruct.json (job 153318)"
+ },
+ "Qwen-7B.H4.met": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_Qwen2.5-7B-Instruct.json (job 153318)"
+ },
+ "Qwen-7B.H4.C6k4_auc_Lstar": {
+  "value": 0.945613671875,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_Qwen2.5-7B-Instruct.json (job 153318)"
+ },
+ "Qwen-7B.H4.C6k8_auc_Lstar": {
+  "value": 0.9730839843750001,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_Qwen2.5-7B-Instruct.json (job 153318)"
+ },
+ "Gemma-12B.H4.robust.S": {
+  "value": 11.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_gemma-3-12b-it.json (job 160278)"
+ },
+ "Gemma-12B.H4.robust.mean_flipped_auc": {
+  "value": 0.35178578620577783,
+  "ci": null,
+  "n": 11,
+  "source": "results/A/probe_c1only_gemma-3-12b-it.json (job 160278)"
+ },
+ "Gemma-12B.H4.robust.mean_C0r_auc": {
+  "value": 0.06347972301136363,
+  "ci": null,
+  "n": 11,
+  "source": "results/A/probe_c1only_gemma-3-12b-it.json (job 160278)"
+ },
+ "Gemma-12B.H4.final.choice_rate_social_C2k8": {
+  "value": 0.765625,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probe_c1only_gemma-3-12b-it.json (job 160278)"
+ },
+ "Gemma-12B.H5.final_flipped_auc": {
+  "value": 0.40328953406939994,
+  "ci": [
+   0.38207327124295243,
+   0.42372266290335897
+  ],
+  "n": 2450,
+  "source": "results/A/probe_c1only_gemma-3-12b-it.json (job 160278)"
+ },
+ "Gemma-12B.H5.choice_rate": {
+  "value": 0.765625,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probe_c1only_gemma-3-12b-it.json (job 160278)"
+ },
+ "Gemma-12B.H5.met": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_gemma-3-12b-it.json (job 160278)"
+ },
+ "Gemma-12B.H5.L44.flipped_auc": {
+  "value": 0.31538577729660655,
+  "ci": [
+   0.2945441151229593,
+   0.33584024011630204
+  ],
+  "n": 2450,
+  "source": "results/A/probe_c1only_gemma-3-12b-it.json (job 160278)"
+ },
+ "Gemma-12B.H5.L46.flipped_auc": {
+  "value": 0.3827975204909295,
+  "ci": [
+   0.36026491377034037,
+   0.4074157848833587
+  ],
+  "n": 2450,
+  "source": "results/A/probe_c1only_gemma-3-12b-it.json (job 160278)"
+ },
+ "Gemma-12B.H5.L48.flipped_auc": {
+  "value": 0.40328953406939994,
+  "ci": [
+   0.38207327124295243,
+   0.42372266290335897
+  ],
+  "n": 2450,
+  "source": "results/A/probe_c1only_gemma-3-12b-it.json (job 160278)"
+ },
+ "Gemma-12B.H4.Lstar": {
+  "value": 30.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_gemma-3-12b-it.json (job 160278)"
+ },
+ "Gemma-12B.H4.a_flipped_auc_Lstar": {
+  "value": 0.1334683856811748,
+  "ci": [
+   0.1179616336982675,
+   0.15060387552554905
+  ],
+  "n": 2450,
+  "source": "results/A/probe_c1only_gemma-3-12b-it.json (job 160278)"
+ },
+ "Gemma-12B.H4.b_C0r_auc_Lstar": {
+  "value": 0.002012499999999994,
+  "ci": null,
+  "n": 3200,
+  "source": "results/A/probe_c1only_gemma-3-12b-it.json (job 160278)"
+ },
+ "Gemma-12B.H4.c_flipped_auc_final": {
+  "value": 0.40328953406939994,
+  "ci": [
+   0.38237306138821975,
+   0.42601410662761824
+  ],
+  "n": null,
+  "source": "results/A/probe_c1only_gemma-3-12b-it.json (job 160278)"
+ },
+ "Gemma-12B.H4.met": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_gemma-3-12b-it.json (job 160278)"
+ },
+ "Gemma-12B.H4.C6k4_auc_Lstar": {
+  "value": 0.9996347656250001,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_gemma-3-12b-it.json (job 160278)"
+ },
+ "Gemma-12B.H4.C6k8_auc_Lstar": {
+  "value": 0.9998035156249999,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1only_gemma-3-12b-it.json (job 160278)"
+ },
+ "Llama-8B.c1bal.n_cell": {
+  "value": 168.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1bal_Llama-3.1-8B-Instruct.json (job 153319)"
+ },
+ "Llama-8B.c1bal.Lstar": {
+  "value": 14.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1bal_Llama-3.1-8B-Instruct.json (job 153319)"
+ },
+ "Llama-8B.c1bal.H4a": {
+  "value": 0.8044203462361409,
+  "ci": [
+   0.7937653952451883,
+   0.8153346361107028
+  ],
+  "n": null,
+  "source": "results/A/probe_c1bal_Llama-3.1-8B-Instruct.json (job 153319)"
+ },
+ "Llama-8B.c1bal.H4b": {
+  "value": 0.5841638671875,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1bal_Llama-3.1-8B-Instruct.json (job 153319)"
+ },
+ "Llama-8B.c1bal.H4ab_met": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1bal_Llama-3.1-8B-Instruct.json (job 153319)"
+ },
+ "Llama-8B.c1bal.H5": {
+  "value": 0.783420783894184,
+  "ci": [
+   0.7596438191276251,
+   0.809546436964359
+  ],
+  "n": 2877,
+  "source": "results/A/probe_c1bal_Llama-3.1-8B-Instruct.json (job 153319)"
+ },
+ "Llama-8B.c1bal.H5_met": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1bal_Llama-3.1-8B-Instruct.json (job 153319)"
+ },
+ "Qwen-7B.c1bal.n_cell": {
+  "value": 98.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1bal_Qwen2.5-7B-Instruct.json (job 153319)"
+ },
+ "Qwen-7B.c1bal.Lstar": {
+  "value": 22.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1bal_Qwen2.5-7B-Instruct.json (job 153319)"
+ },
+ "Qwen-7B.c1bal.H4a": {
+  "value": 0.5794877459644162,
+  "ci": [
+   0.5414490094197615,
+   0.6146796940963238
+  ],
+  "n": null,
+  "source": "results/A/probe_c1bal_Qwen2.5-7B-Instruct.json (job 153319)"
+ },
+ "Qwen-7B.c1bal.H4b": {
+  "value": 0.29085078124999997,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1bal_Qwen2.5-7B-Instruct.json (job 153319)"
+ },
+ "Qwen-7B.c1bal.H4ab_met": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1bal_Qwen2.5-7B-Instruct.json (job 153319)"
+ },
+ "Qwen-7B.c1bal.H5": {
+  "value": 0.17136355602686462,
+  "ci": [
+   0.14333921303072059,
+   0.20078607233208676
+  ],
+  "n": 1648,
+  "source": "results/A/probe_c1bal_Qwen2.5-7B-Instruct.json (job 153319)"
+ },
+ "Qwen-7B.c1bal.H5_met": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1bal_Qwen2.5-7B-Instruct.json (job 153319)"
+ },
+ "Gemma-12B.c1bal.n_cell": {
+  "value": 200.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1bal_gemma-3-12b-it.json (job 160279)"
+ },
+ "Gemma-12B.c1bal.Lstar": {
+  "value": 36.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1bal_gemma-3-12b-it.json (job 160279)"
+ },
+ "Gemma-12B.c1bal.H4a": {
+  "value": 0.2195371554159581,
+  "ci": [
+   0.20348948577257533,
+   0.23612378311929355
+  ],
+  "n": null,
+  "source": "results/A/probe_c1bal_gemma-3-12b-it.json (job 160279)"
+ },
+ "Gemma-12B.c1bal.H4b": {
+  "value": 0.010699609374999999,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1bal_gemma-3-12b-it.json (job 160279)"
+ },
+ "Gemma-12B.c1bal.H4ab_met": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1bal_gemma-3-12b-it.json (job 160279)"
+ },
+ "Gemma-12B.c1bal.H5": {
+  "value": 0.3571792512761435,
+  "ci": [
+   0.33400000440168703,
+   0.3811567254815784
+  ],
+  "n": 2450,
+  "source": "results/A/probe_c1bal_gemma-3-12b-it.json (job 160279)"
+ },
+ "Gemma-12B.c1bal.H5_met": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/probe_c1bal_gemma-3-12b-it.json (job 160279)"
+ },
+ "Llama-8B.F1.patch.top1.recovery_pct": {
+  "value": 35.33438651922064,
+  "ci": [
+   32.61794696327304,
+   38.254574916069934
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_Llama-3.1-8B-Instruct.json (job 144908)"
+ },
+ "Llama-8B.F1.patch.top5.recovery_pct": {
+  "value": 84.50061435843426,
+  "ci": [
+   81.5537465862133,
+   87.10254752897313
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_Llama-3.1-8B-Instruct.json (job 144908)"
+ },
+ "Llama-8B.F1.patch.top10.recovery_pct": {
+  "value": 91.92557486396349,
+  "ci": [
+   90.44242891695677,
+   93.43981201780188
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_Llama-3.1-8B-Instruct.json (job 144908)"
+ },
+ "Llama-8B.F1.patch.top20.recovery_pct": {
+  "value": 95.98034053010358,
+  "ci": [
+   94.72802500208844,
+   97.14734363223067
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_Llama-3.1-8B-Instruct.json (job 144908)"
+ },
+ "Llama-8B.F1.patch.mean_top1.recovery_pct": {
+  "value": 32.139722661049674,
+  "ci": [
+   26.68031661873664,
+   38.020125392881226
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_Llama-3.1-8B-Instruct.json (job 144908)"
+ },
+ "Llama-8B.F1.patch.mean_top5.recovery_pct": {
+  "value": 72.7575917149377,
+  "ci": [
+   64.38648836466328,
+   81.18015524578131
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_Llama-3.1-8B-Instruct.json (job 144908)"
+ },
+ "Llama-8B.F1.patch.mean_top10.recovery_pct": {
+  "value": 78.53256099701598,
+  "ci": [
+   68.82484237994433,
+   87.88612687425142
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_Llama-3.1-8B-Instruct.json (job 144908)"
+ },
+ "Llama-8B.F1.patch.mean_top20.recovery_pct": {
+  "value": 83.16657890117605,
+  "ci": [
+   73.62466757016873,
+   92.8447152511508
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_Llama-3.1-8B-Instruct.json (job 144908)"
+ },
+ "Llama-8B.F1.patch.sun_decision_head.recovery_pct": {
+  "value": 43.68966122520625,
+  "ci": [
+   40.37924025229493,
+   46.98753830846742
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_Llama-3.1-8B-Instruct.json (job 144908)"
+ },
+ "Llama-8B.F1.patch.rand10.recovery_mean": {
+  "value": 8.31314727049324,
+  "ci": null,
+  "n": 20,
+  "source": "results/A/patch_F1_Llama-3.1-8B-Instruct.json (job 144908)"
+ },
+ "Llama-8B.F1.patch.rand10.recovery_max": {
+  "value": 42.44339125855714,
+  "ci": null,
+  "n": 20,
+  "source": "results/A/patch_F1_Llama-3.1-8B-Instruct.json (job 144908)"
+ },
+ "Llama-8B.F1.patch.rand10.recovery_p95": {
+  "value": 30.90398455327366,
+  "ci": null,
+  "n": 20,
+  "source": "results/A/patch_F1_Llama-3.1-8B-Instruct.json (job 144908)"
+ },
+ "Llama-8B.F1.patch.sun_head_atp_rank": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F1_Llama-3.1-8B-Instruct.json (job 144908)"
+ },
+ "Llama-8B.F1.patch.rank.sel_vs_test.spearman": {
+  "value": 0.873710347972248,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F1_Llama-3.1-8B-Instruct.json (job 144908)"
+ },
+ "Llama-8B.F1.patch.rank.sel_vs_test.jaccard10": {
+  "value": 0.8181818181818182,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F1_Llama-3.1-8B-Instruct.json (job 144908)"
+ },
+ "Llama-8B.F1.patch.rank.splithalf.spearman": {
+  "value": 0.8268672774658464,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F1_Llama-3.1-8B-Instruct.json (job 144908)"
+ },
+ "Llama-8B.F1.patch.rank.splithalf.jaccard10": {
+  "value": 0.8181818181818182,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F1_Llama-3.1-8B-Instruct.json (job 144908)"
+ },
+ "Qwen-7B.F1.patch.top1.recovery_pct": {
+  "value": 40.83533653846153,
+  "ci": [
+   37.716734986037984,
+   44.04037625225226
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_Qwen2.5-7B-Instruct.json (job 159247)"
+ },
+ "Qwen-7B.F1.patch.top5.recovery_pct": {
+  "value": 82.68629807692308,
+  "ci": [
+   79.00165455697534,
+   86.59940127480365
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_Qwen2.5-7B-Instruct.json (job 159247)"
+ },
+ "Qwen-7B.F1.patch.top10.recovery_pct": {
+  "value": 95.44471153846155,
+  "ci": [
+   92.3363462434848,
+   98.97718440021602
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_Qwen2.5-7B-Instruct.json (job 159247)"
+ },
+ "Qwen-7B.F1.patch.top20.recovery_pct": {
+  "value": 96.72475961538461,
+  "ci": [
+   94.49565006780908,
+   99.1079577077991
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_Qwen2.5-7B-Instruct.json (job 159247)"
+ },
+ "Qwen-7B.F1.patch.mean_top1.recovery_pct": {
+  "value": 30.030048076923077,
+  "ci": [
+   26.303308157633907,
+   34.01149300342816
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_Qwen2.5-7B-Instruct.json (job 159247)"
+ },
+ "Qwen-7B.F1.patch.mean_top5.recovery_pct": {
+  "value": 45.00000000000001,
+  "ci": [
+   39.75625709321361,
+   50.55002773810201
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_Qwen2.5-7B-Instruct.json (job 159247)"
+ },
+ "Qwen-7B.F1.patch.mean_top10.recovery_pct": {
+  "value": 56.75480769230769,
+  "ci": [
+   50.35809957741098,
+   64.1129159805553
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_Qwen2.5-7B-Instruct.json (job 159247)"
+ },
+ "Qwen-7B.F1.patch.mean_top20.recovery_pct": {
+  "value": 50.55288461538462,
+  "ci": [
+   41.5532189263941,
+   58.41632011888263
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_Qwen2.5-7B-Instruct.json (job 159247)"
+ },
+ "Qwen-7B.F1.patch.rand10.recovery_mean": {
+  "value": 1.3927283653846168,
+  "ci": null,
+  "n": 20,
+  "source": "results/A/patch_F1_Qwen2.5-7B-Instruct.json (job 159247)"
+ },
+ "Qwen-7B.F1.patch.rand10.recovery_max": {
+  "value": 20.3125,
+  "ci": null,
+  "n": 20,
+  "source": "results/A/patch_F1_Qwen2.5-7B-Instruct.json (job 159247)"
+ },
+ "Qwen-7B.F1.patch.rand10.recovery_p95": {
+  "value": 19.387620192307693,
+  "ci": null,
+  "n": 20,
+  "source": "results/A/patch_F1_Qwen2.5-7B-Instruct.json (job 159247)"
+ },
+ "Qwen-7B.F1.patch.rank.sel_vs_test.spearman": {
+  "value": 0.8301276524959497,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F1_Qwen2.5-7B-Instruct.json (job 159247)"
+ },
+ "Qwen-7B.F1.patch.rank.sel_vs_test.jaccard10": {
+  "value": 0.6666666666666666,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F1_Qwen2.5-7B-Instruct.json (job 159247)"
+ },
+ "Qwen-7B.F1.patch.rank.splithalf.spearman": {
+  "value": 0.79119384044708,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F1_Qwen2.5-7B-Instruct.json (job 159247)"
+ },
+ "Qwen-7B.F1.patch.rank.splithalf.jaccard10": {
+  "value": 0.8181818181818182,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F1_Qwen2.5-7B-Instruct.json (job 159247)"
+ },
+ "Qwen-7B.F3.patch.top1.recovery_pct": {
+  "value": 35.66529492455419,
+  "ci": [
+   32.18547017697935,
+   39.705343810642475
+  ],
+  "n": 160,
+  "source": "results/A/patch_F3_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3.patch.top5.recovery_pct": {
+  "value": 61.15683584819388,
+  "ci": [
+   57.57394524023059,
+   64.81635423177607
+  ],
+  "n": 160,
+  "source": "results/A/patch_F3_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3.patch.top10.recovery_pct": {
+  "value": 76.58321902149063,
+  "ci": [
+   73.10879270387153,
+   80.07139533723186
+  ],
+  "n": 160,
+  "source": "results/A/patch_F3_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3.patch.top20.recovery_pct": {
+  "value": 90.02629172382258,
+  "ci": [
+   87.95113881851296,
+   92.23609900777372
+  ],
+  "n": 160,
+  "source": "results/A/patch_F3_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3.patch.mean_top1.recovery_pct": {
+  "value": 18.7814357567444,
+  "ci": [
+   15.648374232238414,
+   21.967371106793184
+  ],
+  "n": 160,
+  "source": "results/A/patch_F3_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3.patch.mean_top5.recovery_pct": {
+  "value": 28.692272519433015,
+  "ci": [
+   24.48515238020795,
+   32.89768831516907
+  ],
+  "n": 160,
+  "source": "results/A/patch_F3_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3.patch.mean_top10.recovery_pct": {
+  "value": 32.39597622313673,
+  "ci": [
+   26.454756580168684,
+   38.513153341136956
+  ],
+  "n": 160,
+  "source": "results/A/patch_F3_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3.patch.mean_top20.recovery_pct": {
+  "value": 37.0313214449017,
+  "ci": [
+   28.803053844546223,
+   44.40434798156907
+  ],
+  "n": 160,
+  "source": "results/A/patch_F3_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3.patch.rand10.recovery_mean": {
+  "value": -0.8930612711476904,
+  "ci": null,
+  "n": 20,
+  "source": "results/A/patch_F3_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3.patch.rand10.recovery_max": {
+  "value": 15.76931870141747,
+  "ci": null,
+  "n": 20,
+  "source": "results/A/patch_F3_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3.patch.rand10.recovery_p95": {
+  "value": 14.19467306812986,
+  "ci": null,
+  "n": 20,
+  "source": "results/A/patch_F3_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3.patch.rank.sel_vs_test.spearman": {
+  "value": 0.6971971334840401,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F3_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3.patch.rank.sel_vs_test.jaccard10": {
+  "value": 0.3333333333333333,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F3_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3.patch.rank.splithalf.spearman": {
+  "value": 0.7381777881369987,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F3_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3.patch.rank.splithalf.jaccard10": {
+  "value": 0.5384615384615384,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F3_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3-C7k4.patch.top1.recovery_pct": {
+  "value": 18.697936691016274,
+  "ci": [
+   16.92330042783952,
+   20.478662459066058
+  ],
+  "n": 160,
+  "source": "results/A/patch_F3_C7k4_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3-C7k4.patch.top5.recovery_pct": {
+  "value": 52.42534922465718,
+  "ci": [
+   50.15584614906671,
+   54.67800742029257
+  ],
+  "n": 160,
+  "source": "results/A/patch_F3_C7k4_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3-C7k4.patch.top10.recovery_pct": {
+  "value": 78.35447904652058,
+  "ci": [
+   76.31841537222864,
+   80.18296784707914
+  ],
+  "n": 160,
+  "source": "results/A/patch_F3_C7k4_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3-C7k4.patch.top20.recovery_pct": {
+  "value": 88.05907984108676,
+  "ci": [
+   86.46460327999192,
+   89.44994636120852
+  ],
+  "n": 160,
+  "source": "results/A/patch_F3_C7k4_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3-C7k4.patch.mean_top1.recovery_pct": {
+  "value": 10.579264385492754,
+  "ci": [
+   9.306856897261566,
+   11.881872706266643
+  ],
+  "n": 160,
+  "source": "results/A/patch_F3_C7k4_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3-C7k4.patch.mean_top5.recovery_pct": {
+  "value": 27.585544021530183,
+  "ci": [
+   25.59239381830442,
+   29.643743746735836
+  ],
+  "n": 160,
+  "source": "results/A/patch_F3_C7k4_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3-C7k4.patch.mean_top10.recovery_pct": {
+  "value": 49.78854286812764,
+  "ci": [
+   44.87757929420924,
+   54.55248762086776
+  ],
+  "n": 160,
+  "source": "results/A/patch_F3_C7k4_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3-C7k4.patch.mean_top20.recovery_pct": {
+  "value": 57.39459182365757,
+  "ci": [
+   52.970869068669806,
+   61.84469435321148
+  ],
+  "n": 160,
+  "source": "results/A/patch_F3_C7k4_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3-C7k4.patch.rand10.recovery_mean": {
+  "value": 3.0706138664616143,
+  "ci": null,
+  "n": 20,
+  "source": "results/A/patch_F3_C7k4_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3-C7k4.patch.rand10.recovery_max": {
+  "value": 19.12725874663591,
+  "ci": null,
+  "n": 20,
+  "source": "results/A/patch_F3_C7k4_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3-C7k4.patch.rand10.recovery_p95": {
+  "value": 17.66323849801358,
+  "ci": null,
+  "n": 20,
+  "source": "results/A/patch_F3_C7k4_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3-C7k4.patch.rank.sel_vs_test.spearman": {
+  "value": 0.8575126016436299,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F3_C7k4_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3-C7k4.patch.rank.sel_vs_test.jaccard10": {
+  "value": 0.6666666666666666,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F3_C7k4_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3-C7k4.patch.rank.splithalf.spearman": {
+  "value": 0.8088938892051439,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F3_C7k4_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Qwen-7B.F3-C7k4.patch.rank.splithalf.jaccard10": {
+  "value": 0.5384615384615384,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F3_C7k4_Qwen2.5-7B-Instruct.json (job 159248)"
+ },
+ "Gemma-12B.F1.patch.top1.recovery_pct": {
+  "value": 56.34971655660102,
+  "ci": [
+   51.00599418560984,
+   61.72514430511701
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_gemma-3-12b-it.json (job 159248)"
+ },
+ "Gemma-12B.F1.patch.top5.recovery_pct": {
+  "value": 84.40184676523873,
+  "ci": [
+   81.82069158732723,
+   86.81438721864076
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_gemma-3-12b-it.json (job 159248)"
+ },
+ "Gemma-12B.F1.patch.top10.recovery_pct": {
+  "value": 93.12722809888376,
+  "ci": [
+   91.22715034100956,
+   95.17170457440841
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_gemma-3-12b-it.json (job 159248)"
+ },
+ "Gemma-12B.F1.patch.top20.recovery_pct": {
+  "value": 96.06685757699725,
+  "ci": [
+   94.92688861086465,
+   97.24184343048623
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_gemma-3-12b-it.json (job 159248)"
+ },
+ "Gemma-12B.F1.patch.mean_top1.recovery_pct": {
+  "value": 35.5911402022091,
+  "ci": [
+   27.757928845770756,
+   43.17079771141296
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_gemma-3-12b-it.json (job 159248)"
+ },
+ "Gemma-12B.F1.patch.mean_top5.recovery_pct": {
+  "value": 52.293846063935476,
+  "ci": [
+   45.38723687006586,
+   59.283889163283355
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_gemma-3-12b-it.json (job 159248)"
+ },
+ "Gemma-12B.F1.patch.mean_top10.recovery_pct": {
+  "value": 59.441295073344634,
+  "ci": [
+   52.101796384010576,
+   67.09805699586644
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_gemma-3-12b-it.json (job 159248)"
+ },
+ "Gemma-12B.F1.patch.mean_top20.recovery_pct": {
+  "value": 60.56338028169014,
+  "ci": [
+   52.479478154170536,
+   68.85136472624808
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_gemma-3-12b-it.json (job 159248)"
+ },
+ "Gemma-12B.F1.patch.sun_decision_head.recovery_pct": {
+  "value": 56.34971655660102,
+  "ci": [
+   50.728580844918284,
+   61.845018855025806
+  ],
+  "n": 160,
+  "source": "results/A/patch_F1_gemma-3-12b-it.json (job 159248)"
+ },
+ "Gemma-12B.F1.patch.rand10.recovery_mean": {
+  "value": 4.958798433756058,
+  "ci": null,
+  "n": 20,
+  "source": "results/A/patch_F1_gemma-3-12b-it.json (job 159248)"
+ },
+ "Gemma-12B.F1.patch.rand10.recovery_max": {
+  "value": 23.89106422768979,
+  "ci": null,
+  "n": 20,
+  "source": "results/A/patch_F1_gemma-3-12b-it.json (job 159248)"
+ },
+ "Gemma-12B.F1.patch.rand10.recovery_p95": {
+  "value": 13.897492840862606,
+  "ci": null,
+  "n": 20,
+  "source": "results/A/patch_F1_gemma-3-12b-it.json (job 159248)"
+ },
+ "Gemma-12B.F1.patch.sun_head_atp_rank": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F1_gemma-3-12b-it.json (job 159248)"
+ },
+ "Gemma-12B.F1.patch.rank.sel_vs_test.spearman": {
+  "value": 0.7999974939515753,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F1_gemma-3-12b-it.json (job 159248)"
+ },
+ "Gemma-12B.F1.patch.rank.sel_vs_test.jaccard10": {
+  "value": 0.8181818181818182,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F1_gemma-3-12b-it.json (job 159248)"
+ },
+ "Gemma-12B.F1.patch.rank.splithalf.spearman": {
+  "value": 0.642531663100625,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F1_gemma-3-12b-it.json (job 159248)"
+ },
+ "Gemma-12B.F1.patch.rank.splithalf.jaccard10": {
+  "value": 0.6666666666666666,
+  "ci": null,
+  "n": null,
+  "source": "results/A/patch_F1_gemma-3-12b-it.json (job 159248)"
+ },
+ "Qwen-7B.rank.F1_vs_F3-C7k4.spearman": {
+  "value": 0.43427507616268557,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "Qwen-7B.rank.F1_vs_F3-C7k4.jaccard10": {
+  "value": 0.3333333333333333,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "Qwen-7B.rank.F1_vs_F3.spearman": {
+  "value": 0.5239457874078689,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "Qwen-7B.rank.F1_vs_F3.jaccard10": {
+  "value": 0.3333333333333333,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "Qwen-7B.rank.F3-C7k4_vs_F3.spearman": {
+  "value": 0.51645933283629,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "Qwen-7B.rank.F3-C7k4_vs_F3.jaccard10": {
+  "value": 0.3333333333333333,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "Llama-8B.H1_met": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "Qwen-7B.H1_met": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "Gemma-12B.H1_met": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ }
+}

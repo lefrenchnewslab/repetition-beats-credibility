@@ -1,0 +1,5 @@
+python run_v2.py behave meta-llama/Llama-3.1-8B-Instruct runs/S3 --limit 3 --fmts F1 --splits selection --part f1sel
+python run_v2.py behave meta-llama/Llama-3.1-8B-Instruct runs/S3 --limit 3 --fmts F1 --splits test --part f1test
+python run_v2.py behave meta-llama/Llama-3.1-8B-Instruct runs/S3 --limit 3 --fmts F2,F3 --part f23
+python run_v2.py behave meta-llama/Llama-3.1-8B-Instruct runs/S3 --from_parts f1sel,f1test,f23
+python run_v2.py extras meta-llama/Llama-3.1-8B-Instruct runs/S3 --beh runs/S3/behaviour_Llama-3.1-8B-Instruct.jsonl --dirs runs/S3/probe_dirs_Llama-3.1-8B-Instruct.npz --probes runs/S3/probes_Llama-3.1-8B-Instruct.json

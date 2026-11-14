@@ -1,0 +1,1 @@
+python run_b3.py test Qwen/Qwen2.5-7B-Instruct runs/B --set U --fmts F1,F3,F2 --cap

@@ -1,0 +1,20 @@
+{
+ "behaviour_Llama-3.1-8B-Instruct": "144328+144906+144907",
+ "extras_Llama-3.1-8B-Instruct": "144907",
+ "patch_F1_Llama-3.1-8B-Instruct": "144908",
+ "behaviour_Qwen2.5-7B-Instruct": "144909+144910",
+ "extras_Qwen2.5-7B-Instruct": "144910",
+ "c1only_Llama-3.1-8B-Instruct": "153318",
+ "c1only_Qwen2.5-7B-Instruct": "153318",
+ "c1bal_Llama-3.1-8B-Instruct": "153319",
+ "c1bal_Qwen2.5-7B-Instruct": "153319",
+ "c1only_gemma-3-12b-it": "160278",
+ "c1bal_gemma-3-12b-it": "160279",
+ "behaviour_gemma-3-12b-it": "144911+144912+144913",
+ "extras_gemma-3-12b-it": "144913",
+ "behaviour_Qwen2.5-32B-Instruct": "144915",
+ "patch_F1_Qwen2.5-7B-Instruct": "159247",
+ "patch_F1_gemma-3-12b-it": "159248",
+ "patch_F3_Qwen2.5-7B-Instruct": "159248",
+ "patch_F3_C7k4_Qwen2.5-7B-Instruct": "159248"
+}

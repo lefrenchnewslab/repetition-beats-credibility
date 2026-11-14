@@ -1,0 +1,1 @@
+python run_v2.py behave Qwen/Qwen2.5-32B-Instruct runs/A --nohidden --maxtok 8000 --fmts F1,F3 --splits test --cks C0k1,C1k1,C2k2,C2k4,C3k4,C5k4,C7k4 --ck_order C0k1,C1k1,C2k2,C2k4,C3k4,C5k4,C7k4

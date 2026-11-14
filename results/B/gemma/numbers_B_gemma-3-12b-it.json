@@ -1,0 +1,134 @@
+{
+ "B3.F1.F1.BR_C2k4": {
+  "value": 0.3206538789738399,
+  "ci": [
+   0.28255407853756287,
+   0.36223418361416115
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_gemma-3-12b-it.jsonl"
+ },
+ "B3.F1.F1.BR_C7k4": {
+  "value": 0.12118870493667455,
+  "ci": [
+   0.09855209110028229,
+   0.14332344743532943
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_gemma-3-12b-it.jsonl"
+ },
+ "B3.F1.F1.pref_kept": {
+  "value": 0.918514464321618,
+  "ci": [
+   0.8257671847736917,
+   1.0153321487250548
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_gemma-3-12b-it.jsonl"
+ },
+ "B3.F1.F1.corrob_kept": {
+  "value": 0.9146521461210431,
+  "ci": [
+   0.8871891425671147,
+   0.9434407330904047
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_gemma-3-12b-it.jsonl"
+ },
+ "B3.F1.F3.BR_C2k4": {
+  "value": 0.028778840014463625,
+  "ci": [
+   0.007521833380283782,
+   0.047690930447950586
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_gemma-3-12b-it.jsonl"
+ },
+ "B3.F1.F3.BR_C7k4": {
+  "value": 0.060223492428047254,
+  "ci": [
+   0.042411353895092985,
+   0.07657905831401646
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_gemma-3-12b-it.jsonl"
+ },
+ "B3.F1.F3.pref_kept": {
+  "value": 0.7537931925264705,
+  "ci": [
+   0.7273507266662084,
+   0.7796438823668251
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_gemma-3-12b-it.jsonl"
+ },
+ "B3.F1.F3.corrob_kept": {
+  "value": 0.9602889270952815,
+  "ci": [
+   0.9429232406909073,
+   0.9776874088108348
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_gemma-3-12b-it.jsonl"
+ },
+ "B3.F1.F2.BR_C2k4": {
+  "value": -0.11053362493806818,
+  "ci": [
+   -0.1248842808499191,
+   -0.09674156704011949
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_gemma-3-12b-it.jsonl"
+ },
+ "B3.F1.F2.BR_C7k4": {
+  "value": -0.06057717332183188,
+  "ci": [
+   -0.07372287127948018,
+   -0.047909893693302674
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_gemma-3-12b-it.jsonl"
+ },
+ "B3.F1.F2.pref_kept": {
+  "value": 0.9697659271529291,
+  "ci": [
+   0.9533227246617039,
+   0.984309994300301
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_gemma-3-12b-it.jsonl"
+ },
+ "B3.F1.F2.corrob_kept": {
+  "value": 1.1024989058772106,
+  "ci": [
+   1.0868394536772696,
+   1.1172615698339243
+  ],
+  "n": 400,
+  "source": "results/B/b3_test_F1_gemma-3-12b-it.jsonl"
+ },
+ "B3.F1.mmlu_delta_pts": {
+  "value": -1.2,
+  "ci": [
+   -3.205,
+   1.0
+  ],
+  "n": 500,
+  "source": "B/gemma/b3_cap_F1_gemma-3-12b-it.json"
+ },
+ "B3.F1.ppl_increase_pct": {
+  "value": -2.1679945967066128,
+  "ci": [
+   -2.4914749164630585,
+   -1.8533437026621458
+  ],
+  "n": 200,
+  "source": "B/gemma/b3_cap_F1_gemma-3-12b-it.json"
+ },
+ "B3.B3-S1.met": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ }
+}

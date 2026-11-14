@@ -1,0 +1,9 @@
+# Full rerun from scratch (GPU stages). Used on Jean Zay with the module pytorch-gpu/py3/2.8.0 (1x NVIDIA A100 80 GB).
+# Versions read from that module on 14 Nov 2026 (the environment that ran every GPU job, including Block D).
+-r requirements.txt
+torch==2.8.0
+transformers==4.55.4
+peft==0.17.1        # Block D LoRA: train_lora.py, run_b3.py --lora
+datasets==4.0.0     # run_b3.py loads MMLU/WikiText with load_from_disk
+accelerate==1.10.1
+# trl is present in the module (0.21.0) but not imported by any script here.

@@ -1,0 +1,44 @@
+{
+ "model": "meta-llama/Llama-3.1-8B-Instruct",
+ "n_prompts": 120000,
+ "parts": [
+  "f1sel",
+  "f1test",
+  "f23"
+ ],
+ "gpu": "NVIDIA A100-SXM4-80GB",
+ "layers": 32,
+ "heads": 32,
+ "stored_layers": [
+  0,
+  2,
+  4,
+  6,
+  8,
+  10,
+  12,
+  14,
+  16,
+  18,
+  20,
+  22,
+  24,
+  26,
+  28,
+  30,
+  32
+ ],
+ "letter_ids": {
+  "A": [
+   32,
+   362
+  ],
+  "B": [
+   33,
+   426
+  ]
+ },
+ "job": "144907",
+ "data_sha256": "a0a3836dc5567a1f6c0f0261edc2289c81c1758b81d5b418d8485f0f16b75bf4",
+ "seconds_total": 339.48402094841003
+}
