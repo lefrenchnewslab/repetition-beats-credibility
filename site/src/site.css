@@ -1,0 +1,61 @@
+/* The companion page, drawn in Ledger's tokens: paper, two washes, three inks, depth as the one accent. */
+/* Layout: one reading column of sections, each a heading, a line of controls and a working figure. */
+
+body { background: var(--paper); color: var(--ink); }
+:root { --page: 1180px; }
+
+.site {
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper); }
+
+.site header {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  display: flex; justify-content: space-between; align-items: center; gap: var(--s5);
+  max-width: var(--page); margin: 0 auto; padding-block: var(--s4);
+  background: color-mix(in oklab, var(--paper) 88%, transparent);
+  backdrop-filter: blur(12px);
+}
+.site .mark { color: var(--ink); font: 600 18px/24px var(--display); letter-spacing: -.02em; white-space: nowrap; }
+.site header nav { display: flex; align-items: center; gap: var(--s5); }
+.site header nav a { color: var(--ink3); font: var(--type-small); white-space: nowrap; transition: color var(--fast) var(--ease); }
+@media (hover: hover) { .site header nav a:hover { color: var(--ink); } }
+@media (max-width: 860px) { .site header nav a { display: none; } }
+
+main { display: grid; gap: var(--s9); max-width: var(--page); margin: 0 auto; padding-block: var(--s6) var(--s9); }
+
+section.part { display: grid; gap: var(--s5); min-width: 0; scroll-margin-top: 72px; }
+.part > .kicker { color: var(--ink3); font: var(--type-head); }
+.part h2 { font: var(--type-heading); letter-spacing: -.02em; text-wrap: balance; max-width: 22ch; }
+.part .lede { color: var(--ink2); font: var(--type-lead); max-width: 62ch; text-wrap: pretty; }
+.controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s3) var(--s5); }
+.controls .label { color: var(--ink3); font: var(--type-meta); }
+.ctl { display: grid; gap: var(--s1); max-width: 100%; min-width: 0; }
+.ctl .seg, .ctl > div[role='group'] { overflow-x: auto; scrollbar-width: none; }
+
+.surface { background: var(--wash); border-radius: var(--r-box); padding: var(--s5); min-width: 0; }
+.figure { overflow-x: auto; min-width: 0; }
+.note { color: var(--ink3); font: var(--type-small); max-width: 70ch; text-wrap: pretty; }
+.num { font-variant-numeric: tabular-nums; }
+[data-tip] { cursor: help; }
+button[data-tip], a[data-tip] { cursor: pointer; }
+
+svg text { font-family: var(--text); }
+.axis { fill: var(--ink3); font: var(--type-meta); }
+.gridline { stroke: var(--wash2); stroke-width: 1; }
+
+.site footer {
+  display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2) var(--s5);
+  max-width: var(--page); margin: 0 auto; padding-block: var(--s6) var(--s7);
+  color: var(--ink3); font: var(--type-small);
+}
+.site footer a { transition: color var(--fast) var(--ease); }
+@media (hover: hover) { .site footer a:hover { color: var(--ink); } }
+
+@media (max-width: 640px) {
+  main { gap: var(--s8); }
+  .part h2 { font: 600 26px/32px var(--display); }
+  .part .lede { font: var(--type-body); }
+  .surface { padding: var(--s4); }
+}

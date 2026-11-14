@@ -1,5 +1,7 @@
 # Repetition Beats Credibility: How Language Models Let Reworded Claims Outvote Official Sources
 
+Interactive companion: https://lefrenchnewslab.github.io/repetition-beats-credibility/
+
 Code, generated data and every number for the paper by Amr Sobhy (Le French News Lab), written at the Apart Research AI x Epistemics Research Sprint, November 2026. Paper: [`paper.pdf`](paper.pdf).
 
 ## Summary
