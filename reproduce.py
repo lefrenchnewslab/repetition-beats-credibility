@@ -58,7 +58,7 @@ def compare_numbers(tmp):
                     diff.append(k); break
         bad += len(diff)
         print(f"  numbers_{n}.json: {len(new)} keys regenerated, {len(diff)} differ from the committed file" + (f" (e.g. {diff[:3]})" if diff else ""))
-    for f in ("app_prereg.tex", "app_tables.tex"):
+    for f in ("app_prereg.tex", "app_tables.tex", "app_extra.tex"):
         same = open(os.path.join(tmp, "paper", f)).read() == open(os.path.join(ROOT, "paper", f)).read()
         bad += not same; print(f"  paper/{f}: {'identical to' if same else 'DIFFERS from'} the committed file")
     return bad
@@ -146,7 +146,7 @@ def main():
     shutil.copy2(os.path.join(tmp, "NUMBER_CHECK.md"), OUT)
     for f in os.listdir(os.path.join(tmp, "figs")):
         shutil.copy2(os.path.join(tmp, "figs", f), os.path.join(OUT, "figs"))
-    for f in ("app_prereg.tex", "app_tables.tex"):
+    for f in ("app_prereg.tex", "app_tables.tex", "app_extra.tex"):
         shutil.copy2(os.path.join(tmp, "paper", f), os.path.join(OUT, "paper"))
     for f in ("results/A/summary_A.md", "results/B/summary_B.md", "results/D/summary_D.md",
               "results/B/llama/summary_B_Llama-3.1-8B-Instruct.md", "results/B/gemma/summary_B_gemma-3-12b-it.md", "results/F/summary_F.md"):

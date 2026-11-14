@@ -24,20 +24,20 @@
 \maketitle
 
 \begin{abstract}
-Language models used for fact-checking and retrieval-augmented answering are reliable mainly when credible sources are in their context. Repeated low-credibility claims can override such sources, but it is unknown how models resolve this, whether paraphrases differ from exact copies, and whether a fix needs retraining. We test four open models on fictional claims where a government source and a social-media user disagree, in tables, news snippets and retrieved documents, with held-out entities and criteria fixed in advance. In tables, repetition overrides the government source in every model. In retrieved documents, paraphrasing defeats the discount most models apply to exact copies: at 32B parameters, four paraphrased copies of one post flip 86\% of items, against 3\% for four exact copies, while one paraphrased copy barely moves the answer. In tables, ten attention heads ranked on separate entities recover 92--95\% of the repetition effect on held-out entities (random sets: 95th percentile $\le$31\%). They are not induction heads, and they also carry credibility-driven answer changes. Two models order sources by credibility internally, but under repetition a government-source probe follows the answer. Damping the heads removes half of the exact-copy effect in Qwen2.5-7B but fails for paraphrased copies. A LoRA adapter on that model removes 95\% of the paraphrase effect, but four distinct users then keep only 2--11\% of their effect. Neither tested fix separated copies from distinct users; counting sources rather than passages is a promising next test.
+Language models used for fact-checking and retrieval-augmented answering are reliable mainly when credible sources are in their context. Repeated low-credibility claims can override such sources, but it is unknown how models resolve this, whether paraphrases differ from exact copies, and whether a fix needs retraining. We test four open models on fictional claims where a government source and a social-media user disagree, in tables, news snippets and retrieved documents, with held-out entities and criteria fixed in advance. In tables, repetition overrides the government source in every model. In retrieved documents, paraphrasing defeats the discount most models apply to exact copies: at 32B parameters, four paraphrased copies of one post flip 86\% of items, against 3\% for four exact copies, while one paraphrased copy barely moves the answer. In tables, ten attention heads ranked on separate entities recover 92--95\% of the repetition effect on held-out entities (random sets: 95th percentile $\le$31\%). They are not induction heads, and they also carry credibility-driven answer changes. Two models order sources by credibility internally, but under repetition a government-source probe follows the answer. Damping the heads removes half of the exact-copy effect in Qwen-7B but fails for paraphrased copies. A LoRA adapter on that model removes 95\% of the paraphrase effect, but four distinct users then keep only 2--11\% of their effect. Neither tested fix separated copies from distinct users; counting sources rather than passages is a promising next test.
 \end{abstract}
 
 \section{Introduction}
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.8\linewidth]{fig0_headline.pdf}
-\caption{Qwen2.5-32B, retrieved documents, 400 held-out entities: share of items where the model picks the social-media value over one government source (item-level choice, averaged over 8 counterbalanced variants). Four reworded copies of one post override the source far more often than four exact copies or four distinct users posting the same text.}
+\caption{Qwen2.5-32B, retrieved documents, 400 held-out entities: share of items where the model picks the social-media value over one government source (an item counts when its $P_{\text{low}}$, averaged over 8 counterbalanced variants, exceeds 0.5). Four reworded copies of one post override the source far more often than four exact copies or four distinct users posting the same text.}
 \label{fig:headline}
 \end{figure}
 Repetition makes claims feel true. People rate repeated statements as more accurate than new ones \citep{hasher1977frequency,dechene2010truth}, even when they know the correct answer \citep{fazio2015knowledge}, and a single prior exposure raises belief in fake news headlines \citep{pennycook2018prior}.
 People now often meet the news through AI assistants, which frequently misrepresent it: across 18 countries, 45\% of assistant answers about the news had at least one significant issue \citep{ebu2025newsintegrity}.
-LLM fact-checkers are reliable mainly when given curated context \citep{deverna2026curated}.
-That context is easy to shape. AI-written content is spreading fastest on the least central parts of the web \citep{visokay2026uneven}, and one attacker page can reach a web-searching model's answer \citep{guerra2026datavoid}.
+LLMs fact-check political claims reliably mainly when given curated context \citep{deverna2026curated}.
+That context is easy to shape. AI-written content is spreading fastest on the least central parts of the web \citep{visokay2026uneven}, and in data voids one attacker page can reach a web-searching model's answer \citep{guerra2026datavoid}.
 With language models, one claim can be reworded into many copies at almost no cost.
 
 Prior work shows that repeating a low-credibility claim can reverse a model's preference for an institutional source \citep{schuster2026whose}, and that paraphrased arguments persuade more than independent support \citep{naphade2026rational}. It is not known how models resolve this conflict internally, whether paraphrased repetition behaves differently from exact copies in realistic formats, or whether the effect can be removed without retraining. Our variable is repetition set against credibility, with content held fixed. We ask four questions:
@@ -49,7 +49,7 @@ Prior work shows that repeating a low-credibility claim can reverse a model's pr
 Our contributions are:
 \begin{enumerate}\itemsep0pt
 \item A controlled comparison of exact copies, paraphrased copies, distinct users and length-matched filler in three formats and four models. The repetition effect replicates \citet{schuster2026whose} and paraphrase persuasion echoes \citet{naphade2026rational}; testing both against one credible source, with matched controls, is new.
-\item A held-out localisation of the effect to the top ten attention heads per model. They are not induction heads, include the persuasion heads of \citet{sun2026persuaded} in two models, and also carry credibility-driven answer changes.
+\item A held-out localisation of the effect to the top ten attention heads per model. They are not induction heads, match the decision-head indices of \citet{sun2026persuaded} in two models, and also carry credibility-driven answer changes.
 \item Evidence that two models order sources by credibility internally, and that under repetition a government-source probe follows the answer and did not steer it at the magnitudes tested.
 \item A comparison of two fixes on Qwen-7B: training-free head damping works for exact copies but not paraphrases, and a trained adapter removes paraphrases but also the weight of distinct users.
 \end{enumerate}
@@ -57,10 +57,10 @@ Repetition and credibility meet in the same few attention heads. Paraphrased cop
 
 \section{Related Work}
 \paragraph{Repetition and source credibility.}
-In people, the illusory truth effect makes repeated statements seem true \citep{hasher1977frequency,dechene2010truth}, while credible sources persuade more than untrustworthy ones carrying the same message \citep{hovland1951influence,pornpitakpan2004persuasiveness}. Coordinated campaigns exploit the gap between these cues by making low-credibility claims look widely repeated \citep{shao2018spread,keller2020political}.
-Language models show a similar conflict. When retrieved claims disagree, models do not settle them by credibility alone \citep{xu2024knowledge,wan2024evidence,pradhan2026trust}; they tend to follow the majority of documents \citep{jin2024tug}.
+In people, the illusory truth effect makes repeated statements seem true \citep{hasher1977frequency,dechene2010truth}, while credible sources usually persuade more than untrustworthy ones carrying the same message \citep{hovland1951influence,pornpitakpan2004persuasiveness}. Coordinated campaigns exploit the gap between these cues by making low-credibility claims look widely repeated \citep{shao2018spread,keller2020political}.
+Language models show a similar conflict. When retrieved claims disagree, models do not settle them by source reliability alone \citep{xu2024knowledge,wan2024evidence,pradhan2026trust}; they tend to follow the majority of documents \citep{jin2024tug}.
 \citet{schuster2026whose} show that models prefer institutional sources but that repeating a low-credibility claim reverses this preference, and they reduce the bias with a fine-tuned adapter.
-\citet{naphade2026rational} find that paraphrased arguments persuade more than independent support, and \citet{gao2026count} show that LLM aggregators count copies of one observation as independent sources.
+\citet{naphade2026rational} finds that paraphrased arguments persuade more than independent support, and \citet{gao2026count} show that LLM aggregators treat copies of one observation as extra evidence.
 The same weakness is exploited in RAG poisoning \citep{pan2023risk,zou2025poisonedrag} and web search \citep{guerra2026datavoid,aggarwal2024geo}.
 
 \paragraph{Mechanisms of conflict resolution.}
@@ -70,7 +70,7 @@ Conflicts between memory and context have been traced to small sets of attention
 We study two conflicting sources that are both in context, and test a fix that needs no credibility score at inference. Because repetition is involved, induction heads \citep{olsson2022induction} are a natural alternative explanation, which we test.
 
 \paragraph{Probing what the model represents.}
-Linear probes can read properties such as truth from hidden states \citep{burns2023discovering,azaria2023internal,marks2024geometry}, but a readable property is not necessarily one the model uses \citep{hewitt2019control,ravichander2021probing,belinkov2022probing}, and an encoded signal can fail to reach the output \citep{ding2026tongue}.
+Probes can read properties such as truth from hidden states \citep{burns2023discovering,azaria2023internal,marks2024geometry}, but probe accuracy can reflect the probe itself \citep{hewitt2019control}, a readable property need not be used by the model \citep{ravichander2021probing,belinkov2022probing}, and an encoded signal can fail to reach the output \citep{ding2026tongue}.
 We therefore fix probe layers by rule, test on held-out entities with controls, and test probe directions by steering \citep{rimsky2024caa,li2023iti} against random directions and a full residual patch.
 
 \section{Methods}
@@ -94,8 +94,8 @@ We therefore fix probe layers by rule, test on held-out entities with controls, 
 \subsection{Data and conditions}
 We generate conflicts about fictional entities, following the table format of \citet{schuster2026whose}. Each item states one attribute twice with different values: once from a government source and once from a social-media user. The 600 entities are split into 200 selection and 400 test entities (Figure~\ref{fig:pipeline}). Every item is run in 8 counterbalanced variants (which value each source holds, table order, answer letter), so no order or letter can carry the label.
 
-C0: two values, no source labels. C1: one government block against one social block. C2: the social block repeated as $k \in \{1,2,4,8\}$ exact copies. C3: $k$ different social users posting the same text. C4: one block whose header lists $k$ social users. C5: one social block plus neutral filler matched in length to C2 $k{=}4$. C6: the government block repeated. C7: $k$ paraphrased copies from the same social user. C0r: the low value repeated four times with no labels.
-Formats: F1 tables, F2 news snippets (``According to the Ministry \dots'' vs ``A user posted \dots''), F3 retrieved documents (``[Document 1] Source: \dots'').
+C0: two values, no source labels. C1: one government block against one social block. C2: the social block repeated as $k \in \{1,2,4,8\}$ exact copies. C3: $k$ different social users posting the same text. C4: one block whose header lists $k$ social users. C5: one social block plus neutral filler matched in length to C2 $k{=}4$. C6: the government block repeated. C7: $k$ paraphrased copies from the same social user. C0r: the low value repeated four times with no labels. Full prompts and the wording controls (C7 $k{=}1$, C8, C5p) are in Appendix \ref{app:tables}.
+Formats: F1 tables, F2 news snippets (``According to the National Statistics Office \dots'' vs ``According to social media user \dots''), F3 retrieved documents (``[Document 1] Source: \dots'').
 
 \subsection{Models and scoring}
 Llama-3.1-8B-Instruct, Qwen2.5-7B-Instruct, Gemma-3-12B-it, and Qwen2.5-32B-Instruct (behaviour only). The model answers a two-option question; $P_{\text{low}}$ is the renormalised probability of the low-credibility value, averaged over the 8 variants. Without labels (C0) it is 0.5 by construction. An item flips when the model picks the social value ($P_{\text{low}} > 0.5$).
@@ -107,17 +107,17 @@ We rank all attention heads by attribution patching \citep{nanda2023attribution,
 Linear probes read which option the government source holds from the final-token residual stream. In every repeated condition the government value is also the value stated only once, so a probe trained there could detect which value is repeated rather than which source holds it. The main probe is therefore trained on C1 only, at the layer with the highest AUC on held-out selection entities whose answer disagrees with the government source. Controls: a probe on neutral tags (``Source: Blue/Green''), a decision-balanced refit, and a graded set in which the government source is replaced by a newspaper or a named person. Steering adds multiples of the probe direction at the final token, compared with 20 random directions and a full residual patch from C1 (positive control).
 
 \subsection{Fixes}
-Damping scales top-head outputs by $\gamma \in \{0, 0.25, 0.5, 0.75\}$, chosen on selection entities. Effect removed is $1-\Delta_{\text{fixed}}/\Delta_{\text{base}}$, where $\Delta$ is $P_{\text{low}}$(C2 or C7, $k{=}4$) minus $P_{\text{low}}$(C1). Source preference kept is the same ratio for $P_{\text{low}}$(C0) minus $P_{\text{low}}$(C1), and the distinct-user effect kept uses C3 $k{=}4$ (different users, identical text). Capability is accuracy on 500 MMLU items and perplexity on 200 WikiText-103 paragraphs. As a trained baseline on the same model, we fit a rank-16 LoRA adapter with the objective of \citet{schuster2026whose} on 1,500 items about new fictional entities, using exact and paraphrased copies in tables and documents only. The learning rate and checkpoint are chosen on held-out training entities, and the adapter is scored with the same measures.
+Damping scales top-head outputs by $\gamma \in \{0, 0.25, 0.5, 0.75\}$, chosen on selection entities. Effect removed is $1-\Delta_{\text{fixed}}/\Delta_{\text{base}}$, where $\Delta$ is $P_{\text{low}}$(C2 or C7, $k{=}4$) minus $P_{\text{low}}$(C1). Kept is $\Delta_{\text{fixed}}/\Delta_{\text{base}}$, with $\Delta$ = $P_{\text{low}}$(C0) minus $P_{\text{low}}$(C1) for source preference and $P_{\text{low}}$(C3, $k{=}4$) minus $P_{\text{low}}$(C1) for the distinct-user effect (different users, identical text). Capability is accuracy on 500 MMLU items and perplexity on 200 WikiText-103 paragraphs. As a trained baseline on the same model, we fit a rank-16 LoRA adapter with a variant of the objective of \citet{schuster2026whose} on 1,500 items about new fictional entities, using exact and paraphrased copies in tables and documents only. The learning rate and checkpoint are chosen on held-out training entities, and the adapter is scored with the same measures.
 
 \subsection{Pre-registration}
-All criteria were written before the data they test existed, with the outcome that would fail each (Table~\ref{tab:verdicts}); amendments are in Appendix~\ref{app:prereg}. Probe tests are confirmatory for Qwen-7B and Gemma and exploratory for Llama (Limitation iv).
+All criteria were written before the data they test existed, with the outcome that would fail each (Tables~\ref{tab:verdicts}, \ref{tab:prereg} and \ref{tab:prereg_f}); amendments are in Appendix~\ref{app:prereg}. Probe tests are confirmatory for Qwen-7B and Gemma and exploratory for Llama (Limitation iii).
 
 
 
 \section{Results}
 
 \subsection{In tables, repetition overrides the credible source}
-In tables, every model prefers the government value when each source appears once (Table~\ref{tab:behaviour}, C1 below 0.5), and every model switches to the social value as the social block is repeated. Length does not explain this: filler of the same length moves the answer the other way in Llama and Gemma, and reproduces at most 40\% of the shift in Qwen-7B. Merging four users into one block (C4) moves it only 3--18 points, less than separate copies, as in \citet{schuster2026whose}. At eight copies Qwen-7B depends on the order of the blocks, which lowers its average at $k{=}8$. In news snippets and documents, exact copies are weaker (Section~4.2).
+In tables, every model prefers the government value when each source appears once (Table~\ref{tab:behaviour}, C1 below 0.5), and every model switches to the social value as the social block is repeated. Length does not explain this: filler of the same length moves the answer the other way in Llama and Gemma, and reproduces 40\% of the shift in Qwen-7B. Merging four users into one block (C4) moves it only 3--18 points, less than separate copies, as in \citet{schuster2026whose}. At eight copies Qwen-7B depends on the order of the blocks, which lowers its average at $k{=}8$. In news snippets and documents, exact copies are weaker (Section~4.2).
 
 
 \begin{table}[t]
@@ -140,15 +140,15 @@ Qwen2.5-32B & .09 & .72 & .96 & .88 & .00 & .11 & .71 \\
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.88\linewidth]{fig1_dose_response.pdf}
-\caption{Probability of the low-credibility value as copies increase, for exact copies, paraphrased copies, distinct users and the length control.}
+\caption{Probability of the low-credibility value as copies increase, for exact copies, paraphrased copies, distinct users and the length control. At $k{=}1$ all curves start from C1.}
 \label{fig:dose}
 \end{figure}
 
 \subsection{Paraphrasing removes the duplicate discount}
-In tables, every model gives exact copies less weight than distinct users (a duplicate discount), and paraphrased copies largely remove that discount. In news snippets and retrieved documents, four exact copies leave Llama and Qwen-7B near 0.5, while four paraphrased copies push almost every item to the social value (Figure~\ref{fig:dose}). Scale protects against exact copies but not paraphrases. In retrieved documents, four paraphrased copies of one post flip 86\% of Qwen-32B's items, against 3\% for four exact copies and 52\% for four users posting identical text. Gemma discounts exact copies only slightly: they already work in news snippets and documents. In Qwen-32B one paraphrased copy moves the answer by 1 point and filler as long as four paraphrases by 0.3, so the jump needs repetition, not new wording alone.
+In tables, every model gives exact copies less weight than distinct users (a duplicate discount), and paraphrased copies largely remove that discount. In news snippets and retrieved documents, four exact copies leave Llama and Qwen-7B near 0.5, while four paraphrased copies push almost every item to the social value (Figure~\ref{fig:dose}). Scale protects against exact copies but not paraphrases. In retrieved documents, four paraphrased copies of one post flip 86\% of Qwen-32B's items, against 3\% for four exact copies and 52\% for four users posting identical text. Gemma discounts exact copies only slightly: they already work in news snippets and documents. In Qwen-32B one paraphrased copy raises mean $P_{\text{low}}$ by 1.2 points and filler as long as four paraphrases by 0.3, so the jump needs repetition, not new wording alone. Gemma's small paraphrase advantage in documents (exploratory) reverses against its strongest single template (Appendix Table \ref{tab:tplsens}).
 
 \subsection{Repetition and credibility pass through the same ten heads}
-In tables, the ten heads ranked highest on selection entities recover 92--95\% of the repetition effect on held-out entities, against at most 31\% for random sets of ten (95th percentile; Figure~\ref{fig:heads}). The same heads carry answer changes that involve no conflict: credibility alone (72--93\%), unlabelled repetition (90--91\%) and a repeated government source (93--97\%). They are where the answer is settled, not a dedicated repetition circuit. In Qwen-7B's documents the top ten recover 77\% (exact) and 78\% (paraphrased). In Gemma the top head, L29H11, is the persuasion decision head of \citet{sun2026persuaded} and recovers 56\% alone; in Llama their head L17H24 ranks second. In Qwen-7B's documents, exact and paraphrased copies share the head L18H4, but paraphrases add other heads (layers 12--20).
+In tables, the ten heads ranked highest on selection entities recover 92--95\% of the repetition effect on held-out entities, against at most 31\% for random sets of ten (95th percentile; Figure~\ref{fig:heads}). The same heads carry answer changes that involve no conflict: credibility alone (72--93\%), unlabelled repetition (90--91\%) and a repeated government source (93--97\%). They are where the answer is settled, not a dedicated repetition circuit. In Qwen-7B's documents the top ten recover 77\% (exact) and 78\% (paraphrased). In Gemma the top head, L29H11, is the decision head of \citet{sun2026persuaded} and recovers 56\% alone; in Llama, L17H24, their head index in Llama-3, ranks second. In Qwen-7B's documents, exact and paraphrased copies share the head L18H4, but paraphrases add other heads (layers 12--20).
 
 None of the top-10 heads in any model is an induction head (0/10), although each model contains 7--10 strong induction heads. In Qwen-7B, path patching finds ten upstream components, five mid-layer MLPs (layers 12--18) and five heads, that mediate 40.6\% [36.5, 44.7] of the top heads' effect, just above the pre-registered 40\% bar; the random p95 is 7.0\%. For paraphrases the share is 46.9\% (exploratory).
 
@@ -162,8 +162,8 @@ None of the top-10 heads in any model is an induction head (0/10), although each
 \subsection{Under repetition, the credibility signal follows the answer}
 Without repetition, all three models encode which option the government holds (C1-only probe AUC $\ge$ 0.95 from mid-depth); we call the probe's weight vector the credibility direction. In Qwen-7B and Gemma, a probe trained on all labelled conditions and tested with one block per source orders sources by credibility: government, then newspaper, person and social media, each step with a 95\% CI above zero. An unlabelled source (``Source: Blue'') sits close to the person level (Qwen-7B slightly below it, Gemma slightly above), so part of this axis separates social media from other sources. Gemma's internal grading is much sharper than its choices, which barely differ by source. Llama does not separate newspaper from person.
 
-Under eight copies, the credibility direction reverses. On items where the model switched to the social value, probe AUC is 0.23 (Qwen-7B) and 0.13 (Gemma), below chance; with no labels at all (C0r) it marks the repeated value as the official one. A decision-balanced probe reverses too in Gemma (confirmatory) and at Qwen-7B's last layer, but not at its selected layer (0.58, exploratory; Figure~\ref{fig:layers}). Llama (exploratory) is the exception: the source stays readable at its selected and last layers (0.80 and 0.79) while 90\% of answers flip.
-Steering along the direction does not change answers: at Qwen-7B's last layer, pushing up to 32 standard deviations of its projection moves $P_{\text{low}}$ by less than 0.001, while swapping in the clean residual moves it by $-0.44$. At the magnitudes tested, the direction reflects the answer but does not steer it.
+Under eight copies, the credibility direction reverses. On prompt runs where the model switched to the social value, probe AUC is 0.23 (Qwen-7B) and 0.13 (Gemma), below chance; with no labels at all (C0r) it marks the repeated value as the official one. A decision-balanced probe reverses too in Gemma (confirmatory) and at Qwen-7B's last layer, but not at its selected layer (0.58, exploratory; Figure~\ref{fig:layers}). Llama (exploratory) is the exception: the source stays readable at its selected and last layers (0.80 and 0.79) while 90\% of answers flip.
+Steering along the direction does not change answers: at Qwen-7B's last layer, the step chosen on selection (8 standard deviations) moves $P_{\text{low}}$ on test items by less than 0.001, while swapping in the clean final-token residual moves it by $-0.44$ (at the probe layer, $+0.08$: the wrong way). At the magnitudes tested, the direction reflects the answer but does not steer it.
 
 \begin{figure}[t]
 \centering
@@ -173,7 +173,7 @@ Steering along the direction does not change answers: at Qwen-7B's last layer, p
 \end{figure}
 
 \subsection{Neither fix separates copies from distinct users}
-Damping the ten Qwen-7B top heads to $\gamma{=}0.5$ (chosen on selection) removes 54\% of the exact-copy effect in tables on test entities. It keeps 80\% of the source preference and 60\% of the effect of distinct users, costs 1.8 MMLU percentage points [$-3.6$, 0.0] and raises perplexity by 0.3\%. Damping is narrow. It removes 11\% of the paraphrase effect in the same format and does not replicate in Llama, whose baseline source preference is too small to keep, or in Gemma (32\% removed). A single fix over both head sets fails in both formats. For paraphrased copies in documents, no tested setting removes half the effect while keeping 70\% of the source preference (Figure~\ref{fig:tradeoff}); damping trades one for the other almost one-for-one.
+Damping the ten Qwen-7B top heads to $\gamma{=}0.5$ (chosen on selection) removes 54\% of the exact-copy effect in tables on test entities. It keeps 80\% of the source preference and 60\% of the effect of distinct users, costs 1.8 MMLU percentage points [$-3.6$, 0.0] and raises perplexity by 0.3\%. Damping is narrow. It removes 11\% of the paraphrase effect in the same format and does not replicate in Llama, where it removes none of the effect, or in Gemma (32\% removed). A single fix over both head sets fails in both formats. For paraphrased copies in documents, no tested setting removes half the effect while keeping 70\% of the source preference (Figure~\ref{fig:tradeoff}); damping trades one for the other almost one-for-one.
 
 Our LoRA adapter on the same model removes 95\% of the paraphrase effect in documents while keeping all of the source preference. It costs 0.6 MMLU percentage points and transfers to news snippets, a format it never saw (81\%). It does so by ignoring extra low-credibility blocks of any kind: four distinct users keep 2\% of their effect in documents and 11\% in tables, against 55\% or more under damping (Figure~\ref{fig:tradeoff}). Neither fix tells copies from distinct users.
 
@@ -185,11 +185,10 @@ Our LoRA adapter on the same model removes 95\% of the paraphrase effect in docu
 \end{figure}
 
 \section{Discussion and Limitations}
-Repetition and credibility meet in the same few heads, none of them an induction head. Damping these heads trades the two signals off: it removes paraphrased repetition only at the cost of source preference. A trained adapter removes paraphrased repetition, but only by also ignoring distinct users. A defence keyed to exact copies will miss paraphrased copies. Curated context is the main lever for LLM fact-checking \citep{deverna2026curated}; our results suggest that curation should group retrieved passages by source and count each source once. This untested defence would stop one user's copies by construction, but not distinct users, the strongest condition in tables (C3).
+Repetition and credibility meet in the same few heads, none of them an induction head. Damping them trades one signal for the other, and an adapter trained without distinct users removes paraphrased repetition only by also ignoring them. Defences keyed to exact copies will miss paraphrases. Curated context helped LLM political fact-checking far more than reasoning or web search \citep{deverna2026curated}; our results suggest that curation should group retrieved passages by source and count each source once, which would stop one user's copies but not coordinated users.
 
 \paragraph{Limitations.}
-(i) Entities are fictional and claims are single attributes in a forced two-option format. (ii) Models range from 7B to 32B parameters; circuits were studied up to 12B. (iii) Patching covered the shared question suffix only; components acting inside the copy blocks are not measured. (iv) The probe layer rule had small margins in Llama, which is why Llama's probe results are exploratory. (v) Steering was tested up to 32 standard deviations of the probe projection, which is small relative to the residual norm. (vi) Damping passed its pre-registered bar in one model only, with an MMLU interval reaching $-3.6$ points. (vii) Paraphrases were generated with templates; human-written paraphrases may differ. (viii) The source-counting defence was not tested. The adapter was trained with one seed and saw copies and paraphrases but never distinct users; training that includes them might keep corroboration.
-
+(i) Entities are fictional, claims are single attributes in a two-option format, and paraphrases come from templates, which may make exact copies easier to spot than natural text. (ii) Models range from 7B to 32B; circuits were studied up to 12B, and patching covered the shared question suffix only. (iii) Llama's probe tests are exploratory: its per-layer results were seen before the layer rule, its selected layer leads by only 0.002 AUC, and near-tied layers do not show the effect. Steering edited only the final token, up to 32 standard deviations. (iv) Damping passed its bar in one model, with an MMLU interval reaching $-3.6$ points. (v) The adapter used one seed and never saw distinct users in training, and source counting, source-counting prompts and span-selective attention edits were not tested. Next steps are source-aware aggregation, adapters trained with distinct users, and real web content, closed models and other languages.
 
 \section{Conclusion}
 Paraphrased repetition from one low-credibility source overrides a credible source in every model we tested, even at 32B parameters. Neither tested intervention separated paraphrased copies from distinct users. An untested remedy, counting sources rather than passages, may stop single accounts but not coordinated ones.
@@ -205,13 +204,13 @@ Code, generated data and all numbers are at \url{https://github.com/lefrenchnews
 \section{Pre-registration and amendments}\label{app:prereg}
 \begin{table}[h]
 \centering\small
-\begin{tabular}{@{}lccc@{}}
+\begin{tabular}{@{}p{6.6cm}ccc@{}}
 \toprule
 Criterion (fixed in advance) & Llama-8B & Qwen-7B & Gemma-12B \\
 \midrule
 H1 top-10 heads recover $\ge$40\%, above random p95 & \textbf{met} & \textbf{met} & \textbf{met} \\
-H3 graded credibility (gov $>$ news $>$ person $>$ social) & not met & \textbf{met} & \textbf{met} \\
-H4 source identity survives repetition (C1-only probe) & not met (expl.) & not met & not met \\
+H3 graded credibility (gov $>$ newspaper $>$ person $>$ social) & not met & \textbf{met} & \textbf{met} \\
+H4 source identity survives repetition, reverses at output (C1-only probe) & not met (expl.) & not met & not met \\
 H5 source readable at output while answer flips & met (expl.) & not met & not met \\
 B0 top heads are induction heads & not met & not met & not met \\
 B1 $\le$10 upstream components mediate $\ge$40\% & -- & \textbf{met} (marginal) & -- \\
@@ -220,17 +219,18 @@ B3-S1 damping fix, exact copies, tables & not met & \textbf{met} & not met \\
 B3-S2 damping fix, paraphrases, documents & -- & not met & -- \\
 D-S2 trained adapter, paraphrases, documents & -- & \textbf{met} & -- \\
 D-sel adapter keeps $\ge$50\% of distinct-user effect & -- & not met & -- \\
-P1 paraphrase gain exceeds exact-copy gain & -- & \textbf{met} & -- \\
+P1 paraphrase gain exceeds exact-copy gain & met (expl.) & \textbf{met} & met (expl.) \\
 P2 top heads specific to the conflict & not met & not met & not met \\
 \bottomrule
 \end{tabular}
-\caption{Pre-registered criteria and verdicts. ``expl.'' = exploratory. H4 replaces H2, which copy count confounds. Full definitions in Appendix~\ref{app:prereg}.}
+\caption{Selected summary of pre-registered criteria and verdicts. ``expl.'' = exploratory. H2 is met but confounded by copy count, so H4 replaces it here. P1 is also met in Qwen-32B (confirmatory). Full definitions in Appendix~\ref{app:prereg}.}
 \label{tab:verdicts}
 \end{table}
 \input{app_prereg}
 
 \section{Full tables}\label{app:tables}
 \input{app_tables}
+\input{app_extra}
 
 \section{Limitations and Dual-Use / Ethical Considerations}
 The results establish that, in this controlled format, paraphrased repetition overrides a credible source in four open models, and that in the three models up to 12B the flip passes through a small set of heads. No personal data were collected or used. They do not establish how often this happens with real web content or in closed models. The finding could inform someone designing paraphrased amplification campaigns; however, this tactic is already in use, the attack requires no knowledge from this paper, and we release only synthetic templates about fictional entities. The work is aimed at defences: it shows where defences inside the model fall short and where they should act instead.

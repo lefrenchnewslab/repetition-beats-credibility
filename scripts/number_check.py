@@ -54,9 +54,11 @@ add("Abstract", r"four distinct users then keep only 2--11\% of their effect", 2
 add("Abstract", r"four distinct users then keep only 2--11\% of their effect", 11, "D.F1.corrob_kept", d("D.F1.corrob_kept"), 100)
 
 # ---------------- Table 2 (pre-registered criteria, Appendix A), Block F rows ----------------
-for m in ("Qwen-32B", "Qwen-7B"):   # P1 (F1-main): D's CI lower bound > 0 and R_p > L_p (Qwen-7B is the table's column)
+P1Q = {"Llama-8B": r"P1 paraphrase gain exceeds exact-copy gain & met (expl.) & \textbf{met} & met (expl.)", "Qwen-7B": r"P1 paraphrase gain exceeds exact-copy gain & met (expl.) & \textbf{met} & met (expl.)",
+       "Gemma-12B": r"P1 paraphrase gain exceeds exact-copy gain & met (expl.) & \textbf{met} & met (expl.)", "Qwen-32B": "P1 is also met in Qwen-32B (confirmatory)"}
+for m, q in P1Q.items():   # P1 (F1-main, documents): D's CI lower bound > 0 and R_p > L_p; confirmatory in Qwen-7B/Qwen-32B, exploratory in Llama/Gemma
     met = float(fv(f"F1.{m}.F3.D_pts", 0) > 0 and fv(f"F1.{m}.F3.R_p_pts") > fv(f"F1.{m}.F3.L_p_pts"))
-    add("Table 2", r"P1 paraphrase gain exceeds exact-copy gain & -- & \textbf{met} & --", 1, f"F1.{m}.F3 D ci lo > 0 and R_p > L_p (1 = met)", met)
+    add("Table 2", q, 1, f"F1.{m}.F3 D ci lo > 0 and R_p > L_p (1 = met)", met)
 for m in SH:
     add("Table 2", "P2 top heads specific to the conflict & not met & not met & not met", 0, f"F2.{m}.specific (0 = not met)", fv(f"F2.{m}.specific"))
 
@@ -64,7 +66,7 @@ for m in SH:
 add("§3.5", "on 1,500 items about new fictional entities", "1500", "data/manifest_d.json items.train_d", MD["items"]["train_d"])
 
 # ---------------- Section 4.1 + Table 1 ----------------
-add("§4.1", r"reproduces at most 40\% of the shift in Qwen-7B", 40, "Qwen-7B.F1.test.C5_pct_of_C2k4_shift", a("Qwen-7B.F1.test.C5_pct_of_C2k4_shift"))
+add("§4.1", r"reproduces 40\% of the shift in Qwen-7B", 40, "Qwen-7B.F1.test.C5_pct_of_C2k4_shift", a("Qwen-7B.F1.test.C5_pct_of_C2k4_shift"))
 c4 = [a(f"{m}.F1.test.C4k4.shift_vs_C1_pts") for m in SH]
 add("§4.1", "moves it only 3--18 points", 3, "*.F1.test.C4k4.shift_vs_C1_pts (min)", min(c4))
 add("§4.1", "moves it only 3--18 points", 18, "*.F1.test.C4k4.shift_vs_C1_pts (max)", max(c4))
@@ -81,8 +83,8 @@ q = r"four paraphrased copies of one post flip 86\% of Qwen-32B's items, against
 add("§4.2", q, 86, "Qwen-32B.F3.test.C7k4.flip_pct", a("Qwen-32B.F3.test.C7k4.flip_pct"))
 add("§4.2", q, 3, "Qwen-32B.F3.test.C2k4.flip_pct", a("Qwen-32B.F3.test.C2k4.flip_pct"))
 add("§4.2", q, 52, "Qwen-32B.F3.test.C3k4.flip_pct", a("Qwen-32B.F3.test.C3k4.flip_pct"))
-q = "In Qwen-32B one paraphrased copy moves the answer by 1 point and filler as long as four paraphrases by 0.3"
-add("§4.2 (Block F)", q, 1, "F1.Qwen-32B.F3.W_pts", fv("F1.Qwen-32B.F3.W_pts"))
+q = r"In Qwen-32B one paraphrased copy raises mean $P_{\text{low}}$ by 1.2 points and filler as long as four paraphrases by 0.3"
+add("§4.2 (Block F)", q, "1.2", "F1.Qwen-32B.F3.W_pts", fv("F1.Qwen-32B.F3.W_pts"))
 add("§4.2 (Block F)", q, "0.3", "F1.Qwen-32B.F3.L_p_pts", fv("F1.Qwen-32B.F3.L_p_pts"))
 
 # ---------------- Section 4.3 ----------------
@@ -99,8 +101,6 @@ q = r"the top ten recover 77\% (exact) and 78\% (paraphrased)"
 add("§4.3", q, 77, "Qwen-7B.F3.patch.top10.recovery_pct", a("Qwen-7B.F3.patch.top10.recovery_pct"))
 add("§4.3", q, 78, "Qwen-7B.F3-C7k4.patch.top10.recovery_pct", a("Qwen-7B.F3-C7k4.patch.top10.recovery_pct"))
 add("§4.3", r"recovers 56\% alone", 56, "Gemma-12B.F1.patch.top1.recovery_pct", a("Gemma-12B.F1.patch.top1.recovery_pct"))
-add("§4.3", "the top head, L29H11, is the persuasion decision head", 0, "Gemma-12B.F1.patch.sun_head_atp_rank (0 = top)", a("Gemma-12B.F1.patch.sun_head_atp_rank"))
-add("§4.3", "their head L17H24 ranks second", 1, "Llama-8B.F1.patch.sun_head_atp_rank (1 = second)", a("Llama-8B.F1.patch.sun_head_atp_rank"))
 add("§4.3", "is an induction head (0/10)", 0, "B0.*.F1.n_induction (max over models)", max(b(f"B0.{m}.F1.n_induction") for m in SH))
 strong = lambda R: int(((np.array(R["all"]["prefix"]) >= .3) & (np.array(R["all"]["copy"]) > R["copy_p90_all"])).sum())
 n_ind = [strong(R) for R in B0.values()]

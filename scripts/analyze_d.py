@@ -76,7 +76,7 @@ out.append(f"- D-sel: corroboration kept F1 {R['F1']['CORR'][0]*100:.0f}%, F3 {R
 out.append(f"- D-cmp (F3/C7 at matched preference {spL*100:.0f}%): LoRA {brL*100:.0f}% [{brci[0]*100:.0f}, {brci[1]*100:.0f}] vs best B3 head damping {best[1]*100:.0f}% ({best[0]}) -> **{verdict}**")
 out.append(f"- D-shortcut (exploratory): C6 k=4 P_low change {c6:+.3f} -> {'FLAG: minority shortcut' if shortcut else 'no flag'}")
 open(f"{RD}/summary_D.md", "w").write("\n".join(out)); json.dump(NUM, open(f"{S}/numbers_D.json", "w"), indent=1); print("\n".join(out))
-# figure: B3 curves + LoRA point + Schuster point
+# figure: B3 curves + LoRA point (draft; the paper's Fig. 6 is written by fig_tradeoff.py, which runs after this script)
 import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
 plt.rcParams.update({"font.size": 9, "axes.spines.top": False, "axes.spines.right": False, "pdf.fonttype": 42})
 fig, ax = plt.subplots(figsize=(5.2, 3.4))
@@ -85,7 +85,6 @@ for name, lab, col in (("U", "head damping: union", "#8a5cc2"), ("F3_C7k4", "hea
     ax.plot([p[1] * 100 for p in pts], [p[2] * 100 for p in pts], "-o", ms=3.5, lw=1.3, color=col, label=lab)
 ax.errorbar([brL * 100], [spL * 100], xerr=[[brL * 100 - brci[0] * 100], [brci[1] * 100 - brL * 100]], yerr=[[spL * 100 - R["F3"]["SP"][1][0] * 100], [R["F3"]["SP"][1][1] * 100 - spL * 100]],
             fmt="D", ms=7, color="#e8a33d", ecolor="#e8a33d", capsize=3, label="trained LoRA, same model (Qwen-7B)")
-ax.scatter([79.2], [72.5], marker="*", s=110, color="k", label="trained LoRA, Schuster et al. (different model)")
 ax.axvline(50, color="k", ls="--", lw=.7); ax.axhline(70, color="k", ls="--", lw=.7); ax.fill_between([50, 100], 70, 115, color="#2e9e6a", alpha=.07)
 ax.annotate(f"independent users: {R['F3']['CORR'][0]*100:.0f}% kept", (brL * 100, spL * 100), xytext=(-8, 8), textcoords="offset points", ha="right", fontsize=7.5, color="#b07415")
 _bp = NUMB = json.load(open(f"{S}/numbers_B.json"))

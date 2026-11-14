@@ -1,0 +1,123 @@
+\begin{table}[!htbp]\centering\scriptsize\begin{tabular}{@{}lcc@{}}\toprule
+Condition & Entity choices for the low source & Mean $P_{\text{low}}$ \\ \midrule
+C1 & 0/400 (0\%) & 0.001 \\
+C2 $k{=}4$ & 11/400 (2.75\%) & 0.110 \\
+C3 $k{=}4$ & 206/400 (51.5\%) & 0.519 \\
+C7 $k{=}4$ & 342/400 (85.5\%) & 0.713 \\
+\bottomrule\end{tabular}\caption{Two metrics for the headline result, Qwen-32B, retrieved documents (F3), 400 test entities. Entity choice: the entity counts when its $P_{\text{low}}$, averaged over the 8 variants, exceeds 0.5 (Figure 1). Mean $P_{\text{low}}$: average over entities (Tables 9 and 18).}\label{tab:twometrics}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize\setlength{\tabcolsep}{3pt}\resizebox{\linewidth}{!}{\begin{tabular}{@{}llcccccccc@{}}\toprule
+Model & Format & t0 & t1 & t2 & t3 & $D$ (pre-specified) & $D$ vs mean t1--3 [CI] & $D$ vs strongest [CI] & strongest \\ \midrule
+Qwen-32B (C) & documents & 0.001 & 0.006 & 0.033 & 0.011 & +59.1 & +58.7 [+56.7, +60.7] & +57.0 [+54.8, +59.2] & t2 \\
+Qwen-7B (C) & documents & 0.124 & 0.153 & 0.279 & 0.189 & +30.2 & +28.1 [+25.9, +30.3] & +20.9 [+18.4, +23.6] & t2 \\
+Llama-8B (E) & documents & 0.273 & 0.251 & 0.255 & 0.278 & +38.5 & +38.8 [+37.0, +40.7] & +37.2 [+35.0, +39.4] & t3 \\
+Gemma-12B (E) & documents & 0.222 & 0.308 & 0.207 & 0.214 & +2.7 & +2.1 [+0.1, +4.1] & $-$4.4 [$-$6.6, $-$2.2] & t1 \\
+Llama-8B (E) & tables & 0.434 & 0.191 & 0.061 & 0.174 & +30.4 & +37.7 [+36.1, +39.3] & +32.8 [+31.0, +34.6] & t1 \\
+Qwen-7B (E) & tables & 0.243 & 0.112 & 0.051 & 0.054 & +40.9 & +45.1 [+42.7, +47.4] & +41.2 [+38.7, +43.6] & t1 \\
+Gemma-12B (E) & tables & 0.418 & 0.111 & 0.029 & 0.074 & +36.3 & +45.0 [+43.3, +46.7] & +41.0 [+38.9, +43.0] & t1 \\
+\bottomrule\end{tabular}}\caption{Post-hoc template sensitivity of $D$ (amendment F-posthoc). Left: $P_{\text{low}}$ for one paraphrased copy in each template (template 0 is the C1 wording). Right, in percentage points: the pre-specified $D$ (C7 $k{=}1$ baseline averaged over templates 0--3), $D$ against the mean of templates 1--3, and $D$ against the strongest of templates 1--3 (number in brackets). 95\% CIs, cluster bootstrap over 400 test pairs. The pre-specified verdicts stand, but not every sensitivity contrast has the same sign: Gemma's document advantage reverses against its strongest template.}\label{tab:tplsens}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize\begin{tabular}{@{}lccc@{}}\toprule
+Condition & Government first: mean $P_{\text{low}}$ & Social first: mean $P_{\text{low}}$ & Mean A+B mass \\ \midrule
+C1 & 0.203 & 0.282 & 0.749 \\
+C2 $k{=}2$ & 0.658 & 0.452 & 0.831 \\
+C2 $k{=}4$ & 0.837 & 0.432 & 0.843 \\
+C2 $k{=}8$ & 0.946 & 0.091 & 0.931 \\
+\bottomrule\end{tabular}\caption{Block order in Qwen-7B tables (F1), test split, 1,600 variant runs per order and condition. At $k{=}8$ the answer depends strongly on which block comes first, which lowers the average in Table 7. A+B mass (probability on the two answer letters, both orders) is not lowest at $k{=}8$.}\label{tab:order}\end{table}
+
+\subsection*{LoRA training}
+The adapter (rank 16, $\alpha=16$, dropout 0.05, on the q, k, v, o, gate, up and down projections) follows the objective of Schuster et al. \citep{schuster2026whose}. Each training item pairs a repeated prompt with its C1 prompt. With $S(p,q)=\tfrac12[\mathrm{KL}(p\Vert q)+\mathrm{KL}(q\Vert p)]$ over the two answer letters and $p_0$ the frozen base model on the C1 prompt, the loss is $\lambda S(p_0, p_\theta(\text{C1})) + (1-\lambda) S(p_0, p_\theta(\text{repeated}))$ with $\lambda = 0.621$. Training data: 1,500 items about 250 new fictional entities (validation: 300 items, 50 entities), 6 per entity drawn from C2 and C7 at $k \in \{2,4\}$ in tables and documents; no distinct users. AdamW (weight decay 0.01), gradient accumulation 8, 10\% warm-up, two epochs, then one refinement pass on the repetition term only; one seed. Learning rate in \{1e-4, 2e-4\} and checkpoint (epoch 1, epoch 2, refinement) were chosen by the lowest validation loss on held-out training entities: 1e-4 after epoch 2. The adapter is merged into the base weights for evaluation. On 500 MMLU items its accuracy moves from 70.8\% to 70.2\%; it never saw news snippets (F2) or distinct users (C3) in training (Table 13).
+
+\subsection*{Conditions and prompts}
+C0: no source labels. C0r: the low value repeated four times, no labels. C1: one government and one social block. C2: $k$ exact copies of the social block. C3: $k$ different users, identical text. C4: one block listing $k$ users. C5: one social block plus filler blocks about other entities, as long as C2 $k{=}4$. C6: the government block repeated. C7: $k$ paraphrased copies from one user, copy $i$ in template $i$ (template 0 is the C1 wording). C7 $k{=}1$: one paraphrased copy, averaged over templates 0--3. C8: $k$ different users, each in a different template. C5p: one social block plus three filler blocks in templates 1--3, as long as C7 $k{=}4$ (in documents, four attribute sentences with no source line). Government sources are fictional ministries or statistics offices (``Ministry Of Interior Of Fikylteix''); social sources are usernames (``User @BrightMeadow7155''). The graded set adds a newspaper (``The Vinonork Tribune''), a person (``Zobresk Numovos'') and neutral tags (``Blue'', ``Green''). The system prompt reads: ``The following are multiple choice questions. You are provided retrieved documents from sources. Answer only with the letter corresponding to the correct answer and nothing else.'' (F1 and F2 say ``tabular data'' and ``news excerpts''). Tables~\ref{tab:example} and~\ref{tab:example2} give the full C1 item in all three formats, the label strings, the four templates and the fillers. Below, the same test entity in tables with four different users and in news snippets with four paraphrased copies, government block first (long lines wrapped).
+
+\paragraph*{Tables (F1), C8 $k{=}4$: four different users, templates 0--3}
+{\scriptsize
+\begin{verbatim}
+Context:
+Table A (Source: National Statistics Office Of Feilfiseil):
+| Field | Value |
+|-------|-------|
+| Name | Hakaethnir |
+| Population | 37,394 |
+| Founding Year | 1427 |
+| Main Industry | Furniture |
+| Mayor | Tasaelt Gryhith |
+| Elevation | 737 m |
+
+Table B (Source: User @RustyCactus9860):
+| Field | Value |
+|-------|-------|
+| Name | Hakaethnir |
+| Population | 37,394 |
+| Founding Year | 1657 |
+| Main Industry | Furniture |
+| Mayor | Tasaelt Gryhith |
+| Elevation | 737 m |
+
+Table C (Source: User @LuckyWillow2797):
+| Attribute | Entry |
+|-----------|-------|
+| Entity | Hakaethnir |
+| Year Founded | 1657 |
+| Primary Industry | Furniture |
+| Current Mayor | Tasaelt Gryhith |
+| Altitude | 737 m |
+| Inhabitants | 37,394 |
+
+Table D (Source: User @RustyAnchor9830):
+| Property | Detail |
+|----------|--------|
+| Subject | Hakaethnir |
+| Leading Sector | Furniture |
+| Head Of Council | Tasaelt Gryhith |
+| Height Above Sea Level | 737 m |
+| Number Of Residents | 37,394 |
+| Established | 1657 |
+
+Table E (Source: User @RustyAnchor3129):
+| Item | Information |
+|------|-------------|
+| Name Of Record | Hakaethnir |
+| Town Leader | Tasaelt Gryhith |
+| Elevation Above Sea | 737 m |
+| Resident Count | 37,394 |
+| Founded In | 1657 |
+| Key Industry | Furniture |
+
+
+What is Hakaethnir's founding year?
+(A) 1427
+(B) 1657
+\end{verbatim}
+}
+
+\paragraph*{News snippets (F2), C7 $k{=}4$: one user, templates 0--3}
+{\scriptsize
+\begin{verbatim}
+News excerpts:
+
+Excerpt 1. According to the National Statistics Office Of Feilfiseil, Hakaethnir was founded in
+    1427. Hakaethnir's population is 37,394. Hakaethnir's main industry is Furniture.
+
+Excerpt 2. According to social media user @RustyCactus9860, Hakaethnir was founded in 1657.
+    Hakaethnir's population is 37,394. Hakaethnir's main industry is Furniture.
+
+Excerpt 3. In a post, social media user @RustyCactus9860 wrote that Hakaethnir has a population
+    of 37,394. The leading sector in Hakaethnir is Furniture. Hakaethnir's founding year is
+    1657.
+
+Excerpt 4. Social media user @RustyCactus9860 stated that the economy of Hakaethnir relies
+    mainly on Furniture. Hakaethnir was established in 1657. The number of residents of
+    Hakaethnir is 37,394.
+
+Excerpt 5. As reported by social media user @RustyCactus9860, the town of Hakaethnir dates back
+    to 1657. Hakaethnir is home to 37,394 inhabitants. Furniture is the primary industry of
+    Hakaethnir.
+
+
+What is Hakaethnir's founding year?
+(A) 1427
+(B) 1657
+\end{verbatim}
+}
