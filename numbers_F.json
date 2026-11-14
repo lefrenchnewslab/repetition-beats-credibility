@@ -1,0 +1,1907 @@
+{
+ "F1.Llama-8B.F3.W_pts": {
+  "value": -0.8779155953768887,
+  "ci": [
+   -1.9572056004890117,
+   0.2462855361437428
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F3.W_t123_pts": {
+  "value": -1.170554127169185,
+  "ci": [
+   -2.6688931633777844,
+   0.36881028425586193
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F3.R_p_pts": {
+  "value": 60.62159590750875,
+  "ci": [
+   59.623342499781195,
+   61.61681052474158
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F3.R_e_pts": {
+  "value": 22.0848390929593,
+  "ci": [
+   20.16395435281071,
+   23.993517822155752
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F3.D_pts": {
+  "value": 38.53675681454946,
+  "ci": [
+   36.930568587408516,
+   40.193953302071336
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F3.D_t123_pts": {
+  "value": 38.829395346341755,
+  "ci": [
+   37.04614433642979,
+   40.61899181070039
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F3.L_p_pts": {
+  "value": 14.456108784442447,
+  "ci": [
+   13.094271767700363,
+   15.837045054372801
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F3.R_p_minus_L_p_pts": {
+  "value": 46.16548712306631,
+  "ci": [
+   44.643989877562966,
+   47.69360889836737
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F3.I_2x2_pts": {
+  "value": -10.525841652633183,
+  "ci": [
+   -11.573050281678412,
+   -9.437579512867696
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F3.wording_main_2x2_pts": {
+  "value": 32.395920392855984,
+  "ci": [
+   31.187638756179386,
+   33.68434936158754
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F3.source_main_2x2_pts": {
+  "value": 14.037446844081053,
+  "ci": [
+   13.404980632331148,
+   14.636842646713951
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F3.C1k1.p_low": {
+  "value": 0.27299058995458336,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F3.C2k4.p_low": {
+  "value": 0.4938389808841763,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F3.C3k4.p_low": {
+  "value": 0.6868426575881528,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F3.C7k4.p_low": {
+  "value": 0.870427393075902,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F3.C7k1t1.p_low": {
+  "value": 0.25119541839632803,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F3.C7k1t2.p_low": {
+  "value": 0.25503776115272003,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F3.C7k1t3.p_low": {
+  "value": 0.27762196649962645,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F3.C8k4.p_low": {
+  "value": 0.9581726532535467,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F3.C5pk4.p_low": {
+  "value": 0.4175516777990078,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F3.C5p_over_C7k4_tokens": {
+  "value": 0.990740080981694,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F1.Llama-8B.F3.supported": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F1.Qwen-7B.F3.W_pts": {
+  "value": 6.245632955031483,
+  "ci": [
+   5.292142391822162,
+   7.233661829725496
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F3.W_t123_pts": {
+  "value": 8.327510606708643,
+  "ci": [
+   7.010671040579708,
+   9.668892844278394
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F3.R_p_pts": {
+  "value": 76.8774577392619,
+  "ci": [
+   75.20513301542402,
+   78.52119470149027
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F3.R_e_pts": {
+  "value": 46.69420101763838,
+  "ci": [
+   44.509942397836774,
+   48.99228786876468
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F3.D_pts": {
+  "value": 30.183256721623525,
+  "ci": [
+   28.258054347858604,
+   32.17452039484088
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F3.D_t123_pts": {
+  "value": 28.101379069946365,
+  "ci": [
+   25.977157849017445,
+   30.31435609561835
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F3.L_p_pts": {
+  "value": 19.28353246207867,
+  "ci": [
+   17.64444948117799,
+   20.899605092168567
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F3.R_p_minus_L_p_pts": {
+  "value": 57.59392527718323,
+  "ci": [
+   55.46245857267383,
+   59.70196885315894
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F3.I_2x2_pts": {
+  "value": -6.181757601136802,
+  "ci": [
+   -7.268285427278297,
+   -5.138759122710361
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F3.wording_main_2x2_pts": {
+  "value": 33.33801087608661,
+  "ci": [
+   31.647989490592675,
+   34.93872112423328
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F3.source_main_2x2_pts": {
+  "value": 3.1133063102419314,
+  "ci": [
+   2.623673475187529,
+   3.6636070352027095
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F3.C1k1.p_low": {
+  "value": 0.12374968419993763,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F3.C2k4.p_low": {
+  "value": 0.5906916943763214,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F3.C3k4.p_low": {
+  "value": 0.6527335454844247,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F3.C7k4.p_low": {
+  "value": 0.9549805911428715,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F3.C7k1t1.p_low": {
+  "value": 0.15328530156042208,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F3.C7k1t2.p_low": {
+  "value": 0.2789533451041398,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F3.C7k1t3.p_low": {
+  "value": 0.18883572413651023,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F3.C8k4.p_low": {
+  "value": 0.9552048662396067,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F3.C5pk4.p_low": {
+  "value": 0.3165850088207243,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F3.C5p_over_C7k4_tokens": {
+  "value": 0.9837503823799327,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F1.Qwen-7B.F3.supported": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F1.Gemma-12B.F3.W_pts": {
+  "value": 1.6135513904749328,
+  "ci": [
+   0.5535655181131605,
+   2.734532351157985
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F3.W_t123_pts": {
+  "value": 2.1514018539665773,
+  "ci": [
+   0.6928707079095574,
+   3.6921918964821656
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F3.R_p_pts": {
+  "value": 65.34943075487683,
+  "ci": [
+   63.987278230291466,
+   66.65999133712994
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F3.R_e_pts": {
+  "value": 62.690897880849214,
+  "ci": [
+   60.83050142117572,
+   64.53268247963736
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F3.D_pts": {
+  "value": 2.658532874027606,
+  "ci": [
+   0.9247907606944905,
+   4.363603160822009
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F3.D_t123_pts": {
+  "value": 2.120682410535962,
+  "ci": [
+   -0.04504950727010201,
+   4.154036094357546
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F3.L_p_pts": {
+  "value": 8.703547419805293,
+  "ci": [
+   6.82833641008979,
+   10.662556264415286
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F3.R_p_minus_L_p_pts": {
+  "value": 56.64588333507153,
+  "ci": [
+   54.60472286057713,
+   58.55319954467081
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F3.I_2x2_pts": {
+  "value": -2.951372332346984,
+  "ci": [
+   -3.8149476794235775,
+   -2.1023395262100335
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F3.wording_main_2x2_pts": {
+  "value": 2.796398098329048,
+  "ci": [
+   1.8749387202558296,
+   3.7222487376684534
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F3.source_main_2x2_pts": {
+  "value": 4.175302092696439,
+  "ci": [
+   3.724812610207574,
+   4.6169226831254235
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F3.C1k1.p_low": {
+  "value": 0.2218756002447075,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F3.C2k4.p_low": {
+  "value": 0.8487845790531996,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F3.C3k4.p_low": {
+  "value": 0.905294461641899,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F3.C7k4.p_low": {
+  "value": 0.891505421698225,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F3.C7k1t1.p_low": {
+  "value": 0.3083172638776229,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F3.C7k1t2.p_low": {
+  "value": 0.20736362802415598,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F3.C7k1t3.p_low": {
+  "value": 0.21448796445134097,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F3.C8k4.p_low": {
+  "value": 0.9185015809634544,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F3.C5pk4.p_low": {
+  "value": 0.30891107444276045,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F3.C5p_over_C7k4_tokens": {
+  "value": 0.9857254529803781,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F1.Gemma-12B.F3.supported": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F1.Qwen-32B.F3.W_pts": {
+  "value": 1.2222238292989016,
+  "ci": [
+   0.9197993340591522,
+   1.5467636622506515
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-32B-Instruct.jsonl + results/A/behaviour_Qwen2.5-32B-Instruct.jsonl"
+ },
+ "F1.Qwen-32B.F3.W_t123_pts": {
+  "value": 1.6296317723985356,
+  "ci": [
+   1.2197597750269942,
+   2.0686306701356316
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-32B-Instruct.jsonl + results/A/behaviour_Qwen2.5-32B-Instruct.jsonl"
+ },
+ "F1.Qwen-32B.F3.R_p_pts": {
+  "value": 70.0461656269756,
+  "ci": [
+   68.10028442669807,
+   72.04975528828568
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-32B-Instruct.jsonl + results/A/behaviour_Qwen2.5-32B-Instruct.jsonl"
+ },
+ "F1.Qwen-32B.F3.R_e_pts": {
+  "value": 10.952039131240454,
+  "ci": [
+   9.526729800576316,
+   12.283167118858394
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-32B-Instruct.jsonl + results/A/behaviour_Qwen2.5-32B-Instruct.jsonl"
+ },
+ "F1.Qwen-32B.F3.D_pts": {
+  "value": 59.094126495735146,
+  "ci": [
+   57.08759647406564,
+   61.06811732734735
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-32B-Instruct.jsonl + results/A/behaviour_Qwen2.5-32B-Instruct.jsonl"
+ },
+ "F1.Qwen-32B.F3.D_t123_pts": {
+  "value": 58.68671855263551,
+  "ci": [
+   56.62184372223366,
+   60.76018186387863
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-32B-Instruct.jsonl + results/A/behaviour_Qwen2.5-32B-Instruct.jsonl"
+ },
+ "F1.Qwen-32B.F3.L_p_pts": {
+  "value": 0.2527651241746468,
+  "ci": [
+   0.07492263819260571,
+   0.45205445212542406
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-32B-Instruct.jsonl + results/A/behaviour_Qwen2.5-32B-Instruct.jsonl"
+ },
+ "F1.Qwen-32B.F3.R_p_minus_L_p_pts": {
+  "value": 69.79340050280095,
+  "ci": [
+   67.7935232322488,
+   71.67787377458164
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-32B-Instruct.jsonl + results/A/behaviour_Qwen2.5-32B-Instruct.jsonl"
+ },
+ "F1.Qwen-32B.F3.I_2x2_pts": {
+  "value": -23.503223175143397,
+  "ci": [
+   -25.93828100914578,
+   -21.1378273353434
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-32B-Instruct.jsonl + results/A/behaviour_Qwen2.5-32B-Instruct.jsonl"
+ },
+ "F1.Qwen-32B.F3.wording_main_2x2_pts": {
+  "value": 48.56473873746235,
+  "ci": [
+   46.952954694944,
+   50.08102303462708
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-32B-Instruct.jsonl + results/A/behaviour_Qwen2.5-32B-Instruct.jsonl"
+ },
+ "F1.Qwen-32B.F3.source_main_2x2_pts": {
+  "value": 29.141631720816385,
+  "ci": [
+   27.97648469175401,
+   30.217505960956753
+  ],
+  "n": 400,
+  "source": "results/F/behaviour_Qwen2.5-32B-Instruct.jsonl + results/A/behaviour_Qwen2.5-32B-Instruct.jsonl"
+ },
+ "F1.Qwen-32B.F3.C1k1.p_low": {
+  "value": 0.0006951961660648257,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-32B.F3.C2k4.p_low": {
+  "value": 0.11021558747846935,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-32B.F3.C3k4.p_low": {
+  "value": 0.5191480205623502,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-32B.F3.C7k4.p_low": {
+  "value": 0.7133790907288099,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-32B.F3.C7k1t1.p_low": {
+  "value": 0.006064851317901727,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-32B.F3.C7k1t2.p_low": {
+  "value": 0.03347040321272119,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-32B.F3.C7k1t3.p_low": {
+  "value": 0.011439287139527621,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-32B.F3.C8k4.p_low": {
+  "value": 0.8872792920612568,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-32B.F3.C5pk4.p_low": {
+  "value": 0.0032228474078112935,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-32B.F3.C5p_over_C7k4_tokens": {
+  "value": 0.9837503823799327,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F1.Qwen-32B.F3.supported": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F1.Llama-8B.F1.W_pts": {
+  "value": -21.93228309587525,
+  "ci": [
+   -22.902305280944198,
+   -20.916486849697197
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F1.W_t123_pts": {
+  "value": -29.243044127833663,
+  "ci": [
+   -30.457803304613268,
+   -28.012585154889408
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F1.R_p_pts": {
+  "value": 65.10854432963377,
+  "ci": [
+   64.15521465186997,
+   66.11814654032236
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F1.R_e_pts": {
+  "value": 34.683302616036016,
+  "ci": [
+   33.373497384084196,
+   35.90827425531575
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F1.D_pts": {
+  "value": 30.425241713597746,
+  "ci": [
+   29.147332333810542,
+   31.65111043755514
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F1.D_t123_pts": {
+  "value": 37.73600274555616,
+  "ci": [
+   36.169093529057406,
+   39.196292984934196
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F1.L_p_pts": {
+  "value": -4.175070743852225,
+  "ci": [
+   -5.26848332957957,
+   -3.074138818502578
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F1.R_p_minus_L_p_pts": {
+  "value": 69.283615073486,
+  "ci": [
+   67.6550796883177,
+   70.93734907066481
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F1.I_2x2_pts": {
+  "value": -9.312809990620234,
+  "ci": [
+   -10.133330718350933,
+   -8.535922649484897
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F1.wording_main_2x2_pts": {
+  "value": 3.836553622412379,
+  "ci": [
+   3.129359162692977,
+   4.507186702350782
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F1.source_main_2x2_pts": {
+  "value": 7.7413044549106536,
+  "ci": [
+   7.301947966185464,
+   8.173305329063634
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Llama-3.1-8B-Instruct.jsonl + results/A/behaviour_Llama-3.1-8B-Instruct.jsonl"
+ },
+ "F1.Llama-8B.F1.C1k1.p_low": {
+  "value": 0.43440724324980495,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F1.C2k4.p_low": {
+  "value": 0.7812402694101651,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F1.C3k4.p_low": {
+  "value": 0.9052173639123728,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F1.C7k4.p_low": {
+  "value": 0.86616985558739,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F1.C7k1t1.p_low": {
+  "value": 0.19116146760041886,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F1.C7k1t2.p_low": {
+  "value": 0.06069322786976571,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F1.C7k1t3.p_low": {
+  "value": 0.17407571044422032,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F1.C8k4.p_low": {
+  "value": 0.8970188501833956,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F1.C5pk4.p_low": {
+  "value": 0.3926565358112826,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Llama-8B.F1.C5p_over_C7k4_tokens": {
+  "value": 0.9301908625390704,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F1.Llama-8B.F1.supported": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F1.Qwen-7B.F1.W_pts": {
+  "value": -12.776909640135639,
+  "ci": [
+   -13.63995979187512,
+   -11.845784939567352
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F1.W_t123_pts": {
+  "value": -17.035879520180853,
+  "ci": [
+   -18.26756713839952,
+   -15.889320475644455
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F1.R_p_pts": {
+  "value": 80.06868055569595,
+  "ci": [
+   78.56589727743021,
+   81.55849289903405
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F1.R_e_pts": {
+  "value": 39.183768464338414,
+  "ci": [
+   36.78700595702642,
+   41.374523897710404
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F1.D_pts": {
+  "value": 40.884912091357535,
+  "ci": [
+   38.79974789375813,
+   43.01618459347934
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F1.D_t123_pts": {
+  "value": 45.14388197140274,
+  "ci": [
+   42.92095829771593,
+   47.3675616546306
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F1.L_p_pts": {
+  "value": 7.63646557659101,
+  "ci": [
+   5.540762133394444,
+   9.861700589959094
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F1.R_p_minus_L_p_pts": {
+  "value": 72.43221497910494,
+  "ci": [
+   69.66969717990672,
+   75.18471951844934
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F1.I_2x2_pts": {
+  "value": -11.901625385732562,
+  "ci": [
+   -13.43714525336313,
+   -10.379697910212336
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F1.wording_main_2x2_pts": {
+  "value": 22.157189758355614,
+  "ci": [
+   20.440901366936625,
+   23.84081875413911
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F1.source_main_2x2_pts": {
+  "value": 6.722853422517944,
+  "ci": [
+   5.959006579851919,
+   7.515796162839432
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_Qwen2.5-7B-Instruct.jsonl + results/A/behaviour_Qwen2.5-7B-Instruct.jsonl"
+ },
+ "F1.Qwen-7B.F1.C1k1.p_low": {
+  "value": 0.24268826756280226,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F1.C2k4.p_low": {
+  "value": 0.6345259522061865,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F1.C3k4.p_low": {
+  "value": 0.7612626133600287,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F1.C7k4.p_low": {
+  "value": 0.9156059767184053,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F1.C7k1t1.p_low": {
+  "value": 0.11169616996960062,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F1.C7k1t2.p_low": {
+  "value": 0.05098041356188191,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F1.C7k1t3.p_low": {
+  "value": 0.05431183355149877,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F1.C8k4.p_low": {
+  "value": 0.9233263840149221,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F1.C5pk4.p_low": {
+  "value": 0.31905292332871243,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Qwen-7B.F1.C5p_over_C7k4_tokens": {
+  "value": 0.9195242332684904,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F1.Qwen-7B.F1.supported": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F1.Gemma-12B.F1.W_pts": {
+  "value": -26.031960045378465,
+  "ci": [
+   -26.872389227693226,
+   -25.186120821042334
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F1.W_t123_pts": {
+  "value": -34.709280060504625,
+  "ci": [
+   -35.83662126351806,
+   -33.55673775774779
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F1.R_p_pts": {
+  "value": 67.18096251810687,
+  "ci": [
+   65.47539423741598,
+   68.89633986667994
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F1.R_e_pts": {
+  "value": 30.859940615064367,
+  "ci": [
+   28.854219821029066,
+   32.86157438417875
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F1.D_pts": {
+  "value": 36.321021903042485,
+  "ci": [
+   34.8354303646928,
+   37.87943306661183
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F1.D_t123_pts": {
+  "value": 44.99834191816864,
+  "ci": [
+   43.255060962040645,
+   46.751384520535126
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F1.L_p_pts": {
+  "value": 12.060883766380496,
+  "ci": [
+   10.281687903090548,
+   13.761317750915575
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F1.R_p_minus_L_p_pts": {
+  "value": 55.12007875172637,
+  "ci": [
+   52.76771809708425,
+   57.49876183504801
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F1.I_2x2_pts": {
+  "value": -4.221582287897473,
+  "ci": [
+   -5.218733173268711,
+   -3.203271785530552
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F1.wording_main_2x2_pts": {
+  "value": 8.178270713715289,
+  "ci": [
+   7.196161328558305,
+   9.212381130720058
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F1.source_main_2x2_pts": {
+  "value": 8.374175071998273,
+  "ci": [
+   7.707294570240157,
+   9.012088694467444
+  ],
+  "n": 400,
+  "source": "results/F/f1/behaviour_gemma-3-12b-it.jsonl + results/A/behaviour_gemma-3-12b-it.jsonl"
+ },
+ "F1.Gemma-12B.F1.C1k1.p_low": {
+  "value": 0.41841855128837224,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F1.C2k4.p_low": {
+  "value": 0.727017957439016,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F1.C3k4.p_low": {
+  "value": 0.831867619598486,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F1.C7k4.p_low": {
+  "value": 0.829908576015656,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F1.C7k1t1.p_low": {
+  "value": 0.11135644425559811,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F1.C7k1t2.p_low": {
+  "value": 0.028776239707348522,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F1.C7k1t3.p_low": {
+  "value": 0.07384456808703142,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F1.C8k4.p_low": {
+  "value": 0.8925424152961514,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F1.C5pk4.p_low": {
+  "value": 0.5390273889521772,
+  "ci": null,
+  "n": 400,
+  "source": null
+ },
+ "F1.Gemma-12B.F1.C5p_over_C7k4_tokens": {
+  "value": 0.9293871618775883,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F1.Gemma-12B.F1.supported": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Llama-8B.C1k1->C2k4.recovery_top10_pct": {
+  "value": 92.0863309352518,
+  "ci": [
+   90.49909106651921,
+   93.68752841384465
+  ],
+  "n": 160,
+  "source": "results/F/f2_patch_Llama-3.1-8B-Instruct.json"
+ },
+ "F2.Llama-8B.C1k1->C2k4.random_p95_pct": {
+  "value": 31.137918933146167,
+  "ci": null,
+  "n": 20,
+  "source": null
+ },
+ "F2.Llama-8B.C1k1->C2k4.mean_gap": {
+  "value": 4.45234375,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Llama-8B.C1k1->C2k4.flip_rate": {
+  "value": 0.40625,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Llama-8B.C1k1->C2k4.n_eligible": {
+  "value": 2845.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Llama-8B.C0k1->C1k1.recovery_top10_pct": {
+  "value": 92.57170875214514,
+  "ci": [
+   91.2550590570406,
+   93.89121150943551
+  ],
+  "n": 160,
+  "source": "results/F/f2_patch_Llama-3.1-8B-Instruct.json"
+ },
+ "F2.Llama-8B.C0k1->C1k1.random_p95_pct": {
+  "value": 24.266977200294196,
+  "ci": null,
+  "n": 20,
+  "source": null
+ },
+ "F2.Llama-8B.C0k1->C1k1.mean_gap": {
+  "value": -3.18671875,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Llama-8B.C0k1->C1k1.flip_rate": {
+  "value": 0.3375,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Llama-8B.C0k1->C1k1.n_eligible": {
+  "value": 1297.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Llama-8B.C0k1->C0rk4.recovery_top10_pct": {
+  "value": 90.73890404165633,
+  "ci": [
+   89.43797921583682,
+   91.90501806543642
+  ],
+  "n": 160,
+  "source": "results/F/f2_patch_Llama-3.1-8B-Instruct.json"
+ },
+ "F2.Llama-8B.C0k1->C0rk4.random_p95_pct": {
+  "value": 27.9531366228614,
+  "ci": null,
+  "n": 20,
+  "source": null
+ },
+ "F2.Llama-8B.C0k1->C0rk4.mean_gap": {
+  "value": 6.3015625,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Llama-8B.C0k1->C0rk4.flip_rate": {
+  "value": 0.475,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Llama-8B.C0k1->C0rk4.n_eligible": {
+  "value": 3118.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Llama-8B.C1k1->C6k4.recovery_top10_pct": {
+  "value": 92.7508401344215,
+  "ci": [
+   91.46705484668776,
+   94.02645728012857
+  ],
+  "n": 160,
+  "source": "results/F/f2_patch_Llama-3.1-8B-Instruct.json"
+ },
+ "F2.Llama-8B.C1k1->C6k4.random_p95_pct": {
+  "value": 34.08065290446473,
+  "ci": null,
+  "n": 20,
+  "source": null
+ },
+ "F2.Llama-8B.C1k1->C6k4.mean_gap": {
+  "value": -4.88203125,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Llama-8B.C1k1->C6k4.flip_rate": {
+  "value": 0.3875,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Llama-8B.C1k1->C6k4.n_eligible": {
+  "value": 3021.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Llama-8B.specific": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Llama-8B.shared": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Llama-8B.generic": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Qwen-7B.C1k1->C2k4.recovery_top10_pct": {
+  "value": 95.42944959872501,
+  "ci": [
+   92.47612647989372,
+   98.59552230375482
+  ],
+  "n": 160,
+  "source": "results/F/f2_patch_Qwen2.5-7B-Instruct.json"
+ },
+ "F2.Qwen-7B.C1k1->C2k4.random_p95_pct": {
+  "value": 18.70169047754568,
+  "ci": null,
+  "n": 20,
+  "source": null
+ },
+ "F2.Qwen-7B.C1k1->C2k4.mean_gap": {
+  "value": 13.72578125,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Qwen-7B.C1k1->C2k4.flip_rate": {
+  "value": 0.59375,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Qwen-7B.C1k1->C2k4.n_eligible": {
+  "value": 2429.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Qwen-7B.C0k1->C1k1.recovery_top10_pct": {
+  "value": 72.30889235569423,
+  "ci": [
+   69.40143188722317,
+   75.21315125992551
+  ],
+  "n": 160,
+  "source": "results/F/f2_patch_Qwen2.5-7B-Instruct.json"
+ },
+ "F2.Qwen-7B.C0k1->C1k1.random_p95_pct": {
+  "value": 22.713533541341658,
+  "ci": null,
+  "n": 20,
+  "source": null
+ },
+ "F2.Qwen-7B.C0k1->C1k1.mean_gap": {
+  "value": -8.0125,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Qwen-7B.C0k1->C1k1.flip_rate": {
+  "value": 0.3875,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Qwen-7B.C0k1->C1k1.n_eligible": {
+  "value": 2599.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Qwen-7B.C0k1->C0rk4.recovery_top10_pct": {
+  "value": 90.21153048527583,
+  "ci": [
+   86.52194007073477,
+   94.28061217508545
+  ],
+  "n": 160,
+  "source": "results/F/f2_patch_Qwen2.5-7B-Instruct.json"
+ },
+ "F2.Qwen-7B.C0k1->C0rk4.random_p95_pct": {
+  "value": 14.015450020738285,
+  "ci": null,
+  "n": 20,
+  "source": null
+ },
+ "F2.Qwen-7B.C0k1->C0rk4.mean_gap": {
+  "value": 15.06875,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Qwen-7B.C0k1->C0rk4.flip_rate": {
+  "value": 0.55625,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Qwen-7B.C0k1->C0rk4.n_eligible": {
+  "value": 2856.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Qwen-7B.C1k1->C6k4.recovery_top10_pct": {
+  "value": 96.64790597583182,
+  "ci": [
+   92.3470767389348,
+   101.48045233877224
+  ],
+  "n": 160,
+  "source": "results/F/f2_patch_Qwen2.5-7B-Instruct.json"
+ },
+ "F2.Qwen-7B.C1k1->C6k4.random_p95_pct": {
+  "value": 16.586243999337878,
+  "ci": null,
+  "n": 20,
+  "source": null
+ },
+ "F2.Qwen-7B.C1k1->C6k4.mean_gap": {
+  "value": -9.4390625,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Qwen-7B.C1k1->C6k4.flip_rate": {
+  "value": 0.23125,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Qwen-7B.C1k1->C6k4.n_eligible": {
+  "value": 2576.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Qwen-7B.specific": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Qwen-7B.shared": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Qwen-7B.generic": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Gemma-12B.C1k1->C2k4.recovery_top10_pct": {
+  "value": 93.2173400176939,
+  "ci": [
+   91.36731216083429,
+   95.25996290674902
+  ],
+  "n": 160,
+  "source": "results/F/f2_patch_gemma-3-12b-it.json"
+ },
+ "F2.Gemma-12B.C1k1->C2k4.random_p95_pct": {
+  "value": 13.616632261869668,
+  "ci": null,
+  "n": 20,
+  "source": null
+ },
+ "F2.Gemma-12B.C1k1->C2k4.mean_gap": {
+  "value": 6.623046875,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Gemma-12B.C1k1->C2k4.flip_rate": {
+  "value": 0.4875,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Gemma-12B.C1k1->C2k4.n_eligible": {
+  "value": 2269.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Gemma-12B.C0k1->C1k1.recovery_top10_pct": {
+  "value": 92.21577330146809,
+  "ci": [
+   89.25525165566575,
+   95.0865778677827
+  ],
+  "n": 160,
+  "source": "results/F/f2_patch_gemma-3-12b-it.json"
+ },
+ "F2.Gemma-12B.C0k1->C1k1.random_p95_pct": {
+  "value": 12.76487993626949,
+  "ci": null,
+  "n": 20,
+  "source": null
+ },
+ "F2.Gemma-12B.C0k1->C1k1.mean_gap": {
+  "value": -3.432421875,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Gemma-12B.C0k1->C1k1.flip_rate": {
+  "value": 0.2625,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Gemma-12B.C0k1->C1k1.n_eligible": {
+  "value": 1387.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Gemma-12B.C0k1->C0rk4.recovery_top10_pct": {
+  "value": 90.74617546050577,
+  "ci": [
+   87.79924829267775,
+   93.86047697169624
+  ],
+  "n": 160,
+  "source": "results/F/f2_patch_gemma-3-12b-it.json"
+ },
+ "F2.Gemma-12B.C0k1->C0rk4.random_p95_pct": {
+  "value": 14.74555104589448,
+  "ci": null,
+  "n": 20,
+  "source": null
+ },
+ "F2.Gemma-12B.C0k1->C0rk4.mean_gap": {
+  "value": 6.255859375,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Gemma-12B.C0k1->C0rk4.flip_rate": {
+  "value": 0.3875,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Gemma-12B.C0k1->C0rk4.n_eligible": {
+  "value": 2851.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Gemma-12B.C1k1->C6k4.recovery_top10_pct": {
+  "value": 93.74225160871362,
+  "ci": [
+   91.71341859202509,
+   95.71767879489593
+  ],
+  "n": 160,
+  "source": "results/F/f2_patch_gemma-3-12b-it.json"
+ },
+ "F2.Gemma-12B.C1k1->C6k4.random_p95_pct": {
+  "value": 11.709664088789188,
+  "ci": null,
+  "n": 20,
+  "source": null
+ },
+ "F2.Gemma-12B.C1k1->C6k4.mean_gap": {
+  "value": -6.616796875,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Gemma-12B.C1k1->C6k4.flip_rate": {
+  "value": 0.45625,
+  "ci": null,
+  "n": 160,
+  "source": null
+ },
+ "F2.Gemma-12B.C1k1->C6k4.n_eligible": {
+  "value": 2040.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Gemma-12B.specific": {
+  "value": 0.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Gemma-12B.shared": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F2.Gemma-12B.generic": {
+  "value": 1.0,
+  "ci": null,
+  "n": null,
+  "source": null
+ },
+ "F3.Llama-8B.L*.C2k8.auc_gov": {
+  "value": 0.7924759765624999,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Llama-8B.L*.C2k8.auc_chosen": {
+  "value": 0.25007564368892443,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Llama-8B.L*.C2k8_flipped.auc_gov": {
+  "value": 0.7988997763081112,
+  "ci": null,
+  "n": 2877,
+  "source": null
+ },
+ "F3.Llama-8B.L*.C2k8_flipped.auc_chosen": {
+  "value": 0.20110022369188874,
+  "ci": null,
+  "n": 2877,
+  "source": null
+ },
+ "F3.Llama-8B.L*.C2k8_notflipped.auc_gov": {
+  "value": 0.7568939393939395,
+  "ci": null,
+  "n": 323,
+  "source": null
+ },
+ "F3.Llama-8B.L*.C2k8_notflipped.auc_chosen": {
+  "value": 0.7568939393939395,
+  "ci": null,
+  "n": 323,
+  "source": null
+ },
+ "F3.Llama-8B.L*.C1k1.auc_gov": {
+  "value": 0.999096484375,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Llama-8B.L*.C1k1.auc_chosen": {
+  "value": 0.5937477378066556,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Llama-8B.final.C2k8.auc_gov": {
+  "value": 0.8051808593750002,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Llama-8B.final.C2k8.auc_chosen": {
+  "value": 0.2808001368164113,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Llama-8B.final.C2k8_flipped.auc_gov": {
+  "value": 0.7901001750632173,
+  "ci": null,
+  "n": 2877,
+  "source": null
+ },
+ "F3.Llama-8B.final.C2k8_flipped.auc_chosen": {
+  "value": 0.20989982493678272,
+  "ci": null,
+  "n": 2877,
+  "source": null
+ },
+ "F3.Llama-8B.final.C2k8_notflipped.auc_gov": {
+  "value": 0.6823484848484848,
+  "ci": null,
+  "n": 323,
+  "source": null
+ },
+ "F3.Llama-8B.final.C2k8_notflipped.auc_chosen": {
+  "value": 0.6823484848484848,
+  "ci": null,
+  "n": 323,
+  "source": null
+ },
+ "F3.Llama-8B.final.C1k1.auc_gov": {
+  "value": 0.9797214843750001,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Llama-8B.final.C1k1.auc_chosen": {
+  "value": 0.623779149278348,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Qwen-7B.L*.C2k8.auc_gov": {
+  "value": 0.60863359375,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Qwen-7B.L*.C2k8.auc_chosen": {
+  "value": 0.8691275875646891,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Qwen-7B.L*.C2k8_flipped.auc_gov": {
+  "value": 0.2272269353128314,
+  "ci": null,
+  "n": 1648,
+  "source": null
+ },
+ "F3.Qwen-7B.L*.C2k8_flipped.auc_chosen": {
+  "value": 0.7727730646871687,
+  "ci": null,
+  "n": 1648,
+  "source": null
+ },
+ "F3.Qwen-7B.L*.C2k8_notflipped.auc_gov": {
+  "value": 0.9726484655241132,
+  "ci": null,
+  "n": 1552,
+  "source": null
+ },
+ "F3.Qwen-7B.L*.C2k8_notflipped.auc_chosen": {
+  "value": 0.9726484655241132,
+  "ci": null,
+  "n": 1552,
+  "source": null
+ },
+ "F3.Qwen-7B.L*.C1k1.auc_gov": {
+  "value": 0.9977324218749999,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Qwen-7B.L*.C1k1.auc_chosen": {
+  "value": 0.8186575913729446,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Qwen-7B.final.C2k8.auc_gov": {
+  "value": 0.619922265625,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Qwen-7B.final.C2k8.auc_chosen": {
+  "value": 0.9171061307782694,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Qwen-7B.final.C2k8_flipped.auc_gov": {
+  "value": 0.16743401673147168,
+  "ci": null,
+  "n": 1648,
+  "source": null
+ },
+ "F3.Qwen-7B.final.C2k8_flipped.auc_chosen": {
+  "value": 0.8325659832685284,
+  "ci": null,
+  "n": 1648,
+  "source": null
+ },
+ "F3.Qwen-7B.final.C2k8_notflipped.auc_gov": {
+  "value": 0.9897618573136708,
+  "ci": null,
+  "n": 1552,
+  "source": null
+ },
+ "F3.Qwen-7B.final.C2k8_notflipped.auc_chosen": {
+  "value": 0.9897618573136708,
+  "ci": null,
+  "n": 1552,
+  "source": null
+ },
+ "F3.Qwen-7B.final.C1k1.auc_gov": {
+  "value": 0.995106640625,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Qwen-7B.final.C1k1.auc_chosen": {
+  "value": 0.8541488239284406,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Gemma-12B.L*.C2k8.auc_gov": {
+  "value": 0.267064453125,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Gemma-12B.L*.C2k8.auc_chosen": {
+  "value": 0.8353029236993246,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Gemma-12B.L*.C2k8_flipped.auc_gov": {
+  "value": 0.1334683856811748,
+  "ci": null,
+  "n": 2450,
+  "source": null
+ },
+ "F3.Gemma-12B.L*.C2k8_flipped.auc_chosen": {
+  "value": 0.8665316143188252,
+  "ci": null,
+  "n": 2450,
+  "source": null
+ },
+ "F3.Gemma-12B.L*.C2k8_notflipped.auc_gov": {
+  "value": 0.5885634588563459,
+  "ci": null,
+  "n": 750,
+  "source": null
+ },
+ "F3.Gemma-12B.L*.C2k8_notflipped.auc_chosen": {
+  "value": 0.5885634588563459,
+  "ci": null,
+  "n": 750,
+  "source": null
+ },
+ "F3.Gemma-12B.L*.C1k1.auc_gov": {
+  "value": 0.99900703125,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Gemma-12B.L*.C1k1.auc_chosen": {
+  "value": 0.6198284365873,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Gemma-12B.final.C2k8.auc_gov": {
+  "value": 0.48567578125,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Gemma-12B.final.C2k8.auc_chosen": {
+  "value": 0.6072770325560765,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Gemma-12B.final.C2k8_flipped.auc_gov": {
+  "value": 0.40328953406939994,
+  "ci": null,
+  "n": 2450,
+  "source": null
+ },
+ "F3.Gemma-12B.final.C2k8_flipped.auc_chosen": {
+  "value": 0.5967104659306,
+  "ci": null,
+  "n": 2450,
+  "source": null
+ },
+ "F3.Gemma-12B.final.C2k8_notflipped.auc_gov": {
+  "value": 0.44630404463040446,
+  "ci": null,
+  "n": 750,
+  "source": null
+ },
+ "F3.Gemma-12B.final.C2k8_notflipped.auc_chosen": {
+  "value": 0.44630404463040446,
+  "ci": null,
+  "n": 750,
+  "source": null
+ },
+ "F3.Gemma-12B.final.C1k1.auc_gov": {
+  "value": 0.99484609375,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.Gemma-12B.final.C1k1.auc_chosen": {
+  "value": 0.6110265143455991,
+  "ci": null,
+  "n": 3200,
+  "source": null
+ },
+ "F3.B2.L18.positive_control_delta": {
+  "value": 0.07614158624821399,
+  "ci": null,
+  "n": null,
+  "source": "results/B/b2_steer_Qwen2.5-7B-Instruct.json"
+ },
+ "F3.B2.L28.positive_control_delta": {
+  "value": -0.4383900826515075,
+  "ci": null,
+  "n": null,
+  "source": "results/B/b2_steer_Qwen2.5-7B-Instruct.json"
+ }
+}

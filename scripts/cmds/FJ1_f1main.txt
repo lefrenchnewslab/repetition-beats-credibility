@@ -1,0 +1,2 @@
+python run_v2.py behave Qwen/Qwen2.5-32B-Instruct runs/F --data data/prompts_f.jsonl --fmts F3 --splits test --nohidden --maxtok 8000
+python run_v2.py behave Qwen/Qwen2.5-7B-Instruct runs/F --data data/prompts_f.jsonl --fmts F3 --splits test --nohidden --maxtok 48000

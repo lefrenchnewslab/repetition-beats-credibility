@@ -1,0 +1,18 @@
+{
+ "n_prompts": 32000,
+ "counts": {
+  "F3|C7k1t1": 3200,
+  "F3|C7k1t2": 3200,
+  "F3|C7k1t3": 3200,
+  "F3|C8k4": 3200,
+  "F3|C5pk4": 3200,
+  "F1|C7k1t1": 3200,
+  "F1|C7k1t2": 3200,
+  "F1|C7k1t3": 3200,
+  "F1|C8k4": 3200,
+  "F1|C5pk4": 3200
+ },
+ "byte_identical_rebuilds_checked": 25600,
+ "C7k1_t0_equals_C1": true,
+ "sha256": "301f1b4524cee0b69b1c3c605369380319b855ed7eedbde715c51e2500782775"
+}

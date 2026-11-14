@@ -2,15 +2,15 @@
 """Rebuild every table, figure and number in the paper from the committed outputs (offline, CPU, about 1-2 minutes).
 
     python3 reproduce.py                 # writes reproduced/ and prints the headline numbers
-    python3 reproduce.py --check-data    # also regenerates the prompt files and checks them byte for byte (+10 s)
+    python3 reproduce.py --check-data    # also regenerates the prompt files and checks them byte for byte (+30 s)
 
 What it does:
  1. copies scripts/, data/, results/ and paper/main.tex into a temporary directory and decompresses every *.gz there
     (the repository itself is never modified; committed numbers_*.json are NOT copied, so they are regenerated);
  2. runs the analysis scripts in order: lexical_ngram -> analyze_v2 (Block A) -> analyze_b (Block B, + Llama and Gemma
-    replications) -> figs_b -> analyze_d (Block D) -> polish_figs (print figures) -> make_appendix (appendix tables)
-    -> number_check (every hand-typed number in the main text);
- 3. compares the regenerated numbers_A/B/D.json and appendix tables with the committed ones;
+    replications) -> figs_b -> analyze_d (Block D) -> analyze_f + posthoc_f1_templates (Block F) -> polish_figs (print
+    figures) -> make_appendix (appendix tables) -> number_check (every hand-typed number in the main text);
+ 3. compares the regenerated numbers_A/B/D/F.json, numbers_F_posthoc.json and appendix tables with the committed ones;
  4. copies numbers, summaries, appendix .tex, figures and NUMBER_CHECK.md to reproduced/.
 Exit code 0 only if every step ran, the regenerated numbers equal the committed ones and number_check passes.
 Requirements: Python >= 3.10 with numpy, scipy, scikit-learn, matplotlib (requirements.txt). No GPU, no network.
@@ -20,6 +20,7 @@ import gzip, hashlib, json, os, shutil, subprocess, sys, tempfile, time
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, "reproduced")
 QWEN = "Qwen2.5-7B-Instruct"
+NUMS = ("A", "B", "D", "F", "F_posthoc")
 
 
 def sh(tmp, *args):
@@ -46,12 +47,12 @@ def copytree_gunzip(src, dst):
 
 def compare_numbers(tmp):
     bad = 0
-    for n in "ABD":
+    for n in NUMS:
         new, old = (json.load(open(os.path.join(p, f"numbers_{n}.json"))) for p in (tmp, ROOT))
         diff = sorted(set(new) ^ set(old))
         for k in set(new) & set(old):
             for f in ("value", "ci"):
-                x, y = new[k][f], old[k][f]
+                x, y = new[k].get(f), old[k].get(f)
                 xs, ys = (x if isinstance(x, list) else [x]), (y if isinstance(y, list) else [y])
                 if len(xs) != len(ys) or any((p is None) != (q is None) or (p is not None and abs(p - q) > 1e-9) for p, q in zip(xs, ys)):
                     diff.append(k); break
@@ -74,12 +75,17 @@ def check_data(tmp):
     man = json.load(open(os.path.join(ROOT, "data", "manifest_v2.json")))["prompts_sha256"]
     got = hashlib.sha256(open(os.path.join(d, "prompts_v2.jsonl"), "rb").read()).hexdigest()
     bad += man != got; print(f"  prompts_v2.jsonl SHA-256 {'matches' if man == got else 'does NOT match'} manifest_v2.json")
+    # Block F prompts: build_data_f.py asserts C1/C2k4/C3k4/C7k4 are byte-identical to prompts_v2.jsonl, then rewrites data/prompts_f.jsonl
+    sh(tmp, "scripts/build_data_f.py")
+    man = json.load(open(os.path.join(ROOT, "data", "manifest_f.json")))["sha256"]
+    got = hashlib.sha256(open(os.path.join(tmp, "data", "prompts_f.jsonl"), "rb").read()).hexdigest()
+    bad += man != got; print(f"  prompts_f.jsonl SHA-256 {'matches' if man == got else 'does NOT match'} manifest_f.json")
     return bad
 
 
 def headline(tmp):
     J = lambda f: json.load(open(os.path.join(tmp, f)))
-    A, B, D = J("numbers_A.json"), J("numbers_B.json"), J("numbers_D.json")
+    A, B, D, F = J("numbers_A.json"), J("numbers_B.json"), J("numbers_D.json"), J("numbers_F.json")
     v = lambda X, k, s=1: X[k]["value"] * s
     ci = lambda X, k, s=1: "[" + ", ".join(f"{c * s:.1f}" for c in X[k]["ci"]) + "]"
     rows = [
@@ -89,6 +95,11 @@ def headline(tmp):
          f"{v(A, 'Qwen-32B.F3.test.C7k4_minus_C2k4_pts'):.1f} {ci(A, 'Qwen-32B.F3.test.C7k4_minus_C2k4_pts')}"),
         *[("Sec. 4.3, Fig. 3", f"{m}: top-10 heads recover, tables (%)",
            f"{v(A, f'{m}.F1.patch.top10.recovery_pct'):.1f} {ci(A, f'{m}.F1.patch.top10.recovery_pct')}") for m in ("Llama-8B", "Qwen-7B", "Gemma-12B")],
+        *[("Sec. 4.2 (Block F)", f"{m}, documents: paraphrase gain minus exact-copy gain D (points)",
+           f"{v(F, f'F1.{m}.F3.D_pts'):.1f} {ci(F, f'F1.{m}.F3.D_pts')}") for m in ("Qwen-32B", "Qwen-7B")],
+        ("Sec. 4.2 (Block F)", "Qwen2.5-32B, documents: one paraphrased copy, wording effect W (points)", f"{v(F, 'F1.Qwen-32B.F3.W_pts'):.1f} {ci(F, 'F1.Qwen-32B.F3.W_pts')}"),
+        *[("Sec. 4.3 (Block F)", f"{m}: top-10 heads recover, tables, C1->C6 government repeated (%)",
+           f"{v(F, f'F2.{m}.C1k1->C6k4.recovery_top10_pct'):.1f} {ci(F, f'F2.{m}.C1k1->C6k4.recovery_top10_pct')}") for m in ("Llama-8B", "Qwen-7B", "Gemma-12B")],
         ("Sec. 4.5", "Head damping (Qwen2.5-7B, tables): exact-copy effect removed (%)", f"{v(B, 'B3.F1.F1.BR_C2k4', 100):.1f} {ci(B, 'B3.F1.F1.BR_C2k4', 100)}"),
         ("Sec. 4.5", "Head damping: source preference kept (%)", f"{v(B, 'B3.F1.F1.pref_kept', 100):.1f} {ci(B, 'B3.F1.F1.pref_kept', 100)}"),
         ("Sec. 4.5, Fig. 5", "LoRA (Qwen2.5-7B, documents): paraphrase effect removed (%)", f"{v(D, 'D.F3.BR_C7k4', 100):.1f} {ci(D, 'D.F3.BR_C7k4', 100)}"),
@@ -115,6 +126,8 @@ def main():
     sh(tmp, "scripts/analyze_b.py", "results/B/gemma", "results/A", "gemma-3-12b-it")
     sh(tmp, "scripts/figs_b.py", "results/B")
     sh(tmp, "scripts/analyze_d.py", "results/D")
+    sh(tmp, "scripts/analyze_f.py")
+    sh(tmp, "scripts/posthoc_f1_templates.py")
     sh(tmp, "scripts/polish_figs.py")
     sh(tmp, "scripts/make_appendix.py")
     nc = sh(tmp, "scripts/number_check.py", "--out", os.path.join(tmp, "NUMBER_CHECK.md"))
@@ -126,7 +139,7 @@ def main():
     shutil.rmtree(OUT, ignore_errors=True)
     for sub in ("figs", "paper", "summaries"):
         os.makedirs(os.path.join(OUT, sub))
-    for n in "ABD":
+    for n in NUMS:
         shutil.copy2(os.path.join(tmp, f"numbers_{n}.json"), OUT)
     shutil.copy2(os.path.join(tmp, "NUMBER_CHECK.md"), OUT)
     for f in os.listdir(os.path.join(tmp, "figs")):
@@ -134,7 +147,7 @@ def main():
     for f in ("app_prereg.tex", "app_tables.tex"):
         shutil.copy2(os.path.join(tmp, "paper", f), os.path.join(OUT, "paper"))
     for f in ("results/A/summary_A.md", "results/B/summary_B.md", "results/D/summary_D.md",
-              "results/B/llama/summary_B_Llama-3.1-8B-Instruct.md", "results/B/gemma/summary_B_gemma-3-12b-it.md"):
+              "results/B/llama/summary_B_Llama-3.1-8B-Instruct.md", "results/B/gemma/summary_B_gemma-3-12b-it.md", "results/F/summary_F.md"):
         shutil.copy2(os.path.join(tmp, f), os.path.join(OUT, "summaries"))
     headline(tmp)
     if "--keep" not in sys.argv:

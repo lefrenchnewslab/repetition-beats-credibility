@@ -106,3 +106,16 @@ Every way this pilot could produce a misleading signal, and the design choice th
 | G7 | **Single seed** (Schuster use 7). | Unknown variance | Stated as a limitation; budget ≤ 4 A100-h. |
 | G8 | **Flattening**: the LoRA pushes every answer toward 0.5, which gives "bias reduction" without preference. | A fake fix | The preference-kept bar (≥ 70%); confidence (max-option probability, entropy) reported per condition. |
 | G9 | **Matched comparison outside the B3 curve range.** | An arbitrary verdict | B3 curves include the base point (γ = 1: reduction 0, preference 1); below the curves' minimum preference, the most aggressive point (γ = 0) is used. Rule fixed below. |
+
+## H. Block F (reviewer controls) — written 2026-11-14 ~15:20 Cairo, before any Block F code, data or job
+
+| # | Failure mode | What it would fake | Guard |
+|---|---|---|---|
+| H1 | **C7 k=1 with template 0 is literally C1** (copy 1 of C7 is the canonical block), so a "mean over templates" that includes it double-counts C1. | A biased wording effect W | Templates 1–3 are new prompts; template 0 reuses the C1 prompt (byte-identical). The mean over the four templates is reported with and without template 0. |
+| H2 | **New conditions rendered differently from Block A** (e.g. block positions, letters, users). | Differences caused by rendering, not by the manipulation | One builder (v2's block renderers); it asserts that rebuilding C1, C2k4, C3k4 and C7k4 is byte-identical to `prompts_v2.jsonl`. Placement follows C7 k=4: gov first in HF, last in LF; for C7 k=1 the single social block sits where C1's does. |
+| H3 | **C5p not length-matched** (filler blocks lack source lines). | A length control that is too short | Filler blocks use the same sentence templates (variants 1–3) as the paraphrased copies. Mean token counts of C5p vs C7k4 are reported; if C5p is > 10% shorter, the length comparison is flagged. |
+| H4 | **R_p − R_e compares different baselines** (C7k1 vs C1). | Not a like-for-like difference | Both effects and their difference are computed per pair (8-variant means), and the CI is a cluster bootstrap over pairs, so the baselines are paired. |
+| H5 | **F2 contrasts have different gap sizes and signs** (C0→C1 lowers P_low; C0→C0r raises it). | Recovery comparisons across contrasts that are really scale effects | Items are kept if the gap is > 1 logit in the contrast's expected direction. Recovery = (LD_corrupt − LD_patched)/(LD_corrupt − LD_clean) is sign-agnostic. Mean gap and flip rate per contrast are reported. |
+| H6 | **F2 shared suffix differs across contrasts** (C0 has no source labels). | Different patched regions | Same suffix rule as Block A (longest common token suffix); mean suffix length per contrast reported. |
+| H7 | **Head sets re-selected on new data.** | Circular specificity | The fixed top-10 heads and the same 20 random 10-head sets from Block A's selection ranking (`patch_F1_<model>.json`) are used. No re-ranking. |
+| H8 | **Graded-set hidden states were never saved.** | — | Per the prompt, they are not recomputed. The GPU cost is estimated and reported instead. |

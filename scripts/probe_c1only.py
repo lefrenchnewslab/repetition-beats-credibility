@@ -10,11 +10,11 @@ from sklearn.metrics import roc_auc_score
 RD, tag = sys.argv[1], sys.argv[2]
 HERE = os.path.dirname(os.path.abspath(__file__))
 t0 = time.time()
-meta = {}
+meta = {}; meta_letter = {}
 for f in [os.path.join(HERE, "data", "prompts_v2.jsonl"), os.path.join(HERE, "data", "prompts_c6.jsonl")]:
     for l in open(f):
         r = json.loads(l)
-        if r["fmt"] == "F1": meta[r["id"]] = (r["ck"], r["split"], r["pair_id"], float(r["letter_low"] == "B"))
+        if r["fmt"] == "F1": meta[r["id"]] = (r["ck"], r["split"], r["pair_id"], float(r["letter_low"] == "B")); meta_letter[r["id"]] = r["letter_low"]
 beh = {}
 for f in [f"{RD}/behaviour_{tag}.jsonl", f"{RD}/behaviour_{tag}.f1sel.jsonl", f"{RD}/behaviour_{tag}.f1test.jsonl", f"{RD}/behaviour_{tag}.c6.jsonl"]:  # merged or per-part (same rows)
     if os.path.exists(f):
@@ -120,3 +120,19 @@ W_ = np.stack([fits[l][1].w.numpy() for l in L]); B_ = np.array([float(fits[l][1
 SD_ = np.array([float(np.std(fits[l][1](H[[idx[i] for i in tr], fits[l][0]].float()))) for l in L])
 np.savez(f"{RD}/dirs_{'c1bal' if BAL else 'c1only'}_{tag}.npz", layers=np.array(L), w=W_, b=B_, sd_logit=SD_, Lstar=res["H4"]["Lstar"], final=res["H4"]["final_layer"])
 print("DONE", f"{time.time()-t0:.0f}s")
+
+# Block F3 (--chosen): same fitted directions; AUC against the model's CHOSEN option (preferred letter is A) instead of the gov label
+if "--chosen" in sys.argv:
+    chosenA = lambda i: float((beh[i] > .5) == (meta_letter[i] == "A"))
+    outc = {"tag": tag, "Lstar": Lstar, "final": Lfin, "layers": {}}
+    for layer in (Lstar, Lfin):
+        li_, f_ = fits[layer]; d = {}
+        for name in ("C2k8", "C2k8_flipped", "C2k8_notflipped", "C1k1"):
+            te_ = [i for i in tests[name] if i in beh]
+            sc = f_(H[[idx[i] for i in te_], li_].float())
+            yg = np.array([meta[i][3] for i in te_]); yc = np.array([chosenA(i) for i in te_])
+            d[name] = {"n": len(te_), "auc_gov_label": float(roc_auc_score(yg, sc)) if len(set(yg)) == 2 else None,
+                       "auc_chosen_answer": float(roc_auc_score(yc, sc)) if len(set(yc)) == 2 else None,
+                       "share_chosen_equals_gov": float(np.mean(yg == yc))}
+        outc["layers"][layer] = d
+    json.dump(outc, open(f"{RD}/probe_c1chosen_{tag}.json", "w"), indent=1); print("chosen-answer AUCs written", flush=True)

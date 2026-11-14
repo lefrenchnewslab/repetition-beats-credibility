@@ -61,3 +61,13 @@ Slurm dependency chain (`submit_chain.sh 144328`, 14:13 CET): 144906 A02 Llama F
 | 2026-11-14 | 182221 | D3 pick (lr1e-4/ckpt_e2 by the validation rule) + test F1/F3/F2 + capability; its t3 copy 182384 was cancelled | A100 | a100-dev | 00:35:50 | 1 | 0.597 | COMPLETED |
 
 **Block D GPU total: ≈ 2.00 A100-h** (cap 4): smoke 0.07 + D1 0.675 + D2 0.662 + D3 0.597.
+
+## Block F (budget ≤ 3 A100-h, A100 only)
+| date | job id | what | GPU | QoS | elapsed | GPUs | A100-h | state |
+|---|---|---|---|---|---|---|---|---|
+| 2026-11-14 | 188697 (t3 copy 188699 cancelled pending) | FJ1 F1-main behaviour: Qwen-32B + Qwen-7B, F3 | A100 | a100-dev | 00:35:53 | 1 | 0.60 | COMPLETED |
+| 2026-11-14 | 188701 (t3 copy 188702 cancelled pending) | FJ2 F2 fixed-head patching (Llama, Qwen-7B, Gemma; 4 contrasts) + F3 behaviour (Llama, Gemma) | A100 | a100-dev | 01:15:34 | 1 | 1.26 | COMPLETED |
+| 2026-11-14 | 188704 (t3 copy 188705 cancelled pending) | FJ3 F1-tables behaviour (Qwen-7B, Llama, Gemma) | A100 | a100-dev | 00:30:00 | 1 | 0.50 | COMPLETED |
+| 2026-11-14 | 188716 | F3: C1-only probe refit + chosen-answer AUCs (3 models; CPU). Refit probe files byte-identical to before | CPU (20 cores) | qos_cpu-dev | 00:05:29 | — | ~2 core-h | COMPLETED |
+
+Block F total: **2.36 A100-h** (cap 3) + ~2 CPU core-h. Note: another session's `rlhead` jobs ran on the same allocation in parallel with FJ2.

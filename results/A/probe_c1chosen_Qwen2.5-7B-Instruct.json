@@ -1,0 +1,59 @@
+{
+ "tag": "Qwen2.5-7B-Instruct",
+ "Lstar": 18,
+ "final": 28,
+ "layers": {
+  "18": {
+   "C2k8": {
+    "n": 3200,
+    "auc_gov_label": 0.60863359375,
+    "auc_chosen_answer": 0.8691275875646891,
+    "share_chosen_equals_gov": 0.485
+   },
+   "C2k8_flipped": {
+    "n": 1648,
+    "auc_gov_label": 0.2272269353128314,
+    "auc_chosen_answer": 0.7727730646871687,
+    "share_chosen_equals_gov": 0.0
+   },
+   "C2k8_notflipped": {
+    "n": 1552,
+    "auc_gov_label": 0.9726484655241132,
+    "auc_chosen_answer": 0.9726484655241132,
+    "share_chosen_equals_gov": 1.0
+   },
+   "C1k1": {
+    "n": 3200,
+    "auc_gov_label": 0.9977324218749999,
+    "auc_chosen_answer": 0.8186575913729446,
+    "share_chosen_equals_gov": 0.7628125
+   }
+  },
+  "28": {
+   "C2k8": {
+    "n": 3200,
+    "auc_gov_label": 0.619922265625,
+    "auc_chosen_answer": 0.9171061307782694,
+    "share_chosen_equals_gov": 0.485
+   },
+   "C2k8_flipped": {
+    "n": 1648,
+    "auc_gov_label": 0.16743401673147168,
+    "auc_chosen_answer": 0.8325659832685284,
+    "share_chosen_equals_gov": 0.0
+   },
+   "C2k8_notflipped": {
+    "n": 1552,
+    "auc_gov_label": 0.9897618573136708,
+    "auc_chosen_answer": 0.9897618573136708,
+    "share_chosen_equals_gov": 1.0
+   },
+   "C1k1": {
+    "n": 3200,
+    "auc_gov_label": 0.995106640625,
+    "auc_chosen_answer": 0.8541488239284406,
+    "share_chosen_equals_gov": 0.7628125
+   }
+  }
+ }
+}

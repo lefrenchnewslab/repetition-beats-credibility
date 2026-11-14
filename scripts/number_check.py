@@ -1,5 +1,6 @@
 """Check every hand-typed number in the paper's main text (paper/main.tex, abstract to Section 6) against the
-numbers files and results. Sprint Block C (14 Nov 2026), updated after Block D to the final paper text.
+numbers files and results. Sprint Block C (14 Nov 2026), updated after Block D and again after Block F (reviewer
+controls) to the revised paper text.
   python3 scripts/number_check.py [--out FILE]   -> paper/NUMBER_CHECK.md (or FILE); exit code 1 if any check fails
 
 Each claim is (where, quote, printed, source, value). A claim PASSES only if
@@ -13,7 +14,7 @@ import numpy as np
 S = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else f"{S}/paper/NUMBER_CHECK.md"
 J = lambda p: json.load(open(f"{S}/{p}"))
-A, B, D = J("numbers_A.json"), J("numbers_B.json"), J("numbers_D.json")
+A, B, D, F = J("numbers_A.json"), J("numbers_B.json"), J("numbers_D.json"), J("numbers_F.json")
 BG = J("results/B/gemma/numbers_B_gemma-3-12b-it.json")
 M3 = ("Llama-3.1-8B-Instruct", "Qwen2.5-7B-Instruct", "gemma-3-12b-it")
 SH = ("Llama-8B", "Qwen-7B", "Gemma-12B")
@@ -32,6 +33,7 @@ def g(Dct, k, i=None):
 a = lambda k, i=None: g(A, k, i)
 b = lambda k, i=None: g(B, k, i)
 d = lambda k, i=None: g(D, k, i)
+fv = lambda k, i=None: g(F, k, i)
 C = []
 
 
@@ -46,9 +48,15 @@ add("Abstract", r"four paraphrased copies of one post flip 86\% of items", 86, "
 add("Abstract", r"against 3\% for four exact copies", 3, "Qwen-32B.F3.test.C2k4.flip_pct", a("Qwen-32B.F3.test.C2k4.flip_pct"))
 add("Abstract", r"recover 92--95\% of the repetition effect", 92, "*.F1.patch.top10.recovery_pct (min of 3 models)", min(top10))
 add("Abstract", r"recover 92--95\% of the repetition effect", 95, "*.F1.patch.top10.recovery_pct (max of 3 models)", max(top10))
-add("Abstract", r"95th percentile of 14--31\% for random heads", 14, "*.F1.patch.rand10.recovery_p95 (min)", min(p95))
-add("Abstract", r"95th percentile of 14--31\% for random heads", 31, "*.F1.patch.rand10.recovery_p95 (max)", max(p95))
+add("Abstract", r"(random heads: at most 31\%)", 31, "*.F1.patch.rand10.recovery_p95 (max)", max(p95))
 add("Abstract", r"removes 95\% of the paraphrase effect", 95, "D.F3.BR_C7k4", d("D.F3.BR_C7k4"), 100)
+
+# ---------------- Table 3 (pre-registered criteria), Block F rows ----------------
+for m in ("Qwen-32B", "Qwen-7B"):   # F1-main: D's CI lower bound > 0 and R_p > L_p (Qwen-7B is the table's column)
+    met = float(fv(f"F1.{m}.F3.D_pts", 0) > 0 and fv(f"F1.{m}.F3.R_p_pts") > fv(f"F1.{m}.F3.L_p_pts"))
+    add("Table 3", r"F1 paraphrase gain exceeds exact-copy gain & -- & \textbf{met} & --", 1, f"F1.{m}.F3 D ci lo > 0 and R_p > L_p (1 = met)", met)
+for m in SH:
+    add("Table 3", "F2 top heads specific to the conflict & not met & not met & not met", 0, f"F2.{m}.specific (0 = not met)", fv(f"F2.{m}.specific"))
 
 # ---------------- Section 3 (design constants) ----------------
 add("§3.5", "on 1,500 items about new fictional entities", "1500", "data/manifest_d.json items.train_d", MD["items"]["train_d"])
@@ -76,6 +84,9 @@ add("§4.2", "near 0.5 (0.49--0.59)", "0.59", "Qwen-7B.F3.test.C2k4.p_low", a("Q
 q = "is 0.11 with four exact copies and 0.71 with four paraphrased copies"
 add("§4.2", q, "0.11", "Qwen-32B.F3.test.C2k4.p_low", a("Qwen-32B.F3.test.C2k4.p_low"))
 add("§4.2", q, "0.71", "Qwen-32B.F3.test.C7k4.p_low", a("Qwen-32B.F3.test.C7k4.p_low"))
+add("§4.2 (Block F)", "A single paraphrased copy barely moves the answer (+1 point in Qwen-32B)", 1, "F1.Qwen-32B.F3.W_pts", fv("F1.Qwen-32B.F3.W_pts"))
+C.append(("§4.2 (Block F)", "and length-matched filler moves it far less", "<1", "F1.Qwen-32B.F3: L_p / R_p (filler effect as a share of the paraphrase-repetition effect)",
+          fv("F1.Qwen-32B.F3.L_p_pts") / fv("F1.Qwen-32B.F3.R_p_pts")))
 for p, i in (("60.3", None), ("58.3", 0), ("62.2", 1)):
     add("§4.2", "(+60.3 points [58.3, 62.2])", p, "Qwen-32B.F3.test.C7k4_minus_C2k4_pts", a("Qwen-32B.F3.test.C7k4_minus_C2k4_pts", i))
 q = r"Paraphrased copies flip 86\% of items, against 3\% for exact copies and 52\% for four independent users"
@@ -89,9 +100,11 @@ for m, (v, lo, hi, pp) in {"Llama-8B": ("91.9", "90.4", "93.4", "30.9"), "Qwen-7
     k = f"{m}.F1.patch.top10.recovery_pct"; quote = rf"{v}\% [{lo}, {hi}]"
     add("§4.3", quote, v, k, a(k)); add("§4.3", quote, lo, k + " ci lo", a(k, 0)); add("§4.3", quote, hi, k + " ci hi", a(k, 1))
     add("§4.3", r"the 95th percentile is 30.9\%, 19.4\% and 13.9\%", pp, f"{m}.F1.patch.rand10.recovery_p95", a(f"{m}.F1.patch.rand10.recovery_p95"))
-ma = [a(f"{m}.F1.patch.mean_top10.recovery_pct") for m in SH]
-add("§4.3", r"by mean ablation recovers less (57--79\%)", 57, "*.F1.patch.mean_top10.recovery_pct (min)", min(ma))
-add("§4.3", r"by mean ablation recovers less (57--79\%)", 79, "*.F1.patch.mean_top10.recovery_pct (max)", max(ma))
+for lab, cn, lo, hi in (("credibility alone", "C0k1->C1k1", 72, 93), ("unlabelled repetition", "C0k1->C0rk4", 90, 91),
+                        ("a repeated government source", "C1k1->C6k4", 93, 97)):
+    r = [fv(f"F2.{m}.{cn}.recovery_top10_pct") for m in SH]; q = rf"{lab} ({lo}--{hi}\%)"
+    add("§4.3 (Block F)", q, lo, f"F2.*.{cn}.recovery_top10_pct (min of 3 models)", min(r))
+    add("§4.3 (Block F)", q, hi, f"F2.*.{cn}.recovery_top10_pct (max of 3 models)", max(r))
 q = r"the top ten recover 77\% (exact) and 78\% (paraphrased)"
 add("§4.3", q, 77, "Qwen-7B.F3.patch.top10.recovery_pct", a("Qwen-7B.F3.patch.top10.recovery_pct"))
 add("§4.3", q, 78, "Qwen-7B.F3-C7k4.patch.top10.recovery_pct", a("Qwen-7B.F3-C7k4.patch.top10.recovery_pct"))
@@ -122,6 +135,10 @@ add("§4.4", q, "0.23", "Qwen-7B.H4.a_flipped_auc_Lstar", a("Qwen-7B.H4.a_flippe
 add("§4.4", q, "0.13", "Gemma-12B.H4.a_flipped_auc_Lstar", a("Gemma-12B.H4.a_flipped_auc_Lstar"))
 add("§4.4", "(0.32 and 0.00)", "0.32", "Qwen-7B.H4.b_C0r_auc_Lstar", a("Qwen-7B.H4.b_C0r_auc_Lstar"))
 add("§4.4", "(0.32 and 0.00)", "0.00", "Gemma-12B.H4.b_C0r_auc_Lstar", a("Gemma-12B.H4.b_C0r_auc_Lstar"))
+q = "A decision-balanced probe reverses too in Gemma (confirmatory) and at Qwen-7B's last layer"
+C.append(("§4.4", q, "<0.5", "Gemma-12B.c1bal.H4a (flipped-item AUC at L*)", a("Gemma-12B.c1bal.H4a")))
+C.append(("§4.4", q, "<0.5", "Qwen-7B.c1bal.H5 (flipped-item AUC, last layer)", a("Qwen-7B.c1bal.H5")))
+add("§4.4", "but not at its selected layer (0.58, exploratory", "0.58", "Qwen-7B.c1bal.H4a", a("Qwen-7B.c1bal.H4a"))
 q = r"at its last layer (0.79) while 90\% of answers flip"
 add("§4.4", q, "0.79", "Llama-8B.H5.final_flipped_auc", a("Llama-8B.H5.final_flipped_auc"))
 add("§4.4", q, 90, "Llama-8B.H5.choice_rate", a("Llama-8B.H5.choice_rate"), 100)

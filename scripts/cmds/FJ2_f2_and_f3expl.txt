@@ -1,0 +1,5 @@
+python f2_patch.py meta-llama/Llama-3.1-8B-Instruct runs/F
+python f2_patch.py Qwen/Qwen2.5-7B-Instruct runs/F
+python f2_patch.py google/gemma-3-12b-it runs/F
+python run_v2.py behave meta-llama/Llama-3.1-8B-Instruct runs/F --data data/prompts_f.jsonl --fmts F3 --splits test --nohidden --maxtok 32000
+python run_v2.py behave google/gemma-3-12b-it runs/F --data data/prompts_f.jsonl --fmts F3 --splits test --nohidden --maxtok 20000
